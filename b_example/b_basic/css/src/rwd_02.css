@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* rwd_02.css */
+
+#wrap{width: 100%; height: auto; min-height:400px;
+  transition:all 300ms linear;}
+h1{display:none;}
+#headBox{width:100%;}
+#adBox{width:100%;}
+#conteneBox{width:100%;}
+#newsBox{width:100%;}
+#footBox{width:100%;}
+
+
+/* mobile start ------------------------- */
+@media screen and (max-width:480px) { 
+  #wrap{background-color:#ccc;}
+
+
+
+}/* mobile end */
+
+/* tab start ------------------------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+  #wrap{background-color:#fac;}
+
+
+
+}/* tablet end */
+
+/* pc start------------------------- */
+@media screen and (min-width:769px) {
+  #wrap{background-color:#acf;}
+  
+
+
+
+}/* pc end */
+

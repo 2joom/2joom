@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ko-KR">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>인삼공사</title>
+   <style type="text/css">
+    html,body{margin:0 auto;}
+    h1,h2,h3,h4,h5,h6,p,div,ul,ol,li,dt,dd,dl{margin:0; padding:0;}
+    ul,ol,li{list-style:none;}
+    a{text-decoration:none;}
+    a:hover, a:focus{color:#fa0; font-weight:bold; text-decoration:underline;
+        outline:3px solid #fa0;}
+  
+    header,nav,aside,section,article,footer,main,figure{display:block;}
+  
+    #wrap .hidden{width:0; height:0; overflow:hidden;}
+    #wrap{width:940px; height:auto; margin:0 auto; text-align:center;}
+    #wrap>*{width:100%;}
+
+    /* headBox */
+    #headBox{height:110px; background-color:#222;}
+     h1{width:140px; height:50px; background-color:#aaa; margin:0 auto; padding-top:5px; 
+      font-size:20px; line-height:30px;}
+     /* menuBox */
+     #menuBox{width:743px; height:30px; margin:0 auto; background-color:#ccc; margin-top:15px;}
+     #menuBox>ul{width:100%; height:100%;}
+     #menuBox>ul>li{width:106.142857px; float:left; line-height:30px; background-color:#777;
+      border:1px solid #fff; box-sizing:border-box;}
+
+    /* adBox */
+    #adBox{height:530px; background-color:#555;
+      padding-top:153px; padding-left:245px; box-sizing:border-box;}
+      #adBox_text{width:400px; height:103px; background-color:#ccc;
+        font-size:27px;}
+    /* brandBox */
+    #brandBox{height:595px; background-color:#777; 
+      padding-top:65px; box-sizing:border-box;}
+      h3{width:190px; height:45px; margin:0 auto; margin-bottom:30px;
+        background-color:#fff; line-height:45px;}
+      /* brand_nav */
+      #brand_nav{width:890px; height:90px; margin-left:25px;}
+      #brand_nav>ul{width:100%; height:100%;}
+      #brand_nav>ul>li{width:148.333333px; height:100%; background-color:#aaa; line-height:90px; float:left; 
+        border:1px solid #fff; box-sizing:border-box;}
+      /* brand_ad */ 
+      #brand_ad{width:890px; height:322px; 
+        margin-left:25px; margin-bottom:43px; background-color:#fff;}
+      #brand_ad>*{float:left;}  
+      #brand_ad>#brand_ad01{width:295px; height:100%; background-color:#444;}
+        .b_ad01_img{height:230px; line-height:230px;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad01_title{height:25px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad01_text{height:67px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+      #brand_ad>#brand_ad02{width:298px; height:100%; background-color:#444;}
+        .b_ad02_img{height:230px; line-height:230px;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad02_title{height:25px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad02_text{height:67px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+      #brand_ad>#brand_ad03{width:297px; height:100%; background-color:#444;}
+        .b_ad03_img{height:230px; line-height:230px;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad03_title{height:25px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+        .b_ad03_text{height:67px; text-align:left;
+          border:1px solid #fff; box-sizing:border-box;}
+
+    /* eventBox */
+    #eventBox{height:695px; background-color:#aaa;
+      padding-top:15px; box-sizing:border-box;}
+      #eventBox>h3{margin-bottom:60px;}
+      #eventBox_img{margin:0 auto; width:890px; height:490px;}
+        #eventBox_img01{float:left; border:1px solid #fff; 
+          padding-top:145px; box-sizing:border-box;
+          width:390px; height:100%;
+          background-color:#555;}
+          .e_box_img01_text{width:315px; height:95px; margin-left:20px;
+            border:1px solid #fff; box-sizing:border-box;
+            text-align:left;}
+          .e_box_img01_title{width:100%; height:67px; margin-top:183px;
+            border:1px solid #fff; box-sizing:border-box;
+            line-height:67px}
+      #eventBox_img02{float:right; width:385px; height:490px;}
+        #eventBox_img02>*{height:150px; line-height:150px;
+          border:1px solid #fff; box-sizing:border-box;
+          background-color:#555;}
+        .e_box_img02_2,.e_box_img02_1{margin-bottom:20px;}
+
+    /* storeBox */
+    #storeBox{height:186px; background-color:#444;
+      padding-top:25px; box-sizing:border-box;}
+      #storeBox>h3{height:57px; float:left; margin-left:100px;
+        line-height:57px;}
+        #searchBox{float:right; 
+            margin-right:28px; margin-width:506px; height:90px;}
+          #store{margin-bottom:13px; background-color:#aaa;
+            width:506px; height:57px; 
+            border:1px solid #fff; box-sizing:border-box;
+            text-align:left; line-height:57px;}
+          #link{float:right; margin-right:20px;
+            width:90px; height:20px; background-color:#aaa;
+            font-size:10px; line-height:20px;
+            border:1px solid #fff; box-sizing:border-box;}  
+
+    /* newsBox */
+    #newsBox{height:624px; background-color:#aaa;  
+      padding-top:60px; box-sizing:border-box;}
+      #newsBoxs{width:817px; height:360px; margin:0 auto;
+        background-color:#777;}
+        #newsBoxs>*{float:left; width:259px; height:360px;}
+        #newsBoxs h3{width:259px; height:48px; margin:0 auto;}
+        #news_content1,#news_content2{margin-right:20px;}
+          .news1_img,.news2_img,.news3_img{height:192px; color:#fff;
+            border:1px solid #fff; box-sizing:border-box; 
+            line-height:192px;}
+          .news1_title,.news2_title,.news3_title{height:40px; color:#fff;
+            border:1px solid #fff; box-sizing:border-box;
+            line-height:40px; text-align:left;}
+          .news1_text,.news2_text,.news3_text{height:80px; color:#fff;
+            border:1px solid #fff; box-sizing:border-box;
+            line-height:80px; text-align:left;}  
+      #newsNav{margin-top:20px; width:814px; height:92px; color:#fff;
+        border:1px solid #fff; box-sizing: border-box; float:left;}
+        .newsNav_text{float:left; margin-left:26px; margin-top:28px; background-color:#777;
+          width:164px; height:36px; font-size:10px;  line-height:36px;
+          border:1px solid #fff; box-sizing: border-box;}
+        .newsNav_link{float:right; margin-right:38px; margin:22px; 
+          width:230px; height:48px; font-size:10px;  line-height:48px; background-color:#777;
+          border:1px solid #fff; box-sizing: border-box;}
+
+    /* snsBox */
+    #snsBox{height:665px; background-color:#555; 
+        padding-top:65px; box-sizing:border-box;}
+      #snsBox>h3{width:140px; height:40px;}
+      #snsGroup{width:100%; height:461px;}
+        #snsGroup>*{float:left; width:210px; height:224px;
+          border:1px solid #fff; margin:0 auto 13px 20px;}
+        #snsbutton{margin:0 auto; width:37px; height:37px;}
+         .button_L{float:left; border:1px solid #fff;
+          font-weight:bold;}
+         .button_R{float:right; border:1px solid #fff;
+          font-weight:bold;}
+
+    /* navBox */
+    #navBox{height:457px; background-color:#222;
+      padding-top:40px; padding-left:110px; padding-right:115px;
+      box-sizing:border-box;}
+      #navBox_menu1{width:720px; height:160px;}
+        #navBox_menu1>dl{float:left; width:120px;
+          padding-left:3px; box-sizing:border-box;}
+        #navBox_menu1 dt{height:25px; background-color:#666; margin-bottom:2px; font-weight:bold}
+        #navBox_menu1 ul{height:135px;}
+        #navBox_menu1 li{height:21.5px; background-color:#777; 
+          margin-bottom:1px;}
+
+          
+      #navBox_menu2{margin-top:40px; width:720px; height:180px;}
+        h4{width:88px; height:35px; margin:0 auto 9px; color:#fff;
+          font-size:11px; text-align:center; line-height:35px;}
+        #n_menu2>dl{float:left; width:80px; font-size:13px;
+          padding-left:3px; box-sizing:border-box;}
+        #n_menu2 dt{height:25px; background-color:#666; 
+          line-height:25px; margin-bottom:2px; font-weight:bold;}
+        #n_menu2 ul{height:135px;}
+        #n_menu2 li{height:21.5px; background-color:#777; 
+          margin-bottom:1px; line-height:21.5px;}
+    
+    /* footBox */
+    #footBox{height:206px; background-color:#ccc;}
+      #footBox_nav{width:481px; height:40px; margin-left:85px;}
+        #footBox_nav>div{float:left; width:80px; height:100%; background-color:#333;margin-right:5px;}
+      #addBox{width:767px; height:168px; margin:14px auto 0;}
+        #addBox>h1{float:left; width:136px; height:40px; 
+        margin-right:100px; font-style:normal;}
+
+      #familySite{float:right; margin-bottom:42px; font-style:normal;
+        width:247px; height:28px; background-color:#555;}
+        #familySite>.site1{float:left; width:120px; height:100%; background-color:#333;}
+        #familySite>.site2{float:right; width:120px; height:100%; background-color:#333;}
+
+      #addressBox{float:left; width:293px; height:49px; background-color:#444; margin-top:17px; font-style:normal; font-size:12px;}
+
+      #footBox_sns{float:right; width:280px; height:36px;}
+        #footBox_sns>*{float:left; width:30px; height:36px; 
+          margin-right:5px; background-color:#000;}
+        #footBox_sns>.footBox_ccmlogo{float:right; width:55px; height:36px; background-color:#000;}
+   </style>
+ </head>
+ <body>
+    <div id="wrap">
+      <!-- headBox -->
+      <header id="headBox">
+        <h1>KGC인삼공사</h1>
+        <h2 class="hidden">전체메뉴</h2>
+        <nav id="menuBox">
+          <ul>
+            <li>브랜드</li>
+            <li>제품보기</li>
+            <li>인삼이야기</li>
+            <li>이벤트</li>
+            <li>매장안내</li>
+            <li>고객센터</li>
+            <li>회사소개</li>
+          </ul>
+        </nav>
+      </header>
+      <!-- adBox -->
+      <section id="adBox">
+        <div id="adBox_text"><strong>119년 지켜온 역사와 전통으로<br />정성을 담아 고객님께 드립니다</strong></div>
+      </section>
+      <!-- brandBox -->
+      <article id="brandBox">
+        <h3>KGC BRAND</h3>
+        <nav id="brand_nav">
+          <ul>
+            <li><a href="#">nav01</a></li>
+            <li><a href="#">nav02</a></li>
+            <li><a href="#">nav03</a></li>
+            <li><a href="#">nav04</a></li>
+            <li><a href="#">nav05</a></li>
+            <li><a href="#">nav06</a></li>
+          </ul>
+        </nav>  
+        <article id="brand_ad">
+          <div id="brand_ad01">
+            <div class="b_ad01_img">이미지</div>
+            <div class="b_ad01_title">에브리타임 30포</div>
+            <div class="b_ad01_text">설명</div>
+          </div>
+          <div id="brand_ad02">
+            <div class="b_ad02_img">이미지</div>
+            <div class="b_ad02_title">화애락진</div>
+            <div class="b_ad02_text">설명</div>
+          </div>
+          <div id="brand_ad03">
+            <div class="b_ad03_img">이미지</div>
+            <div class="b_ad03_title">천녹톤(70ml*60포)</div>
+            <div class="b_ad03_text">설명</div>
+          </div>
+        </article>              
+      </article>
+      <!-- eventBox -->
+      <article id="eventBox">
+        <h3>KGC EVENT</h3>
+        <article id="eventBox_img">
+          <div id="eventBox_img01">
+              <div class="e_box_img01_text">자연을 담다,자연을 닮다<br />건강을 전하는 브랜드 콜라보레이션</div>
+              <div class="e_box_img01_title">정관장 x 힐리언스 선마을</div>
+          </div>    
+          <div id="eventBox_img02">
+            <div class="e_box_img02_1">이미지</div>
+            <div class="e_box_img02_2">이미지</div>            
+            <div class="e_box_img02_3">이미지</div>             
+          </div>
+        </article>
+      </article>
+      <!-- storeBox -->
+      <section id="storeBox">
+        <h3>KGC STORE</h3>
+        <nav id="searchBox">
+          <nav id="store">매장명 또는 지역명 입력</nav>
+          <nav id="link"><a href="#">지도로 매장찾기 ></a></nav>
+        </nav>
+      </section>
+      <!-- newsBox -->
+      <section id="newsBox">
+        <article id="newsBoxs">
+          <div id="news_content1">  
+            <h3>KGC뉴스</h3>
+            <div class="news1_img">이미지</div>
+            <div class="news1_title">제목</div>
+            <div class="news1_text">설명</div>
+          </div>
+          <div id="news_content2">  
+            <h3>KGC사회공헌</h3>
+            <div class="news2_img">이미지</div>
+            <div class="news2_title">제목</div>
+            <div class="news2_text">설명</div>
+          </div>
+          <div id="news_content3">  
+            <h3>KGC레시피</h3>
+            <div class="news3_img">이미지</div>
+            <div class="news3_title">제목</div>
+            <div class="news3_text">설명</div>
+          </div>
+          <article id="newsNav">
+            <div class="newsNav_text">KGC인삼공사 인삼박물관</div>
+            <div class="newsNav_link">KGC인삼공사 인삼박물관 견학신청</div>
+          </article>
+        </article>
+      </section>
+      <!-- snsBox -->        
+      <section id="snsBox">
+        <h3>KGC SNS</h3>
+        <div id="snsGroup">
+          <div class="sns_img1"></div>
+          <div class="sns_img2"></div>
+          <div class="sns_img3"></div>
+          <div class="sns_img4"></div>
+          <div class="sns_img5"></div>
+          <div class="sns_img6"></div>    
+          <div class="sns_img7"></div>
+          <div class="sns_img8"></div>
+        </div>
+        <div id="snsbutton">
+          <div class="button_L"><</div>
+          <div class="button_R">></div>
+        </div>
+      </section>  
+      <!-- navBox -->        
+      <nav id="navBox">
+        <div id="navBox_menu1">
+          <dl>
+            <dt>브랜드</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>인삼이야기</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>이벤트</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>매장안내</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>고객센터</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>회사소개</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div id="navBox_menu2">
+          <h4>정관장 제품보기</h4>
+          <div id="n_menu2">
+            <dl>
+            <dt>정관장홍삼</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>홍삼정</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>홍삼토닉</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>키즈.청소년</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>특정기능</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>한방</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>녹용</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>기호.음료</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+                <li>정관장</li>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>선물세트</dt>
+            <dd>
+              <ul>
+                <li>정관장</li>
+              </ul>
+            </dd>
+          </dl>
+         </div>
+        </div>  
+      </nav>
+      <!-- footBox -->
+      <footer id="footBox">
+        <nav id="footBox_nav">
+          <div class="f_nav1"></div>
+          <div class="f_nav2"></div>
+          <div class="f_nav3"></div>
+          <div class="f_nav4"></div>
+          <div class="f_nav5"></div>
+        </nav>
+        <address id="addBox">
+          <h1>KGC인삼공사</h1>
+          <div id="familySite">
+            <div class="site1">Global Site</div>
+            <div class="site2">Family Site</div>
+          </div>
+          <address id="addressBox">(주)한국인삼공사 대표:김재수 대전광역시   대덕구 벚꽃길 71(평촌동)<br />고객만족센터:080-041-0303/1588-2304
+          </address>
+          <div id="footBox_sns">
+            <div class="footBox_sns1"></div>
+            <div class="footBox_sns2"></div>
+            <div class="footBox_sns3"></div>
+            <div class="footBox_sns4"></div>
+            <div class="footBox_sns5"></div>
+            <div class="footBox_sns6"></div>
+            <div class="footBox_ccmlogo"></div>
+          </div>
+          </address>
+        </address>
+      </footer>
+    </div>
+ </body>
+</html>

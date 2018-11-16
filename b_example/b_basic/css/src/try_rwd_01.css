@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* try_rwd_01.css */
+
+
+#wrap{width:100%; height:2000px;
+  background-color:#5cc;}
+
+/* mobile -------------------------*/
+@media screen and (max-width:480px) { 
+        /* 가로의길이가 최대:480px일때
+        즉, ex)360px,300px...일때 적되어라 */
+#wrap{width:100%; height:auto;}
+  #headBox{position:relative; width:100%; height:100px;
+    background-color:#5FF78C;}
+  #headBox>h1{position:absolute; top:50%; margin-top:-22.5px; right:10px;
+    float:right; width:45px; height:45px;
+    text-align: center; line-height:45px; font-size:1rem;
+    background-color:#fff; }
+  #adBox{width:100%; height:400px;
+    background-color:#A184BE;}
+  #bigBox{width:100%; height:auto;}
+    #artBox{width:100%; height:400px;}
+      .sBox0{float:left; width:50%; height:50%;
+        background-color:#A5D27D; border:1px solid #fff; box-sizing: border-box;}
+      .sBox1{float:left; width:50%; height:50%;
+        background-color:#93DAF8; border:1px solid #fff; box-sizing: border-box;}
+      .sBox2{float:left; width:50%; height:50%;
+        background-color:#A5D27D; border:1px solid #fff; box-sizing: border-box;}
+      .sBox3{float:left; width:50%; height:50%;
+        background-color:#93DAF8; border:1px solid #fff; box-sizing: border-box;}
+    #banBox{width:100%; height:300px;}
+      .bBox1{float:left; width:100%; height:100px; background-color:#FEF200;}
+      .bBox2{float:left; width:100%; height:200px; background-color:#F97716;}
+  #footBox{position:relative; width:100%; height:100px;
+      background-color:#AE8032;}
+    #footBox>h1{position:absolute; z-index:50; left:50%; margin-left:-50px; 
+      width:100px; height:100px; 
+      background-color:#00AEEB; text-align: center; line-height: 100px;}
+
+}/* mobile end */
+
+/* tablet ------------------------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+
+#wrap{width:100%; height:auto;}
+  #headBox{width:100%; height:150px;
+    background-color:#FFF78C;}
+    h1{float:left; width:100px; height:100%;
+      background-color:#A4D38D; text-align: center; line-height: 100px;}
+  #adBox{width:100%; height:300px; background-color:#A184BE;}
+  #bigBox{width:100%; height:auto;}
+    #artBox{width:100%; height:400px;}
+      .sBox0{float:left; width:25%; height:100%;
+        background-color:#A5D27D;}
+      .sBox1{float:left; width:25%; height:100%;
+        background-color:#93DAF8;}
+      .sBox2{float:left; width:25%; height:100%;
+        background-color:#A5D27D;}
+      .sBox3{float:right; width:25%; height:100%;
+        background-color:#93DAF8;}
+    #banBox{width:100%; height:300px; background-color:#a15;}
+      .bBox1{float:left; width:100%; height:100px; background-color:#FEF200;}
+      .bBox2{float:left; width:100%; height:200px; background-color:#F97716;}
+  #footBox{width:100%; height:100px; background-color:#AE8032;}
+    h2{width:100px; height:100px;
+      background-color:#00AEEB; text-align: center; line-height: 100px;}
+
+}/* tablet end */
+
+/* pc ------------------------- */
+@media screen and (min-width:769px) {
+
+#wrap{width:100%; height:auto;}
+  #headBox{width:100%; height:150px;
+    background-color:#FFF78C;}
+    h1{float:left; width:100px; height:100%;
+      background-color:#A4D38D; text-align: center; line-height: 100px;}
+  #adBox{width:100%; height:450px;
+    background-color:#A184BE;;}
+  #bigBox{width:100%; height:auto;}
+    #artBox{width:100%; height:400px;}
+      .sBox0{float:left; width:25%; height:100%;
+        background-color:#A5D27D;}
+      .sBox1{float:left; width:25%; height:100%;
+        background-color:#93DAF8;}
+      .sBox2{float:left; width:25%; height:100%;
+        background-color:#A5D27D;}
+      .sBox3{float:left; width:25%; height:100%;
+        background-color:#93DAF8;}
+    #banBox{display:none; width:100%; height:300px; display: none;}
+      .bBox1{width:100%; height:100px; background-color:#FEF200;}
+      .bBox2{width:100%; height:200px; background-color:#F97716;}
+  #footBox{width:100%; height:100px; background-color:#AE8032;}
+      h2{width:100px; height:100px;
+        background-color:#00AEEB; text-align: center; line-height: 100px;}
+
+}/* pc end */

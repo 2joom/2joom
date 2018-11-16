@@ -9,4 +9,5 @@
 - **git push -u origin master** : 최초의 전송하기
 - **git push** : 이후 전송하기
 - **git config --global user.name "name(2joom)"** : 컴퓨터에 최초로 사용자등록
-- **git config --global user.name "email(dlwnal9295@gmail.com)"** : 컴퓨터에 최초로 사요자 메일등록# 2joom1
+- **git config --global user.name "email(dlwnal9295@gmail.com)"** : 컴퓨터에 최초로 사요자 메일등록
+

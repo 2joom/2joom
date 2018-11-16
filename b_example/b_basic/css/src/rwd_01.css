@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* rwd_01.css */
+
+/* media screen의 규정
+@media screen and (max-width:480px)
+x-480 : 모바일;
+@media screen and (min-width:481px) and (max-width:767px)
+481-767 : 테블릿;
+@media screen and (min-width:768px) and (max-width:1366px)
+768-1366 : 노트북;
+@media screen and (max-width:1367px)
+1367-x : 데스크탑;
+*/
+
+#wrap{width:100%; height:2000px;
+  background-color:#fa0;}
+
+/* mobile ------------------------- */
+@media screen and (max-width:480px) { 
+              /* 가로의길이가 최대:480px일때
+              즉, ex)360px,300px...일때 적되어라 */
+  #wrap{width: 80%; background-color:#2e3192; color:#fff;}
+
+
+}/* mobile end */
+
+/* tablet ------------------------- */
+@media screen and (min-width:481px) and (max-width:1024px) {
+
+
+  #wrap{height: 500px; background-color: #c30; color:#fc0;}
+
+
+}/* tablet end */
+
+/* pc ------------------------- */
+@media screen and (min-width:1025px) {
+
+  #wrap{background-color: #070;}
+
+}/* pc end */
