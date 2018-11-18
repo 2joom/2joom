@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* homework_1123_01.css */
+
+
+body{background-color:#7cd;}
+
+/* mobile start ------------------------- */
+@media screen and (max-width:480px) { 
+  
+
+
+
+}/* mobile end */
+
+/* tab start ------------------------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+  
+
+
+
+}/* tablet end */
+
+/* pc start------------------------- */
+@media screen and (min-width:769px) {
+  
+  
+
+
+
+}/* pc end */
+
