@@ -14,7 +14,7 @@
     border:1px solid #577;
     border-left:none; border-right:none;
     height: 70px; line-height: 70px;
-    text-indent:2rem;/* text-indent : 들여쓰기; */
+    text-indent:2rem;/* text-indent : 첫줄만 들여쓰기; */
   }
 
 .line_height{
@@ -32,7 +32,7 @@
   background-color: #aff;
 }
 
-  table{width: 500px; height: 300px; border:1px solid #555;}
+table{width: 500px; height: 300px; border:1px solid #555;}
   tr,td{width: 100%;height: 100%; vertical-align: middle;}
 /* vertical align은 특정 조건(ex:table 등...)에서만 동작하는 세로에서의 정렬기능 */
 
@@ -46,3 +46,32 @@
 .lower{text-decoration: none; font-weight: bold;
   text-transform:lowercase;}
 .upper{color:#79f; text-transform: uppercase;}
+.cap{text-transform:capitalize;}
+
+.ellip{margin-bottom:1rem;
+  width: 150px; height: 50px; 
+  background-color: #753; color:#7ff;
+  overflow:hidden;/* 상자에 넘친느것을 숨겨라(숨길뿐 읽어준다.) */
+/*text-overflow:hidden; 글이 넘치는것을 숨겨라(숨김과 동시 읽어주지않음) */
+  text-overflow: ellipsis;/* ellipsis: ... 표시 */
+  white-space:nowrap;}/* 의미없는 공백을 없애라 : 한줄로 만들어짐; */
+
+.webfont{font-size:2rem; color:#950;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;}
+
+
+p::-webkit-selection{color:red;}
+p::-moz-selection{color:red;}
+p::-ms-selection{color:red;}
+p::-o-selection{color:red;}
+p::selection{color:red;}
+/* 벤더 프리픽스: 
+-webkit- : 크롬,사파리;
+-moz- : 모질라;
+-ms- : 마이크로소프트;
+-o- : 오페라;
+      최신 기능으로 브라우저에서 기능자체는 지원하지만,
+      공식으로 사용할 수 없는 테스트버전일경우에,
+      강제로 테스트버전을 사용할 수 있도록 처리하는 방법
+*/
