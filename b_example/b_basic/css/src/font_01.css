@@ -24,6 +24,7 @@ ol,li{list-style:decimal; padding-left:1.3rem;}
 .bold{font-weight:bold;}
 .weight_normal{font-weight:normal;}
 
+/* italic:기울기; */
 .italic{font-style:italic;}
 .italic_normal{font-style:normal;}
 
