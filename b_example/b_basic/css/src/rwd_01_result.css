@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* rwd_01_result.css */
+
+#wrap{margin:auto;
+  width: 60rem; height: 250rem; 
+  background-color: #fa0;}
+
+
+
+/* commonArea ========================================== */
+
+
+
+
+
+
+
+/* mobile ------------------------- */
+@media screen and (max-width:480px) { 
+              
+
+
+
+
+
+}/* mobile end */
+
+/* tablet ------------------------- */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+
+ 
+
+
+
+
+}/* tablet end */
+
+/* pc ------------------------- */
+@media screen and (min-width:769px) and (max-width: 1366px) {
+
+
+
+
+
+
+
+
+}/* pc end */
