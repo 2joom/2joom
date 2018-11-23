@@ -1,24 +1,19 @@
 @charset "utf-8";
 /* rwd_01_result.css */
 
-#wrap{margin:auto;
-  width: 60rem; height: 250rem; 
-  background-color: #fa0;}
+#wrap{width: 100%; height: 250rem; background-color: #fa0;}
 
 
 
 /* commonArea ========================================== */
+ 
+/* - width는 %로 설정
+   - 제한을 걸고자 할때 : max-width , min-width 값 별도로 설정하여 상황에 맞추어 가로값 설정  */
 
+/* mobile 480 ------------------------- */
+@media screen and (max-width:480px) {
 
-
-
-
-
-
-/* mobile ------------------------- */
-@media screen and (max-width:480px) { 
-              
-
+  #wrap{background-color: #afa;}
 
 
 
@@ -27,6 +22,7 @@
 
 /* tablet ------------------------- */
 @media screen and (min-width:481px) and (max-width:768px) {
+  #wrap{background-color: #acf;}
 
 
  
@@ -34,10 +30,11 @@
 
 
 
-}/* tablet end */
+}/* tablet end ----------------------- */
 
-/* pc ------------------------- */
+/* laptop 1366 ------------------------- */
 @media screen and (min-width:769px) and (max-width: 1366px) {
+  #wrap{ background-color: #f50;}
 
 
 
