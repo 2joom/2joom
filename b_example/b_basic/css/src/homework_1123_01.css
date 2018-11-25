@@ -3,40 +3,64 @@
 /* homework_1123_01.css */
 
 
-#wrap{width:100%; height:auto; background-color:#aac;}
+#wrap{width:100%; height:auto;}
 #addBox{width: 100%;background-color: #ba7;}
 #headBox{width:100%; background-color:#333;}
-  #unbBox{width: 100%;}
-#artBox{width: 100%; background-color:#547D77; 
-  padding-left:24px; padding-top:26px; box-sizing: border-box;}
-  .box{float:left; width: 192px; width: 12rem; height: 156px;height: 9.75rem; background-color:#33B88F;
-    padding-top:24px; padding-left:26px;}
+#artBox{width: 100%; background-color:#547D77;}
 #newsBox{width: 100%; background-color: #957DE9;}
 #footBox{width: 100%; background-color: #333;}
 
 
 /* mobile start ------------------------- */
-@media screen and (max-width:479px) { 
+@media screen and (max-width:480px) { 
 #wrap{height:auto;}  
-#addBox{height: 720px; height: 45rem;}
-#headBox{height: 60px; height: 3.75rem;}
+#addBox{position:relative; height: 720px; height: 45rem;}
+  #adBox{position:absolute; top:202px;
+    width: 100%; height: 453px;}
+    #adBox>div{max-width: 407px; width: 95%; height: 90px; background: #fff;
+      margin:auto; margin-bottom:31px;}
+    #adBox>div:last-child{margin-bottom: 0;} 
+#headBox{position:absolute; top:0; height: 60px; height: 3.75rem;}
   .mobLogo{width: 18px; width: 1.125rem; height: 22px;height: 1.375rem;
     margin-top:11px; margin-left:11px;
     float:left; background-color:#fff;}
   .mobUnb{float:right; width: 35px; height: 27px;
     margin-top:11px; margin-right:11px; background-color: #fff;}
-#artBox{height: 720px; height: 45rem;}
-#newsBox{height: 720px; height: 45rem;}
-#footBox{height: 60px; height: 3.75rem;}
-
+#artBox{padding-top:60px; box-sizing:border-box; height: 490px; height: 30.625rem;}
+  #artBox1{margin:auto; width: 90%; height: 408px;}
+    #artBox1>div{max-width:226px; background-color: #fff;
+      width: 47%; height: 200px;}
+    #artBox1>div:nth-child(1){float:left; margin-bottom:5%;}
+    #artBox1>div:nth-child(2){margin-bottom:5%; float:right;}
+    #artBox1>div:nth-child(3){float:left;}
+    #artBox1>div:nth-child(4){float:right;} 
+#newsBox{height: 640px; margin:0;
+  padding-top:55px; box-sizing: border-box;}
+  .newBox{width:100%; height: 557px; }
+  .newBox>li{max-width:461px; 
+    width: 95%; height: 103px; background-color:#fff;
+    margin:auto; margin-bottom: 10px;}
+  .newBox>li:last-child{margin-bottom:0;}
+#footBox{padding-top:12px; box-sizing:border-box;
+  height: 60px; height: 3.75rem;}
+  .footBox1{max-width: 340px; 
+    width: 70%; height: 35px; background-color:#33B88F;
+    margin:auto;}
+  .footBox2{display: none;}
 
 
 }/* mobile end */
 
 /* tab start ------------------------- */
-@media screen and (min-width:480px) and (max-width:768px) {
-#addBox{height: 450px; height: 28.125rem;}
-#headBox{height: 60px; height: 3.75rem;}
+@media screen and (min-width:481px) and (max-width:768px) {
+#addBox{position:relative; height: 450px; height: 28.125rem;}
+  #adBox{position:absolute; top:164px; left:20px;
+    width: 730px; height: 205px;}
+    .addBox01,.addBox02{width: 58px; height: 205px; background-color:#fff;}
+    .addBox01{float:left;}
+    .addBox02{float:right;}
+  #headBox{position:absolute; top:0;
+    height: 60px; height: 3.75rem;}
   #unbBox{float:right; width: 91px; height: 33px;}
     .mobUnb{float:right; width: 35px; height: 27px;
       margin-top:11px; margin-right:11px; background-color: #fff;}
@@ -44,26 +68,74 @@
       margin-top:11px; margin-left:11px;
       float:left; background-color:#fff;}
       .pcUnb{display:none;}
-#artBox{height: 210px; height: 13.125rem;}
+#artBox{height: 180px;}
+  #artBox1{width: 729px; height: 120px;
+    padding-left:19px; padding-top:31px;}
+  #artBox1>div{float:left; width: 136px; height: 100%;
+    background-color:#fff; margin-right:60px;}
+  #artBox1>div:last-child{margin-right:0;}  
 #newsBox{height: 540px; height: 33.75rem;}
-#footBox{height: 120px; height: 7.5rem;}
-  
+  .newBox{width: 100%; height: 100%; background-color:#fff; }
+  .box01{float:left; background-color:#957DE9; 
+    width: 50%; height: 100%;}
+  .box02{float:right; background-color:#95ABE9; 
+    width: 50%; height: 100%;}
+  .box03,.box04,.box05{display:none;}
+#footBox{height: 120px; height: 7.5rem;
+  padding-top:16px; padding-left:32px; padding-right:22px;}
+  .footBox1{float:left; max-width: 250px; width: 80% ; height: 45px;
+    background-color:#33B88F;}
+  .footBox2{float:right; max-width: 438px; width: 80%; height: 45px;
+    background-color:#33B88F;}
+
 
 
 
 }/* tablet end */
 
-
+ 
 /* pc start------------------------- */
 @media screen and (min-width:769px) {
-#addBox{height: 450px; height: 28.125rem;}
-#headBox{height: 60px; height: 3.75rem;}
-  .pcLogo{}
-#artBox{height: 210px; height: 13.125rem;}
-#newsBox{height: 540px; height: 33.75rem;}
-#footBox{height: 120px; height: 7.5rem;}
-
-  
+#addBox{padding-top: 164px; box-sizing:border-box;
+  height: 450px; height: 28.125rem;}
+  #adBox{max-width:892px;margin:auto; width: 100%; height: 205px;}
+    .addBox01,.addBox02{max-width: 58px; 
+      width: 95%;height: 205px; background-color:#fff;}
+    .addBox01{float:left;}
+    .addBox02{float:right;}
+    .addBox03,.addBox04{display:none;}
+#headBox{position:absolute; top:0;
+  height: 60px; height: 3.75rem;}
+  #unbBox{width: 91px; height: 33px;}
+    .pcLogo{float:left; width: 250px; height: 45px;
+      margin-top:8px; padding-left:20px; box-sizing: border-box;
+      background-color:#33B88F;}
+      .pcUnb{display:block; float:right; width: 430px; height: 30px;}
+      .pcUnb>li{display: block;
+        float:left; max-width:100px; width: 90%; height: 100%; 
+        background-color:#33B88F}
+      .mobUnb{display: none;}
+#artBox{margin:auto; height: 210px; max-width: 940px;}
+  #artBox1{width: 884px; height: 150px;
+      padding-left:38px; padding-top:30px;}
+    #artBox1>div{float:left; width: 170px; height: 100%;
+      background-color:#fff; margin-right:68px;}
+    #artBox1>div:last-child{margin-right:0;}  
+#newsBox{margin:auto; height: 540px; height: 33.75rem; max-width: 940px;}
+  .newBox{width: 100%; height: 100%; background-color:#fff; }
+    .box01{float:left; background-color:#957DE9; 
+      width: 33%; height: 100%;}
+    .box02{float:left; background-color:#95ABE9; 
+      width: 34%; height: 100%;}
+    .box03{float:right; background-color:#95D2E9; 
+      width: 33%; height: 100%;}
+    .box04,.box05{display:none;}
+  #footBox{height: 100%; height: 7.5rem;
+    padding-top:16px; padding-left:32px; padding-right:22px; box-sizing: border-box;}
+    .footBox1{float:left; max-width: 250px; width: 70%; height: 45px;
+      background-color:#33B88F;}
+    .footBox2{float:right; max-width: 667px; width: 70%; height: 45px;
+      background-color:#33B88F;}
 
 
 
