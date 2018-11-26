@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* rwd_03_mobile.css */
+
+/* - width는 %로 설정
+   - 제한을 걸고자 할때 : max-width , min-width 값 별도로 설정하여 상황에 맞추어 가로값 설정  
+
+   VW : 나의 값 /기준값 *100 ;
+   */
+
+/* mobile 480 ------------------------- */
+@media screen and (max-width:480px) {
+  /* device 기준크기 : 480px */
+  #wrap{background-color: #afa;}
+  #headBox{height: 12.5vw;/* vw:60/480*100 */ min-height: 2.5rem;}
+  #addBanner{margin-top: 12.5vw; height: 150vw; /* vw:720/480*100 */ 
+    min-height:30rem;}
+  #infoBox{height: 150vw; /* vw:720/480*100 */ min-height:30rem;}
+  #contentBox{height: 150vw; /* vw:720/480*100 */ min-height:30rem;}
+  #footBox{height: 12.5vw;/* vw:60/480*100 */ min-height: 2.5rem;}
+
+}/* mobile end */
