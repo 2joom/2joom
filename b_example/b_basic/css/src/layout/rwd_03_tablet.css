@@ -9,6 +9,8 @@
      height: 5.46875vw; /*42/768*100 */min-height:1.875rem; max-height:2.625rem;}
   #navBox{width: 12.2395833vw; /*94/768*100 */min-width:5.625rem ; max-width: 5.875rem;
           height: 4.9479167vw; /*38/768*100 */min-height:2.375rem ; max-height: 2.375rem;}
+  .sing_up{width:45%;}
+  .menu{width: 45%;}
   
   #addBanner{height: 58.59375vw; /* vw:450/768*100 */ min-height:25rem;}
   #infoBox{height: 27.34375vw; /* vw:210/768*100 */ min-height:30rem;}
