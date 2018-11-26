@@ -1,2 +1,13 @@
 @charset "utf-8";
 /* rwd_03_pcfull.css */
+
+/* pcfull ------------------------- */
+@media screen and (min-width:769px) and (max-width: 1366px) {
+  /* device 기준크기 : 1366x */
+  #wrap{ background-color: #f50;}
+  #addBanner{height: 32.942899vw; /* vw:450/1366*100 */ 
+    min-height:28.125rem; max-height:37.5rem;}
+  #infoBox{height:13.125rem;}
+  #contentBox{height:33.75rem;}
+
+}/* pcfull */
