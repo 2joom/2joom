@@ -19,6 +19,7 @@ h1{float:left;  font-size:1rem;
 .menu>button{width: 100%; height: 100%;}
 .gnb{display:none;}
 
+
 /* 임시 테스트:; 끝*/ 
 .menu>button:focus + .gnb,
 .menu>button:hover + .gnb{display: block; width: 50vw; height: 50vh; background-color: #afc;}
