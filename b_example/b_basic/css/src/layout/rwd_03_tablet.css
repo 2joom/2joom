@@ -14,9 +14,14 @@
   
   #addBanner{height: 58.59375vw; /* vw:450/768*100 */ min-height:25rem;}
   #infoBox{height: 27.34375vw; /* vw:210/768*100 */ min-height:30rem;}
-  #contentBox{height: 70.3125vw; /* vw:540/768*100 */ 
-    min-height:28.125rem; max-height: 33.75rem;} 
- 
+  #contentBox{height: auto; /* vw:540/768*100 */ 
+    min-height:28.125rem; max-height: auto;} 
+  
+    .con_in{float: left; width: 50%; height: auto; min-height: 30rem;}
+    .cont_01{background-color: #af3;}
+    .cont_02{background-color: #ba4;}
+    .cont_03{background-color: #c65; width: 100%; 
+      height: 10rem; min-height: auto;} 
 
 
 
