@@ -55,7 +55,7 @@ console.log(tt);
                              ...등
 
   var Go = function(a) { return a+2; };
-  var myObj = { coffee : 'amerciano',
+  var myObj = { coffee : 'americano',
                 come : Go
               };
   var a = myObj.come(10);
@@ -102,8 +102,8 @@ show.on('click',function(e){
 hide.on('click',function(evt){
   evt.preventDefault();
   //btnDd.hide();
-  //btnDd.fadeOut(5000);//offset:사라지기(x000초 안에)
-  btnDd.slideUp(6000);
+  btnDd.fadeOut(5000);//offset:사라지기(x000초 안에)
+  //btnDd.slideUp(6000);
 
 });
 
