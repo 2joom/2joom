@@ -32,7 +32,12 @@
   #addBanner{margin-top: 12.5vw; height: 150vw; /* vw:720/480*100 */ 
     min-height:30rem;}
   #infoBox{height: 150vw; /* vw:720/480*100 */ min-height:30rem;}
-  #contentBox{height: 150vw; /* vw:720/480*100 */ min-height:30rem;}
+  #contentBox{height: 150vw; /* vw:720/480*100 */ min-height:auto;}
+    .con_in{float: left; width:100%; height: auto; min-height: 30rem;}
+    .cont_01{background-color: #af3;}
+    .cont_02{display: none;}
+    .cont_03{display: none;}
+
   #footBox{height: 12.5vw;/* vw:60/480*100 */ min-height: 2.5rem;}
 
 }/* mobile end */
