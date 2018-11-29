@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* font_01.css */
+/* 최초의 서체크기를 설정하는 방법 
+    :root{font-size: 30px;} */
+#wrap{width: 960px;height: auto; line-height: 2rem; margin: 2rem auto;}
+h1,h2,h3,h4,h5,h6{font-family: "myriad pro",arial,"나눔고딕",nanumGothic,"돋움",dotum,sans-serif;}
+h2{background-color: #fca;}
+p,div{font-family: "myriad pro",arial,"나눔고딕",nanumGothic,"돋움",dotum,sans-serif;}
+ol,li{font-family: "myriad pro",arial,"나눔고딕",nanumGothic,"돋움",dotum,sans-serif; list-style: lower-roman; padding-left: 1rem; }
+/*   font-family >> 서체를 설정하는 기능   */
+
+.bold{font-weight: bold;}
+.weight_normal{font-weight: normal;}
+
+.italic{font-style: italic;}
+.italic_normal{font-style: normal;}
+
+.underline{text-decoration: underline;}
+.underline_normal{text-decoration: none;}
+
+.delete{text-decoration: line-through; text-decoration-color: #afc;
+  text-decoration-style: dotted;}
+.delete_normal{text-decoration: none;}
+
+/*-----------------------------*/
+.mini_web{border: 1px solid #999; padding: 1rem;}
+  .mini_web>h1{font-size: 12pt; font-weight: normal;}
+  .mini_web>h2{font-size: 100%; font-weight: normal; background-color: transparent;}
+  .mini_web>h3{font-size: 1em; font-weight: normal;background-color: transparent;}
+  .mini_web>h4{font-size: 1em; font-weight: normal; background-color: transparent;}
+/* ============================================== */
+  h3{background-color: #3ac;}
+  .size_box{width: 600px; height: auto; border: 1px solid #333; background-color: #9cb; padding: 1.5rem; box-sizing: border-box;}
+  .size_box span{display: block; border: 1px solid #333; padding: 0.5rem;}
+/* ============================================== */
+  .pt_check{font-size: 36pt;}
+  .pt_01{font-size: 18pt;}
+  .pt_02{font-size: 9pt;}
+  .pt_03{font-size: 18pt;}
+  .pt_04{font-size: 9pt;}
+/* ============================================== */
+/* % 단위는 최초의 설정에서만 12px기준 설정 
+    이후는 부모기준으로 설정된다.  */
+
+  .per_check{font-size: 300%;}
+  .per_01{font-size: 50%;}
+  .per_02{font-size: 50%;}
+  .per_03{font-size: 200%;}
+  .per_04{font-size: 50%;}  
+
+/* ===12pt--16px--1em 상대크기, 부모기준으로 설정=== */
+
+  .em_check{font-size: 3em;}
+  .em_01{font-size: 0.5em;}
+  .em_02{font-size: 0.5em;}
+  .em_03{font-size: 2em;}
+  .em_04{font-size: 0.5em;}
+
+/* ===12pt--16px--1rem 상대크기 최초설정한 크기기준=== */
+
+  .rem_check{font-size: 3rem;}
+  .rem_01{font-size: 1.5rem;}
+  .rem_02{font-size: 0.75rem;}
+  .rem_03{font-size: 1.5rem;}
+  .rem_04{font-size: 0.75rem;}
+
+
+
+.px_box{margin:auto; margin-bottom: 3rem; width: 480px;height: 480px; background-color: #fa0;border: 1px solid #333; line-height: 3rem;}
+.px_box_01{width: 240px;height: 240px;background-color: #c90;}
+.px_box_02{width: 120px;height: 120px;background-color: #950;}
+.px_box_03{width: 240px;height: 240px;background-color: #fff; opacity: 0.5;}
+.px_box_04{width: 120px;height: 120px;background-color: #f6f;}
+
+/* em단위 박스사이즈는 최초기준으로 변한다. */
+.em_box{margin:auto; margin-bottom: 3rem; width: 30em;height: 30em; background-color: #f0a;border: 1px solid #333;line-height: 3rem;}
+.em_box_01{width: 15em;height: 15em;background-color: #c90;}
+.em_box_02{width: 7.5em;height: 7.5em;background-color: #950;}
+.em_box_03{width: 15em;height: 15em;background-color: #fff; opacity: 0.5;}
+.em_box_04{width: 7.5em;height: 7.5em;background-color: #f6f;}
+
+/*  em의 문제점을 수정해서 나온 단위, 
+    but, IE-11버전 이상에서만 제대로 지원. 
+    이하에서는 px과 rem 단위 같이사용해야함  */
+    
+.rem_box{margin:auto; margin-bottom: 3rem; width: 30rem;height: 30rem; background-color: #a0f; border: 1px solid #333; line-height: 3rem;}
+.rem_box_01{width: 15rem;height: 15rem;background-color: #c90;}
+.rem_box_02{width: 7.5rem;height: 7.5rem;background-color: #959;}
+.rem_box_03{width: 15rem;height: 15rem;background-color: #fff; opacity: 0.7;}
+.rem_box_04{width: 7.5rem;height: 7.5rem;background-color: #f6f;}

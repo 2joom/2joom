@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*  font_02.css  */
+#wrap{padding: 1rem; ;width: 900px; height: auto; line-height: 2rem; margin: 2rem auto; border: 1px solid #333;}
+
+h1,h2,h3,h4,h5,h6,div,ol,li{font-family: "gloria hallelujah",sunflower,"myriad pro",arial,"나눔고딕",nanumGothic,"돋움",dotum,sans-serif;}
+
+h1{padding: 1rem; text-align: center; background-color: #aca;}
+h2{border-top: 3px solid #aca; border-bottom: 3px solid #aca; height: 50px; line-height: 50px; text-indent: 1rem; margin-top:10px; margin-bottom: 10px;}
+
+.line_height{width: 100%; height: auto; background-color: #fd5; line-height: 2.5; padding: 1rem; box-sizing: border-box;}
+
+.vertical_align{display: inline-block; width: 100%;height: 500px; vertical-align: top; background-color: #5dc;padding: 1rem; box-sizing: border-box;}
+
+table{width: 500px; height: 300px; border: 1px solid #444;}
+tr,td{width: 100%; height: 100%; vertical-align: middle;}
+/* vertical align 은 특정 조건에서만 동작하는 세로에서의 정렬기능 */
+
+.letter_spacing{letter-spacing: 2.5rem ;}
+.word_spacing{word-spacing: 3rem;}
+.indent{width: 600px;height: 300px;background-color: #5cd; text-indent: 5rem; padding-left: 3rem; box-sizing: border-box; word-spacing: 1rem;}
+
+.lower{text-decoration: none; font-weight: bold; 
+      text-transform: lowercase;}
+.upper{clear: #79f; text-transform: uppercase;}
+.cap{text-transform: capitalize;}
+.ellip{margin-bottom: 1rem; width: 150px; height: 50px; background-color: #473; color: #ccc; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap;}
+
+.webfont{font-size: 2rem; color: #950; font-family: Skranji,'Noto Sans KR'; font-weight: 700; }
+
+p::-webkit-selection{color: red;}
+p::-moz-selection{color: red;}
+p::-ms-selection{color: red;}
+p::-o-selection{color: red;}
+p::selection{color: red;}
+/* 벤더프리픽스 : 최신기능으로 브라우저에서 기능자체는 지원하지만, 
+    공식으로 사용할 수 없는 테스트 버전일경우에 강제로 테스트버전을 사용할 수 있도록 처리하는 방법 */
