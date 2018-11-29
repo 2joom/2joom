@@ -47,8 +47,7 @@ transform: scale(1.8);}
 .banner_04{background-color: #b10;  background-image:url("../../../img/image3.jpg");}
 .banner_05{background-color: #ffa;  background-image:url("../../../img/image4.jpg");}
 
-.view_banner_outer h4{padding:1rem; width:80%; color:#fff; 
-                      background-color: rgba(50,50,50,0.7); font-size: 2.3rem;}
+.view_banner_outer h4{padding:1rem; width:80%; color:#fff; font-size: 2.3rem;}
 .view_banner_outer p{margin-top: 1.5rem; color:#fff; width: 80%;
                     font-size: 1.2rem; text-indent: 1rem;
                     border-bottom:1px solid #fff; padding-bottom: 1rem; margin-bottom: 1.5rem;}
