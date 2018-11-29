@@ -132,7 +132,29 @@
           $('div').children('ul');
           $('div').find('a');
 
-*/
+    * 순서를 선택하는 방법, eq
+        - $('li').eq(1) // 순서는 처음이 0 (css선택에서는 1부터)
 
+    * 부모를 선택하는 방법, parent() parentsUntil()
+
+        1. wrap.parent().css({height:'100rem',backgroundColor:'#fa0'});
+        2. headBox.parent(wrap).css({height:'100rem',backgroundColor:'#fa0'});
+        3. $('li').parent('ul').parent('#list').parent('ul').parent('#wrap').css({height:'       - 100rem',backgroundColor:'#fa0'});
+        4. $('li').parentsUntil('#wrap').css({height:'100rem',backgroundColor:'#fa0'});
+
+    * 형제를 선택하는 방법, siblings, next, prev, nextAll, prevAll
+
+ 
+ 
+
+ */       
+
+        $('li').parentsUntil('#wrap').css({height:'100rem', backgroundColor:'#f6a'});
+        
+        $('li').ep(2).siblings().css({marginLeft:'3rem'});
+        $('li').eq(2).prev().css({textIndent:'-5rem'});
+        $('li').eq(2).next().css({textIndent:'-5rem'});
+        $('li').eq(2).nextAll().css({color:'#ff6'});
+        $('li').eq(2).prevAll().css({color:'#0a7'});
 
 })(jQuery); 
