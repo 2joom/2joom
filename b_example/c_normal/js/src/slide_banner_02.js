@@ -100,6 +100,7 @@ var liLeng = viewIndi.length-1;//length는 갯수를 파악하는 것 0이면 �
       viewOuter.animate({marginLeft:-_index + '%'});
       viewIndi.removeClass('action');
       viewIndi.eq(slideI).addClass('action');
+  });
 
 })(jQuery);
   // step_04 해당광고의 끝으로 이동하면 버튼 사라지게 만들기

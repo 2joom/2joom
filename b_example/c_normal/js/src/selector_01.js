@@ -115,7 +115,7 @@
 
      /* 
       var i=0;
-      for(; i < listLilen; li라는 변수의 객체의 갯수보다 i가 작을때!!; i+=1){
+      for(; i < listLilen; li라는   객체의 갯수보다 i가 작을때!!; i+=1){
         listLi.eq(i).css({backgroundColor:color1[i]});
       }
        for(var i=0;이다 i<=4;같거나작을때 i+=1(i++)){
@@ -149,12 +149,12 @@
 
  */       
 
-        $('li').parentsUntil('#wrap').css({height:'100rem', backgroundColor:'#f6a'});
+        //$('li').parentsUntil('#wrap').css({height:'100rem', backgroundColor:'#f6a'});
         
-        $('li').ep(2).siblings().css({marginLeft:'3rem'});
+        //$('li').ep(2).siblings().css({marginLeft:'3rem'});
         $('li').eq(2).prev().css({textIndent:'-5rem'});
-        $('li').eq(2).next().css({textIndent:'-5rem'});
-        $('li').eq(2).nextAll().css({color:'#ff6'});
-        $('li').eq(2).prevAll().css({color:'#0a7'});
+        //$('li').eq(2).next().css({textIndent:'-5rem'});
+        //$('li').eq(2).nextAll().css({color:'#ff6'});
+        //$('li').eq(2).prevAll().css({color:'#0a7'});
 
 })(jQuery); 
