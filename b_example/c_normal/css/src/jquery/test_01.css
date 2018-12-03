@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* test_01.css */
+#wrap{width: 100%; height: 100%; text-align: center;}
+
+#haedBox{position: fixed; top:25px; left;0; z-index: 5;
+  width: 100%; background-color:#ccc;}
+  #container{height: 100%;}  
+    h1{float: left; height: 100%; color:#fff;}
+    #navBox{height:100%; float:right;}
+    #navBox>div{height:100%; background-color: #009444;}
+      .sign_up{float: left;}
+      .menu{float: right;}
+#mainBox{position: relative; width: 100%; background-color: #231f20}    
+  .main_big{width: 100%; background-color: #dbd9d6;}
+  .main_small{position:absolute; left:50%;}
+    .main_text{position: absolute; left:50%;background-color: #ffce00;}
+    .main_button{width: 100%;}
+      .main_b_box1{float:left; height: 100%; background-color: #009444;}
+      .main_b_box2{float:right; height: 100%; background-color: #009444;}
+#menuBox{position:relative; width: 100%; height: 100 ; background-color: #a7a9ac;}
+#bannerBox{width: 100%; height: 100%; background-color: #58595b;}
+#artBox{width: 100%; height: 100%; background-color: #939598;}
+#infoBox{width: 100%; height: 100%; background-color: #231f20;}
+#footBox{width: 100%; height: 100%; background-color: #bcbec0;}
+
+
+
+
+/* mob start */
+@media screen and (max-width: 480px){
+#haedBox{height: 36px;}
+  h1{width: 80px;}
+  #navBox{width: 142px;}
+  #navBox>div{width:60px;}
+  
+#mainBox{height: 673px;}
+.main_big{position: relative; height: 418px; top:61px; }
+  .main_small{margin-left:-173.5px;
+    width: 347px; height: 128px; margin-top: 73px;}
+    .main_text{margin-left:-97.5px; 
+      width: 195px; height: 44px;}
+    .main_button{width: 347px; height: 44px; margin-top: 84px;}
+      .main_b_box1{width: 144px;}
+      .main_b_box2{width: 144px;}  
+
+#menuBox{height: 645px;}
+  .mune_big{position:absolute; top:50%; margin-top:-219px; width: 100%; height: 438px;}
+  .mune_big>div{float:left; width: 100%; height: 92px; background-color: #009444; margin-bottom:15px;}
+  .mune_big>div:last-child{margin-bottom: 0;}
+
+#bannerBox{height: 923px;}
+#artBox{height: 609px;}
+#infoBox{height: 609px;}
+#footBox{height: 331px;}
+}
+/* mob end */
+
+
+/* tablet start */
+@media screen and (min-width: 481px) and (max-width: 768px){
+#haedBox{height: 51px;}
+  h1{width: 129px;}
+  #navBox{float:right; width: 202px;}
+  #navBox>div{width:96px;}
+
+#mainBox{height: 881px;}   
+.main_big{position: relative; height: 87px; top:76px;}
+  .main_small{margin-left:-219px; width: 438px; height: 154px; margin-top: 131px;}
+    .main_text{margin-left:-123.5px; 
+      width: 247px; height: 56px;}
+    .main_button{width: 438px; height: 56px; margin-top:98px;}
+      .main_b_box1{width: 182px;}
+      .main_b_box2{width: 182px;} 
+#menuBox{height: 1067px;}
+  .mune_big{position:absolute; top:50%; margin-top:-219px; width: 100%; height: 706px;}
+  .mune_big>div{float:left; width: 177px; height: 522px; background-color: #009444; margin-right:20px;}
+  .mune_big>div:last-child{margin-right:0;}
+#bannerBox{height: 1396px;}
+#artBox{height: 761px;}
+#infoBox{display: none;}
+#footBox{height: 579px;}
+
+
+}
+/* tablet end */
+
+
+/* pc start */
+@media screen and (min-width: 769px) and (max-width: 960px){
+#haedBox{height: 73px;}
+  h1{width: 129px;}
+  #navBox{width: 193px;}
+  #navBox>div{width:83px;}
+
+#mainBox{height: 935px;}   
+  .main_big{position:relative; top:80px; height: 666px;}
+  .main_small{display:block;}
+    .main_text{display:block; position: absolute; left:50%; margin-left:-123.5px; top:144px; 
+      width: 247px; height: 56px;}
+    .main_button{display: none;}
+ 
+
+#menuBox{height: 1095px;}
+#bannerBox{height: 1142px;}
+#artBox{display: none;}
+#infoBox{display: none;}
+#footBox{height: 440px;}
+ 
+
+
+
+}
+/* pc end */
+
+/* pc full */
+@media screen and (min-width: 961px){
+#haedBox{height: 73px;}
+ h1{width: 181px;}
+  #navBox{width: 240px;}
+  #navBox>div{width:117px;}
+
+#mainBox{height: 1368px;} 
+  .main_big{position:relative;  top:98px; height:1280px;}
+  .main_small{display:block;}
+    .main_text{display:block; position: absolute; z-index: 5;  bottom:38px; left:50%; margin-left:-174.5px; 
+      width: 349px; height: 90px;}
+    .main_button{display: none;}   
+#menuBox{height: 1660px;}
+#bannerBox{height: 2164px;}
+#artBox{display: none;}
+#infoBox{display: none;}
+#footBox{height: 696px;}
+
+ 
+
+
+
+}
+/* pc full end */
