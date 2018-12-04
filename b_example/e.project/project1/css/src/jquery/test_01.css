@@ -3,23 +3,28 @@
 /* test_01.css */
 #wrap{width: 100%; height: 100%; text-align: center;}
 
-#haedBox{position: fixed; top:25px; left;0; z-index: 5;
+#haedBox{position: fixed; top:25px; left:0; z-index: 5;
   width: 100%; background-color:#ccc;}
   #container{height: 100%;}  
     h1{float: left; height: 100%; color:#fff;}
     #navBox{height:100%; float:right;}
     #navBox>div{height:100%; background-color: #009444;}
       .sign_up{float: left;}
-      .menu{float: right;}
+      .menu{position:relative; float: right;}
       .menu>button{width: 100%; height: 100%;}
-      .gnb{display:none;}
+      .gnb{/*display:none;*/ position: absolute; top:100%; right: 0; float:right; width:100vw; height:30vw;}
+      
 
+      .gnb>dl{display:inline-block; width: 96px; height: 100%; background-color: #009444;}
+      .gnb>dl>dt{width: 100px;height: 33px; background-color:#a97c50;}
+      .gnb>dl>dt>dd{width: 100px; height: 15px; background-color: #b3b0a1}
+
+      .menu>button:focus+.gnb,
+      .menu>button:hover+.gnb{display:block; }
+      .gnb a{display: block; width: 100%; height: 100%;}
 
     
 
-      .menu>button:focus+.gnb,
-      .menu>button:hover+.gnb{display:block; float:right; width:100vw; height:30vw;}
-      .gnb a{display: block; width: 100%; height: 100%;}
 
 #mainBox{position: relative; width: 100%; background-color: #231f20} 
   .main_big{width: 100%; background-color: #dbd9d6;}
