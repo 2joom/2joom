@@ -39,8 +39,40 @@
 
       <article id="conBox">
         <h2>무언가 내용영역</h2>
-      </article>
+        <form action="">
+          <fieldset>
+            <legend>form영역</legend>
+            <input type="text"     id="input_1" value="" placeholder="id를 입력하세요"    />
+            <input type="password" id="input_2" value="" placeholder="비밀번호를 입력하세요"  />
+            <input type="email"    id="input_3" value="" placeholder="메일을 입력하세요"    />
+            <input type="tel"      id="input_4" value="" placeholder="연락처를 입력하세요"   />
+            <input type="search"   id="input_5" value="" placeholder="검색어를 입력하세요"   />
+          </fieldset>
+        </form>
 
+        <div class="shop">
+          <dl class="product">
+            <dt>제품명</dt>
+            <dd>
+              <div class="shop_img"></div>
+              <p>제품에대한 설명</p>
+              <p><a href="http://naver.com" target="_blank">상품 바로가기</a></p>
+            </dd>
+          </dl>
+        </div>
+
+      </article>
+      
+      <article id="listBox">
+        <ul>
+          <li class="list list_01"><a href="#headBox"></a>headBox</li>
+          <li class="list list_02"><a href="#viewBox"></a>viewBox</li>
+          <li class="list list_03"><a href="#conBox"></a>conBox</li>
+          <li class="list list_04"><a href="#listBox"></a>listBox</li>
+          <li class="list list_05"><a href="#footBox"></a>footBox</li>
+        </ul>
+      </article>
+      
       <footer id="footBox">
         <h2>회사 정보 영역</h2>
       </footer>
@@ -48,6 +80,6 @@
   <!--  script   -->
   <script src="../../js/base/jquery-3.3.1.min.js"></script>
   <script src="../../js/base/jquery-ui.min.js"></script>
-  <script src="../../js/src/inner_content_01.js"></script>
+  <script src="../../js/src/teacher_inner_content_01.js"></script>
   </body>
   </html>

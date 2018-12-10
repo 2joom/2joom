@@ -40,8 +40,10 @@
 
   * css 애니메이션 효과
     : transition(전이:변화시키는 중에 일어나는 효과):all 300ms linear;
-    : .icon_01:hover{animation: exloding 2000ms infinite ease;}  
-        @keyframes exloding {
+    : 
+
+    .icon_01:hover{animation: exloding 2000ms infinite(무한궤도) ease(속도);}  
+        @keyframes(애니메이션 사용시 필요함수) exloding {
         0%{background-position: 20% -100%;}
         100%{background-position: 20% 200%;}
       } 
