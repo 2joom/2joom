@@ -21,7 +21,9 @@
     border-radius: 50%; background-color:#fff; color:#888888; font-weight: bold; font-size: 2rem; text-align: center; line-height: 124px;}
   
 #viewBox{float:right; width: 732px; height: 100%; background-color:#adadad;}
-#footBox{padding-top:13px; padding-left:43px; box-sizing: border-box;
+  .view_img{width: 60%; height: 80%; background-color: #fff;}
+  .view_txt{width: 40%; height: 80%; background-color: #ddd;}
+#footBox{position:relative; padding-top:13px; padding-left:43px; border-top:1px solid #ccc; box-sizing: border-box; 
   width: 100%; height: 112px; background-color:#fff; }
   h3{float:left; width: 88px; height: 54px; color:#fff; background-color: #888888;}
   #info{float:left; margin-left:7px; 
@@ -29,12 +31,13 @@
   .location{width:100%; height: 50%; border:1px solid #aaa; box-sizing: border-box;}
   .sns{width:100%; height: 50%;}
   .sns>div{float:left; width: 33.3333%; height: 100%; border:1px solid #aaa; box-sizing: border-box;}
-  p{float:left; margin-left: 23px; 
-    font-size:11px; width: 329px; height: 54px;}
-  .familysite{float:right; margin-top:-131px; margin-right:30px;  width: 303px; height: 133px; }
-  .webpage{float:left; width: 100%; height: 50%;}
-    .w_box1{float:left; width: 50%; height: 100%; background-color: #888888;}
-    .w_b2{float:left; width: 50%; height: 100%; background-color: #baa50c;}
+  .addtxt{float:left; width: 350px; height: 54px;}
+  .addtxt>p{margin-left:20px; font-size:11px; width: 100%; height: 100%;}
+  .familysite{float:right; margin-top:-82px; margin-right:30px;  width: 303px; height: 133px; }
+  .webpage{float:left; margin-bottom:2px; width: 100%; height: 50%;}
+    .w_box1{float:left; width: 30%; height: 100%; background-color: #888888;}
+    .w_b2{float:left; width: 70%; height: 100%; background-color: #baa50c;}
   .cafe{float:left; width: 100%; height: 50%;}
-    .c_box1{float:left; width: 50%; height: 100%; background-color: #888888;}
-    .c_b2{float:left; width: 50%; height: 100%; background-color: #fff30d;}
+    .c_box1{float:left; width: 30%; height: 100%; background-color: #888888;}
+    .c_b2{float:left; width: 70%; height: 100%; background-color: #fff30d;}
+  .foottxt{float:right; margin-right: 40px; width: 204px; height: 47px; line-height: 47px;}
