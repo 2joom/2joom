@@ -77,41 +77,61 @@ body{overflow-x:hidden;}/* 가로값만 숨겨야하기 때문에 x설정 */
 #wrap{margin:auto; width: 61.25rem; height: 53.125rem; background-color: #ccc;}
 
 /* homeBox ------- */
-#homeBox{position: relative;  z-index:100;  width: 100%; height: 1.875rem; background-color:#888888;}
+#homeBox{float:left; position: relative;  z-index:100;  
+  width: 100%; height: 1.875rem; background-color:#888888;}
 #homeBox ul{float:right; width: 27.1875rem; height: 100%;
   background-color: #888888;}
 #homeBox ul>li{float:left; width: 5.9375rem; height: 100%;}
 #homeBox ul>li:nth-child(2){background-color: #555555;}
-#homeBox ul>li:last-child{width: 15.3125rem; background-color: #fff30d;}
-#homeBox ul>li:last-child{width: 15.3125rem; background-color: #fff30d;}
-.hidden_wrap a{display: block; width: 100%; height: 100%;}
+#homeBox ul>li:last-child{position:relative; z-index:100; width: 15.3125rem; background-color: #fff30d;}
+
+.hidden_wrap a{display: block; width: 100%; height: 100%; text-align: center;}
+
+#homeBox ul>li:last-child a:after{content:" "; display: block;
+  position: absolute; z-index: -1; top: 0; left: 0;
+  width: 50vw; height: 100%; background-color:inherit;}
+
 #homeBox ul>li>a:hover{background-color: #acc;}
+#homeBox ul>li>a:focus{background-color: #afc;}
 
 
 #homeBox:before,
-#homeBox::before,
-#footBox:before,
-#footBox::before  
-{content:" "; display: block;
+#homeBox::before{content:" "; display: block;
           position:absolute; top:0; z-index:-1; left:50%; margin-left: -50vw;
           width: 100vw; height: 100%; background-color:inherit;}
 
-/* .box_wrap ------- 
+/* .box_wrap ------- */
 .box_wrap{width: 100%; height: auto; min-height: 40rem;}
 /* headBox -------- */
-  #headBox{float:left; position: relative; z-index:100; width: 15.625rem; height: auto; min-height: 44.375rem; background-color: #777777;}
+  #headBox{float:left; position: relative; z-index:100; 
+    padding:3.4375rem 3.125rem 6.25rem 2.5rem; box-sizing: border-box;
+    width: 15.625rem; height: auto; min-height: 44.375rem; background-color: #777777;}
+  
   #headBox:before,
   #headBox::before{content:" "; display: block;
             position:absolute; z-index:-1; top:0; left:50%; margin-left: -50vw;
             width: 50vw; height: 100%; background-color:inherit;}
+  
+    h1{margin-bottom: 1.875rem; width: 100%; height: 6.5625rem; background-color: #acc;}
+    #gnb{width: 100%; height: auto; min-height: 10rem; background-color: #acc;}
+    #gnb>ul{width: 100%; height: auto;}
+    #gnb>ul>li{margin-bottom: 1rem; width: 100%; height: 2.8125rem;}
+    #gnb>ul>li:last-child{margin-bottom: 0; height: 7rem;}
+    #gnb>ul>li>a{display: block;  
+      box-sizing:border-box; border-bottom:4px solid #fff; 
+      width: 100%; height: 100%;}
+    #gnb>ul>li>a:focus{border-color:#000;}
 
 
 /* viewBox -------- */
-  #viewBox{float:right; position: relative; z-index:100; width: 45.625rem; height: auto; min-height: 44.375rem; background-color:#acf; }
+  #viewBox{float:right; position: relative; z-index:100; width: 45.625rem; height: auto; min-height: 44.375rem; background-color:#adadad; }
   #viewBox:before,
   #viewBox::before{content:" "; display: block;
             position:absolute; z-index:-1; top:0; right:50%; margin-right: -50vw;
             width: 50vw; height: 100%; background-color:inherit;}
+
+  #viewBox .com{margin: auto; margin-top: 5rem; width: 21.25rem; height: 34.375rem; background-color: #acf;}
+
 
 /* footBox ------- */
 #footBox{position: relative;  z-index:100;
@@ -120,3 +140,8 @@ body{overflow-x:hidden;}/* 가로값만 숨겨야하기 때문에 x설정 */
 #footBox::after{content:" "; display:block; width:100vw; height: 0; 
         position: absolute; z-index: 500; left:50%; top:0; margin-left: -50vw;
         border-top:0.0625rem solid #171717;}
+#footBox:before,
+#footBox::before  
+{content:" "; display: block;
+          position:absolute; top:0; z-index:-1; left:50%; margin-left: -50vw;
+          width: 100vw; height: 100%; background-color:inherit;}
