@@ -12,7 +12,7 @@
 
 #homeBox a{display: block; width: 100%; height: 100%;
   background-color: inherit; color: #fff; line-height: 1.875rem;  text-align: center;
-  background-image: url("/project1/img/gcass/homeBox/homeBox.png");
+  background-image: url("../../../../img/gcass/homeBox/homeBox.png");
   background-repeat:no-repeat; background-position: 50%;}
 
 #homeBox ul>li:nth-child(1)>a{background-position-x:0;
@@ -22,7 +22,10 @@
 #homeBox ul>li:nth-child(3)>a{background-position-x:-190px;
   /*background-image: url("../../../../img/gcass/homeBox/education.png")*/}
 #homeBox ul>li>a:hover,
-#homeBox ul>li>a:focus{background-image: url("/project1/img/gcass/homeBox/homeBox_over.png");}
+#homeBox ul>li>a:focus{outline:none; background-image: url("../../../../img/gcass/homeBox/homeBox_over.png");}
+
+#homeBox ul>li:last-child>a:hover,
+#homeBox ul>li:last-child>a:focus{position:static; background-color:#000cf2; }
 
 #homeBox ul>li:last-child a:after{content:" "; display: block;
   position: absolute; z-index: -1; top: 0; left: 0;
@@ -31,7 +34,7 @@
 /* 
 배경색 삽입 이유 : :before사용으로 배경색 맞지않아 강제로 배경색 삽입;
 #homeBox ul>li>a:hover,
-#homeBox ul>li>a:focus{background-color:#000cf2;}
+#homeBox ul>li>a:focus{background-color}
 */
 
 #homeBox:before,
