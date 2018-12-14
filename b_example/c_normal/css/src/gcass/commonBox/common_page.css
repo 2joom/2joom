@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* common_page.css -------- */
+
+body{overflow-x:hidden;}/* 가로값만 숨겨야하기 때문에 x설정 */
+#wrap{margin:auto; width: 61.25rem; height: 53.125rem; background-color: #ccc;}
+.box_wrap{width: 100%; height: auto; min-height: 40rem;}
+
