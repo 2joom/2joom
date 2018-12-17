@@ -11,3 +11,7 @@
 런닝화 모음 https://www.dhgate.com/product/asics-gel-nimbus-17-xvii-men-running-shoes/386477174.html
 
 야구화1https://tongya.co.kr/mall/view/goodsNo/86768/categoryNo/14729
+
+
+
+영문 글꼴(Graphik) : https://fonts.asics.digital/graphik/Graphik-Regular-Web.woff2 asics
