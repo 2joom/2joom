@@ -61,7 +61,13 @@ image 출처 :
 
 이종석,하지원모델 https://www.pinterest.co.kr/pin/436989970065126650/
 
+이종석,하지원모델 https://pann.nate.com/talk/318616276
+
+권혁수모델 http://www.edaily.co.kr/news/read?newsId=01623606612779136&mediaCodeNo=257
+
 이파니 모델 http://www.newspic.kr/view.html?nid=2018010605200281435&cp=t7sGt66U&pn=19&utm_medium=affiliate&utm_campaign=2018010605200281435&utm_source=cashslide
+
+화보 http://m.mt.co.kr/renew/view.html?no=2016012814032742703&googleamp
 
 아식스t https://global.rakuten.com/ko/store/apworld/item/ezt714-/
 
@@ -76,6 +82,10 @@ image 출처 :
 리뷰 https://www.daangn.com/articles/2824312
 
 리뷰 http://www.singinginthesilo.ca/asics-print-tshirt-performance-black-men-shirts-topsasics-usa-wrestling-singletofficial-p-485.html
+
+리뷰 http://picdeer.com/media/1905669841244511709_8785669862
+
+리뷰 https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjO1M260qnfAhVDT7wKHVSEABcQjRx6BAgBEAU&url=http%3A%2F%2Fpicdeer.com%2Ftag%2F%25EC%2595%2584%25EC%258B%259D%25EC%258A%25A4%25EC%25BD%2594%25EB%25A6%25AC%25EC%2595%2584&psig=AOvVaw3y8-Fm7QmvYY8G29TNbEAL&ust=1545230201443184
 
 외국키즈모델 https://www.sneakerstoyou.com/product_info.php?c=asics%20kids
 
