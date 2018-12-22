@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- try_form_02.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  
+    
+
+    <link rel="stylesheet" href="../../css/base/reset.css" />  
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/src/try_form_02.css" />
+     
+    <!--[if lte IE 9 ]>
+      <script src="../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../ie/ie9.min.js"</script>
+      <script src="../ie/respond/dest/respond.min.js"</script>
+
+     <link rel="stylesheet" href="../css/src/menu_btn_01_forIE.css" />
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../ie/icon/favicon.png">
+    <title>로그인02 만들기</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <div class="box">
+        <form method="post">
+          <fieldset>
+            <legend class="hidden">group company</legend>
+            <h1>
+              <span class="hidden">group company 로그인 만들기</span>
+            </h1>
+            <dl class="login_box01">
+              <dt class="user_id">
+                <label for="idName"><span class="hidden">사용자 이름 또는 이메일을 입력하세요.</label>
+              </dt>
+              <dd>
+                <input type="text" id="idName" name="idName" value="" required="required" placeholder="username or email" />
+              </dd>
+
+              <dt class="user_pw">
+              <label for="pwName"><span class="hidden">비밀번호를 입력하세요.</span></label>
+              </dt>
+              <dd>
+                <input type="text" id="pwName" name="pwName" value="" required="required" placeholder="password" />
+              </dd>
+            </dl>
+            
+            <dl class="check clearfix">
+              <dt>
+                <input type="checkbox" id="checkBox" name="checkBox" value="저장">
+              </dt>
+              <dd class="check_box">
+                <label for="checkBox">
+                  <span class="txt1">remember</span> me<span class="hidden">id를 기억하시겠는지 체크하세요.</span></label>
+              </dd>
+            </dl>
+
+            <div class="login_box02">
+              <button type="submit" id="logIn">login</button>
+              <button type="submit" id="register">register</button>
+              <button type="submit" id="forgot">forgot your password?</button>
+              <button type="submit" id="back">&larr; <span class="txt1">back </span>to <span class="txt2">wpb</span>rigade</button>
+            </div>
+            
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+  <!--  script   -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <!-- <script src="../js/src/try_form_02.js"></script> -->
+  <script>
+    
+  </script> 
+  </body>
+  </html>

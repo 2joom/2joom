@@ -1,0 +1,61 @@
+/* try_form_02.css */
+
+form,fieldset, legend, label, input, button{margin: 0; padding: 0; border: 0;}
+.txt1{text-transform: capitalize;}
+.txt2{text-transform: uppercase;}
+
+#wrap{width: 100%; height: 100%; background-image:url(../../img/bg/bg.png); background-repeat: no-repeat; background-size: cover; background-position: 0 0;}
+
+.box{
+  position: fixed;
+  top: 50%; left: 50%; margin-top: -348.5px;
+  margin-left: -298.5px;
+  padding:90px 114px 85px 113px;
+  box-sizing: border-box;
+  border:1px ;
+  width: 597px; height: 697px;
+  border-radius: 3px;
+  background-color:rgba(250,250,250,0.2);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2), -0.5rem -0.5rem 1rem rgba(0,0,0,0.2);}
+
+form, fieldset{width:100%; height:100%;}
+
+h1{width: 100%; height: 113px; 
+  background-image: url(../../img/bg/login_02.png); 
+  background-repeat: no-repeat;  
+  background-position: -656px -265px;}
+
+.login_box01{margin-top: 56px; width: 100%; height: 188px;}
+#idName{width: 100%; height: 54px;
+  text-indent: 0.5rem; border:1px solid #fff; box-sizing: border-box; 
+  background-color: transparent; text-transform:capitalize;}
+/*#idName:first-letter{text-transform:capitalize;} 대체 왜 안먹음? */
+
+::-webkit-input-placeholder{color: #fff;}
+::-moz-placeholder {color: #fff;}
+::-moz-placeholder {color: #fff;}
+::-ms-input-placeholder {color: #fff;}
+::-moz-placeholder {color: #fff;}
+
+#pwName{margin-top: 28px ;width: 100%; height: 54px;
+  text-transform: capitalize; text-indent: 0.5rem;
+  border:1px solid #fff; box-sizing: border-box; background-color: transparent; }
+
+.check{width: 100%; height: 22px;}
+#checkBox{float:left; width:19px; height: 22px;}
+.check_box{float:left; width: 124px; height: 22px; text-indent: 0.5rem; font-size:10pt; color:#fff;}
+
+.login_box02{margin-top:30px; width: 100%; height: 172px;}
+#logIn{width: 100%; height:58px; 
+  background-color: #5aafe7; color:#fff; 
+  text-transform: uppercase; line-height: 58px; text-align: center; font-weight: bold;}
+#register{float:left; margin-top: 22px; 
+  width: 50%; height: 32px; border:none; text-align: left;
+  text-transform: capitalize; background-color: transparent; color:#fff;}
+#forgot{float:right; margin-top: 22px; 
+  width: 50%; height: 32px; border:none; text-align: left; background-color: transparent; color:#fff;}
+#forgot:first-letter{text-transform:capitalize;}
+
+#back{width: 100%; height: 30px; border:none; text-align: left; background-color: transparent; color:#fff;}
+
+
