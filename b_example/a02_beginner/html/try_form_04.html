@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- try_form_ 04.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../../css/base/reset.css" />  
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/src/try_form_04.css"/>
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../../ie/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.png">
+    <title>div형식으로 만들어보기</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <form action="#" method="post">
+      <h2 class="sing_up"><span class="hidden">회원가입</span></h2>
+      <h3 class="need_text">*필수 입력사항</h3>
+        <fieldset>
+          <legend class="hidden">회원가입 만들기</legend>
+        
+          <dl>
+            <dt>
+              <label for="idName">아이디</label>
+            </dt>
+            <dd>
+              <input type="text" id="idName" name="idName" value="" required="required" placeholder="아이디를 입력하세요." />
+              <button type="submit" id="idCheck" name="idCheck" value="" />중복확인</button>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="trueName">이름</label>
+            </dt>  
+            <dd>
+              <input type="text" id="idName" name="trueName" value="" required="required" placeholder="이름을  입력하세요." />
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              성별
+            </dt>
+            <dd>
+              <label for="men">남성</label>
+              <input type="radio" id="men" name="men" value="men" />
+              <label for="women">여성</label>
+              <input type="radio" id="women" name="women" value="women" />
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="passWord">암호</label>
+            </dt>
+            <dd>
+              <input type="password" id="passWord" name="passWord" value="" required="required" placeholder="암호를 입력하세요."/>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="passCheck">암호확인</label>
+            </dt>
+            <dd>
+              <input type="password" id="passCheck" name="passCheck" value="" required="required" placeholder="암호를 확인 하세요." />
+            </dd>  
+          </dl>
+
+          <dl>
+            <dt>
+              이메일
+            </dt>
+            <dd>
+              <label for="emailBox1"><span class="hidden">이메일id를 입력하세요</span></label>
+              <input type="text" id="emailBox1" name="emailBox1" value="" />
+              <label for="emailBox2" class="in_text"><span class="hidden">이메일 주소를 선택 및 입력하세요.</span></label>
+              <input type="text" id="emailBox2" name="emailBox2" value="" placeholder="이메일을 입력하세요."/>
+              <select name="emailBox2" id="emailBox2">
+                <option value="naver">naver.com</option>
+                <option value="daum">daum.net</option>
+                <option value="nate">nate.com</option>
+                <option value="google">gmail.com</option>
+              </select>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <label for="address">주소</label>
+            </dt>
+            <dd>
+              <input type="text" id="address" name="address" value="" />
+              <button type="submit" id="address" name="address" value="" />주소찾기</button>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt class="phone">
+              휴대폰
+            </dt>
+            <dd>
+              <input type="radio" id="phoneSkt" name="phoneSkt" value="phoneSkt" />
+              <label for="phoneSkt">skt</label>
+              <input type="radio" id="phoneKt" name="phoneKt" value="phoneKt" />
+              <label for="phoneSkt">kt</label>
+              <input type="radio" id="phoneLgu" name="phoneLgu" value="phoneLgu" />
+              <label for="phoneLgu">lgu</label>
+              <input type="radio" id="phoneAr" name="phoneAr" value="phoneAr" />
+              <label for="phoneAr">알뜰폰</label>
+              <br />
+              <label for="phoneNum1"><span class="hidden">핸드폰 번호 앞자리 입력하세요</span></label>
+              <input type="tel" id="phoneNum1" name="phoneNum1" value="" /><span>-</span>
+              <label for="phoneNum2"><span class="hidden">핸드폰 번호 앞자리 입력하세요</span></label>
+              <input type="tel" id="phoneNum2" name="phoneNum2" value="" />
+              <label for="phoneNum3"><span class="hidden">핸드폰 번호 앞자리 입력하세요</span></label><span>-</span>
+              <input type="tel" id="phoneNum3" name="phoneNum3" value="" />
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>관심</dt>
+            <dd>
+              <input type="checkbox" id="checkBox1" name="checkBox1" value="checkBox1" />
+              <label for="checkBox1">쇼핑</label>
+              <input type="checkbox" id="checkBox2" name="checkBox2" value="checkBox2" />
+              <label for="checkBox2">게임</label><input type="checkbox" id="checkBox3" name="checkBox3" value="checkBox3" />
+              <label for="checkBox3">여행</label><input type="checkbox" id="checkBox4" name="checkBox4" value="checkBox4" />
+              <label for="checkBox4">기타</label>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>자기소개</dt>
+            <dd>
+              <div class="box"></div>
+            </dd>
+          </dl>
+        </fieldset>
+      </form>
+
+      <div class="btn_box">
+        <button type="reset" id="resetBox" name="resetBox" value="" />다시입력</button>
+        <button type="submit" id="submitBox" name="submitBox" value="" />확인</button>
+      </div>
+    </div>
+  <!--  script   -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script src="../../js/src/try_form_04.html"></script>
+  </body>
+  </html>

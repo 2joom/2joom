@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- tableTojoin.html -->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../../css/base/reset.css" />  
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/src/tableTojoin.css"/>
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../../ie/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.png">
+    <title>회원가입</title>
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <h1>회원가입<span class="hidden">페이지 만들기</span></h1>
+      <form action="#" method="post">
+        <fieldset>
+          <legend class="hidden">회원가입 내용 양식</legend>
+
+          <colgroup>
+            <col class="title" />
+            <col class="content" />
+          </colgroup>
+
+          <table summary="테이블을 이용한 회원가입페이지 생성하기">
+            <caption class="hidden">회원가입페이지 상세내용</caption>
+            <thead class="hidden">
+              <tr>
+                <th>분류</th>
+                <th>내용작성</th>
+              </tr>
+            </thead>
+
+            <tbody>
+             <tr>
+              <th><label for="in_01"></label>아이디</th>
+              <td>
+                <input type="text" id="in_01" class="input-text" name="idName" value="" />
+                <button type="button" class="check-btn">
+                  <span class="hidden">아이디</span>중복확인
+                </button>
+              </td>
+             </tr>
+
+             <tr>
+              <th><label for="in_02"></label>이름</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_03"></label>성별</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_04"></label>암호</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_05"></label>암호확인</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_06"></label>이메일</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_07"></label>주소</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_08"></label>휴대폰</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_09"></label>관심</th>
+              <td></td>
+             </tr>
+
+             <tr>
+              <th><label for="in_010"></label>자기소개</th>
+              <td></td>
+             </tr> 
+            </tbody>
+          </table>
+
+          <div class="check_btn">
+            <input type="reset" name="" value="다시입력">
+            <input type="submit" name="" value="확인">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  <!--  script   -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script src="../../js/src/tableTojoin.js"></script>
+  </body>
+  </html>

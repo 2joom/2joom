@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* tableTojoin.css */
+
+/* more reset */
+table,thead,tbody,tfoot,th,td{margin: 0; padding:0; border: 1px solid #333; border-left: none; border-collapse:collapse;}
+
+form,fieldset,legend{margin: 0; padding:0; border: 0;}
+input{border:1px solid #333; box-sizing:border-box; text-indent: 0.5rem;}
+select{border:1px solid #333; box-sizing: border-box;}
+
+input[type="subimit"],
+input[type="reset"],
+input[type="button"],
+select{cursor:pointer;}
+
+
+/* layout */
+#wrap{margin: auto; width: 650px;height: auto; min-height: 10rem; background-color:#adf;}
+  h1{margin-bottom: 50px;
+    width: 100%; height: auto; 
+    text-align: center; border-bottom: 1px solid #333;}
+  table{margin-bottom: 1rem;width: 100%; height: auto; min-height: 5rem; background-color: #cff; border-spacing: none;}
+    
+    thead,thead>tr,th,{border:0;}
+    tbody{width: 100%; height: auto;}
+
+    th{width: 15%; height: 30px; text-align: left; text-indent: 1rem;}
+    td{padding: 0.3rem 1rem; box-sizing:border-box; width: 85%; height: 30px;}
+
+    .check_btn{margin: auto; width: 200px; height: 30px;}
+    input[type="submit"]{float:left; width: 50px; height: 100%; border: 0; text-indent:0; background-color: #333; color:#fff;}
+    input[type="reset"]{float:right; width: 100px; height: 100%; border: 0; text-indent:0; background-color: #333; color:#fff;}
+    /* input[type^="r"] r로 시작하는 속성*/
+
+    .input-text{margin-right: 1rem; width: 200px; height: 100%;}
+    .check-btn{border: 0; padding: 0.3rem 1rem; background-color: #77a; color:#fff; font-weight: bold;}
