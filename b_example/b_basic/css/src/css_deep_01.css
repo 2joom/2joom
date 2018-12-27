@@ -1,0 +1,120 @@
+ css_deep_01.css */
+
+/* 
+css3Pie 사용법 
+  * IE에서 사용할수 없는 기능을 CSS3PIE에서 구현할 수 있도록 만들어져 있다.
+  * 이를 사용하기 위해서는 일단 불러오고!!!!(<script src="경로/PIE_IE9.js"></script>)
+  * 사용하는 속성의 말미에 PIE를 적용을 시킨다. ( behavior:url(경로PIE.htc); )
+  ******** 이때! 주의사항 - 적용시킨 PIE는 css문서기준이 아닌, html문서의 기준!
+*/
+#wrap{width: 100%; min-width:1280px; height: auto; min-height: 100%; background-color: #a56;}
+
+h1{padding: 1rem; background-color: #a89; color:#fff; text-align: center;}
+
+h2{margin-bottom: 1rem; border-bottom: 2px solid #333; margin-top: 1rem; text-align:center;}
+
+h2+div{margin: auto; margin-bottom: 2rem;
+  width: 80%; height: 800px; background-color: #fff;}
+
+.option_1>ul{width: 100%; height: 100%;}
+.option_1>ul>li{margin: 3rem; float:left; 
+  width: 500px; height: 100px; background-color: #811;
+  text-align: center; line-height: 100px; font-weight: bold; font-size: 1.4rem; color:#fff;}
+
+.option_1>ul>li:nth-child(1){box-shadow: 1rem 1rem 0.5rem #a11;}
+/* box-shadow : x축 y축 blur color;*/
+/* box-shadow : x축 y축 color; 최소 여기까지는 필수*/
+.option_1>ul>li:nth-child(2){box-shadow: 1rem 1rem 1rem 1rem #f66;}
+/* box-shadow : x축 y축 blur offset color;*/
+.option_1>ul>li:nth-child(3){box-shadow: 1rem 1rem 0.2rem #f66 inset;}
+/* box-shadow : x축 y축 blur color inset; : 안쪽으로 그림자 생성 */
+.option_1>ul>li:nth-child(4){text-shadow: 0.5rem 0.5rem 0.2rem #f66;}
+.option_1>ul>li:nth-child(5){text-shadow: -0.4rem 0rem 0.1rem #faa,
+                                          0rem -0.4rem 0.1rem #faa;
+
+                             box-shadow: -1rem -1rem 0.3rem #190,
+                                         -1rem -1rem 0.3rem #50f,
+                                  -1rem -1rem 0.3rem #af2 inset;}
+
+.option_1>ul{position: relative;}
+.option_1>ul>li.snow{position:absolute; top:50%; left:50%;
+  margin-top: -3px; margin-left: 3px;
+  width: 6px; height: 6px; border-radius:50%; background-color: #111;
+  box-shadow:10rem 10rem #47f,
+             12rem -10rem #451,
+             -20rem -10rem #11f,
+             -7rem -9rem #191,
+             -21rem -12rem #ff1,
+             -20rem -10rem #f11,
+             -2rem -10rem #f1f,
+             -20rem -10rem #991,
+             -50rem -10rem #1dd,
+             -1rem -10rem #881,
+             -28rem -10rem #188,
+             -20rem -10rem #811;
+
+  behavior:url("../css3pie/PIE.htc");
+}
+
+.option_2>ul{width: 100%; height: 100%;}
+.option_2>ul>li{margin: 3rem; float:left; width: 200px; height: 100px; background-color: #fc2; text-align: center; line-height: 100px; font-weight: bold; font-size: 1.4rem}
+.option_2>ul>li:nth-child(1){border-radius:3rem;}
+.option_2>ul>li:nth-child(2){border-radius:3rem 0 0 0;}
+.option_2>ul>li:nth-child(3){border-radius:0 3rem 0 0;}
+.option_2>ul>li:nth-child(4){border-bottom-left-radius:3rem;}
+.option_2>ul>li:nth-child(5){border-bottom-right-radius:3rem;}
+.option_2>ul>li:nth-child(6){border-radius:100%;}
+.option_2>ul>li:nth-child(7){border-radius:50%;}
+/* 좌표 순서 : 위아래, 좌우 */
+.option_2>ul>li:nth-child(8){border-top-left-radius:4rem 2rem;}
+.option_2>ul>li:nth-child(9){border-bottom-right-radius:15rem 2rem;}
+.option_2>ul>li:nth-child(10){border-bottom-right-radius:3rem;
+                              border-top-right-radius:7rem;}
+
+/* transform ------------------------*/
+.option_3>ul{width: 100%; height: 70%; background-color: #a5a;}
+.option_3>ul>li{margin:1.5rem; width: 110px; height: 110px; background-color: #a00; font-weight: bold; 
+  text-align: center; line-height: 100px;
+  font-size: 1rem; font-family: 'Naum Gothic';
+  padding: 5px; box-sizing:border-box; float:left;
+}
+.option_3>ul>li>div{width: 100px; height: 100px; background-color: #ccc;}
+
+.option_3>ul>li:nth-child(1):hover>div{transform:translateX(-3rem);}
+.option_3>ul>li:nth-child(2):hover>div{transform:translateY(4rem);}
+.option_3>ul>li:nth-child(3):hover>div{transform:rotateX(80deg);}
+.option_3>ul>li:nth-child(4):hover>div{transform:rotateY(45deg);}
+.option_3>ul>li:nth-child(5):hover>div{transform:rotate(45deg);}
+/* ratoate는 아무것도 입력하지 않은상태가 rotateZ축을 기준으로 한다. */
+.option_3>ul>li:nth-child(6):hover{transform:skewX(45deg);}
+.option_3>ul>li:nth-child(6):hover>div{transform:skewX(-45deg);}
+.option_3>ul>li:nth-child(7):hover{transform:skewY(45deg);}
+.option_3>ul>li:nth-child(7):hover>div{transform:skewY(-45deg);}
+.option_3>ul>li:nth-child(8):hover>div{transform:scaleX(2);}
+.option_3>ul>li:nth-child(9):hover>div{transform:scale(0.5,2);}
+/* ratoate는 아무것도 입력하지 않은상태가 scaleX,Y축을 기준으로 한다.
+  -x값을 줄경우 뒤집어진다. 작아지다 뒤집어지는 ai를 생각할것 */
+.option_3>ul>li:nth-child(10)>div{transition: all 500ms; transform-origin:0 0;}
+.option_3>ul>li:nth-child(10):hover>div{transform:rotate(45deg); opacity: 0;}
+
+.option_3>ul>li:nth-child(11)>div{transform-origin: 0 0; transition:all 1000ms ease;}
+.option_3>ul>li:nth-child(11):hover>div{transform: scale(3) rotate(1200deg)  translate(10rem) ;}
+
+.option_3>ol{position:relative; width: 100%; height: 30%; background-color:#cdd; 
+  -webkit-perspective: 500px;}
+
+/*.option_3>ol>li{width: 10rem; height: 20rem; background-color: #aad; border:1rem solid #15b; border-radius: 0.7rem; padding: 1rem; box-sizing: border-box; box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.7) inset;*/
+  /*position:absolute; top:50%; margin-top: -10rem; left:50%; margin-left: -5rem;*/
+  /*transition: all 500ms ease-in;}*/
+
+.option_3>ol>li{width: 10rem; height: 20rem;border-radius: 0.7rem; position: absolute; left: 50%; top: 50%; margin-top: -10rem; margin-left: -5rem; overflow: hidden;}
+ 
+.option_3>ol>li>div{border: 1rem solid #35a;box-sizing:border-box; width: 100%; height: 100%; background-color: #fff;text-align: center; font-size: 1.3rem; padding-top: 1rem;  transition: all 500ms ease-in; }
+
+.option_3>ol:hover>li:nth-child(1){transform:translateX(-400%) rotateY(190deg);}
+.option_3>ol:hover>li:nth-child(2){transform:translateX(-200%) rotateY(190deg);}
+.option_3>ol:hover>li:nth-child(3){transform:translateX(0%) rotateY(190deg);}
+.option_3>ol:hover>li:nth-child(4){transform:translateX(200%) rotateY(190deg);}
+.option_3>ol:hover>li:nth-child(5){transform:translateX(400%) rotateY(190deg);}
+
+.option_3>ol:hover>li>div{transform:rotateY(180deg);}
