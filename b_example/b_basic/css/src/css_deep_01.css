@@ -1,4 +1,4 @@
- css_deep_01.css */
+ /*css_deep_01.css */
 
 /* 
 css3Pie 사용법 
@@ -56,6 +56,16 @@ h2+div{margin: auto; margin-bottom: 2rem;
   behavior:url("../css3pie/PIE.htc");
 }
 
+/* box-shadow:x축 y축 blur offset color inset; 
+
+ * box-shadow:x축 y축; - 최소수치
+ * box-shadow:x축 y축 color;
+ * box-shadow:x축 y축 번짐의정도 color;
+ * box-shadow:x축 y축 번짐의정도  크기 color;
+ * box-shadow:x축 y축 번짐의정도  크기 color 안쪽그림자;
+
+*/
+
 .option_2>ul{width: 100%; height: 100%;}
 .option_2>ul>li{margin: 3rem; float:left; width: 200px; height: 100px; background-color: #fc2; text-align: center; line-height: 100px; font-weight: bold; font-size: 1.4rem}
 .option_2>ul>li:nth-child(1){border-radius:3rem;}
@@ -72,6 +82,13 @@ h2+div{margin: auto; margin-bottom: 2rem;
                               border-top-right-radius:7rem;}
 
 /* transform ------------------------*/
+/* transform, translate, transition 구분하자
+ * transform: translate() | rotate() | skew() | scale() ...
+
+ 강제로 위치를 이동시키거나, 회전하거나, 뒤틀거나, 크기를 변경하거나...
+
+ * transform-origin:x y; 축이되는 위치를 지정하는 것
+ */
 .option_3>ul{width: 100%; height: 70%; background-color: #a5a;}
 .option_3>ul>li{margin:1.5rem; width: 110px; height: 110px; background-color: #a00; font-weight: bold; 
   text-align: center; line-height: 100px;

@@ -1,0 +1,303 @@
+@charset 'utf-8';
+/* animation_01.css */
+#wrap{margin: auto; width: 60rem; height: auto; min-height: 10rem; background-color: #dfdfdf;}
+
+h1{margin-bottom: 1rem; padding:1rem; text-align:center; border-bottom: 1px solid #333;}
+h1{width: 100%; height: auto; padding: 1rem; box-sizing: border-box; background-color:#59a; color:#fff; text-indent: 2rem; margin-bottom: 0.5rem;}
+
+.out_box{width: 100%; height: auto; min-height: 10rem;
+  background-color: #caa;}
+.out_box>ul{width: 100%; height: auto;}
+.out_box>ul:after{content:" "; display: block; width: 100%; height: clear:both;}
+.out_box li{float:left; margin: 1rem; width: 100px; height: 100px; border-radius: 50px; background-color: #faa;
+  text-align: center; line-height: 100px; font-size: 1.5rem; color:#fff;
+  font-weight: bold;}
+
+  .out_box li:nth-child(1):hover{background-color: #f06;} /*단순하게 변화*/
+  .out_box li:nth-child(2):hover{background-color: #d11; height: 200px; font-size: 2rem;
+                          transition-property:all; 
+                          transition-duration:1000ms;
+  }
+  .out_box li:nth-child(3):hover{height: 300px; background-color: #a01;
+    transition-duration: 500ms; 
+    transition-property: all; 
+    transition-timing-function:cubic-bezier(.15,.92,.62,.03); }/* 각각의 좌표위치일뿐 */
+  .out_box li:nth-child(4):hover{font-size:7rem;
+    transition-property: font-size; transition-duration: 500ms; transition-delay:200ms;}
+  .out_box li:nth-child(5):hover{height: 300px; background-color: #ff0;  
+    transform:translateY(3rem); transition: all 1000ms ease 200ms;}
+
+  .out_box li:nth-child(6){transition: all 1000ms linear;}
+  .out_box li:nth-child(6):hover{background-color: #ff0066; text-shadow: 0.5rem 0.5rem 0.5rem #fff;}
+  .out_box li:nth-child(6):active{box-shadow: 0.3rem 0.3rem 0.3rem #171717 inset;}
+
+  .out_box li:nth-child(7){transition: 1000ms ease;}
+  .out_box li:nth-child(7):hover{height: 300px;background-color: #ff0;
+                          transition-duration: 2000ms;} /*전후의 상태및 속도조절 가능*/
+
+/** transition
+  * transition이란? css의 변화를 부드럽게 ansimation기능으로 처리되는 형태를 만드는 것을 말한다.
+
+  * transition-duration: ; -> 변화하는 시간 기본은 초단위 , 1초(1s) 1000ms
+     js에서는 1초는 무조건 1000ms이기때문에!
+
+  * transition-property: ; -> 어떠한 속성을 변화시킬것인가?
+    2가지 일경우는 ,로 구분 2가지 이상은 all사용하면 적용된다.
+    기본 적용은 되지만 호환이 되지않는 브라우저를 위해 항상 쓴다.
+
+  * transition-timing-function: ; -> 변화의 흐름에대한 속도를 어떻게 처리할것인가?
+    ease(빨라지다 느리게:자연스럽게) | ease-in(점점 빠르게) | ease-out(점점 느리게) 
+    | ease-in-out(빨라지다 느리게) | linear(같은속도로) | cubic-bezier()(사용자지정)
+
+
+  * transition-delay: ; -> 지연시간: 얼마의 시간뒤에 transition기능을 수행할 것인가?;
+  
+  * transition:property duration timing-funciton delay ; 
+    -transition이 가지는 속성으로 하나로 뭉쳐서 처리하는 기능 
+    - 수치는 앞에(property)있는것은 진행시간, 뒤에(delay)있는것은 w지연시간
+  ***단, 순서를 지켜야한다.
+
+  * transition 작성시 :hover | :active | :focus 등등
+    기존형태에서 변화의 시점을 던져주는 상황(이벤트 발생시점)에 transition을 작성하면,
+    원래대로 돌아갈 때는 transition기능이 적용되지 않는다!
+
+*/
+
+/* transition test1 =================================== */
+ /* 내가만든 것 ------------------- */
+h3{margin: 1rem auto; padding: 0.5rem; background-color: #333; color:#fff;}
+.test_box{margin: auto; margin-top:1rem; padding:1rem; position: relative;
+  box-sizing:border-box; width: 25rem; height: 25rem; background-color:#fff;}
+
+.box01{position:absolute; top:0; left:0; width: 1px; height:1rem; background-color: transparent; 
+  transition:1500ms ease;}
+
+.box02{position:absolute; top:0; right:0; width: 1rem; height:1px; background-color: transparent; 
+  transition: all 500ms ease;
+  transition-delay: 1000ms}
+
+.box03{position:absolute; bottom:0; right:0; width:1px; height:1rem; background-color:transparent; 
+  transition: all 500ms ease;
+  transition-delay: 500ms}
+
+.box04{position:absolute; bottom:0; left:0; width:1rem; height:1px; background-color: transparent; 
+  transition: all 500ms ease;}
+
+.test_box:hover>.box01{
+  width:25rem; background-color: #00f;
+  transition-property:all;
+  transition-duration:500ms;}
+.test_box:hover>.box02{
+  height:25rem; background-color: #00f;
+  transition-property:all;
+  transition-duration:500ms;
+  transition-delay:500ms;}
+.test_box:hover>.box03{
+  width:25rem; background-color: #00f;
+  transition-property:all;
+  transition-duration:500ms;
+  transition-delay:1000ms;}
+.test_box:hover>.box04{
+  height:25rem; background-color: #00f;
+  transition-property:all;
+  transition-duration:500ms;
+  transition-delay:1500ms;}
+
+
+/* 쌤이만든것 -------------------------------- */
+.move_line{position: relative; margin: auto; margin-top:10rem; padding: 2rem; box-sizing:border-box; width: 30rem; height: 15rem; background-color: #caa;}
+/*p{width: 100%; height: 100%; background-color: rgba(255,255,255,0.3); text-align: center; font-size: 2rem; line-height: 10rem; font-weight: bold;}*/
+
+.move_line>div{position: absolute; transform: all 500ms ease; background-color: #11a;}
+.line_01{top:0;    left:0;  width: 0;  height: 1rem; transition-delay:2000ms;}
+.line_02{top:0;    right:0; width: 1rem; height: 0; transition-delay:1500ms;}
+.line_03{bottom:0; right:0; width: 0;  height: 1rem; transition-delay:1000ms;}
+.line_04{bottom:0; left:0;  width: 1rem; height: 0; transition-delay:500ms;}
+
+.move_line:hover .line_01{width: 100%; transition-delay:0ms;}
+.move_line:hover .line_02{height: 100%;  transition-delay:1000ms;}
+.move_line:hover .line_03{width: 100%; transition-delay:1500ms;}
+.move_line:hover .line_04{height: 100%;  transition-delay:2000ms;}
+
+
+
+
+/* transition test2 =================================== */
+
+.multi_link{width: 100%;height: 20rem; 
+  background-image:url("../../img/20170728171227907rkwe.jpg");
+  background-repeat: no-repeat; background-position: 50%;
+  background-size:100% auto;}
+.multi_link>ul{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+
+.multi_link>ul>li{float:left; width: 20%; height: 100%; border-right:1px solid #fff; box-sizing:border-box; margin-bottom: 10rem;}
+
+.multi_link>ul>li:last-child{border-right: 0;}
+
+.multi_link a{display: block; padding: 5rem 1rem; box-sizing: border-box;
+  width: 100%; height: 100%; transition:all 500ms ease;
+  color:#fff; font-size: 1.1rem;}
+
+  .link_wrap{width: 100%; height:10rem; transition: all 500ms ease;}
+
+  .link_wrap>i{position: relative; margin: auto; margin-bottom: 0.5rem; display: block; width: 2rem; height: 2rem; border-radius: 50%; border:2px solid #fff; box-sizing: border-box;
+    text-align: center; line-height:1.35rem; font-size: 1.5rem; font-weight: bold; 
+    font-style:normal; transition: all 500ms ease-out; }
+
+  .link_wrap>i:after{position: absolute; top:0; left:0; content: "+"; display: block; width: 107%; height: 107%; border-radius: 50%; background-color: #fff; color:#171717;
+    transform:scale(0); transition:all 500ms ease;}
+  
+  .link_wrap>h4{width: 100%; height: auto; margin-bottom: 0.5rem; font-weight: normal; font-size:0.875rem; transition: all 500ms ease-out;}
+ 
+  .link_wrap>h5{margin-bottom: 1.5rem; width: 100%; height: auto;  font-size: 1.2rem;}
+  .link_wrap>h5::first-letter{text-transform: uppercase;}
+  .link_wrap>p{color:#fff; line-height: 120%; font-size: 1rem; text-align: left; font-weight: normal; opacity: 0;}
+
+.multi_link a:focus,
+.multi_link a:hover{background-color: rgba(0,0,0,0.3);}
+
+/*.multi_link a:focus > .link_wrap,*/
+/*.multi_link a:hover > .link_wrap{transform: translateY(-2rem);}*/
+
+.multi_link a:focus i,
+.multi_link a:hover i{transform:translateY(-2rem);}
+
+.multi_link a:focus h4,
+.multi_link a:hover h4{transform:translateY(-2rem);}
+
+.multi_link a:focus h5,
+.multi_link a:hover h5{transform:translateY(-2rem);}
+
+
+.multi_link a:focus i:after,
+.multi_link a:hover i:after{transform:translateY(-2rem);}
+
+
+.multi_link a:focus p,
+.multi_link a:hover p{opacity: 1;}
+
+/* animaiton ==================================== */
+.ani_narr{font-size: 1rem; line-height: 1.2rem; text-align: left;}
+.ani_box{margin-bottom: 5rem; width: 100%; height: 1000px; background-color: #fac;}
+
+.check{width: 30px; height: 30px;}
+.ani_box>ul{width: 100%; height: 100%; padding-top: 1rem;}
+.ani_box li{margin: 1rem; width: 50px; height: 50px; border-radius: 25px; background-color: #069; text-align: center;   lighting-color: 50px; color:#fff;}
+
+.ani_box li:nth-child(1){
+  animation-name:oneFrame;
+  animation-duration:1000ms;
+  animation-iteration-count: 5;
+  animation-direction: infinite;
+}
+
+.ani_box li:nth-child(2){
+  animation-name:oneFrame;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes oneFrame{
+  0%{transform:translate(0); background-color: #0af;}
+  50%{transform:translate(10rem , 20rem);}
+  100%{transform:translate(30rem); background-color: #f06;}
+}
+
+.ani_box li:nth-child(3){
+  animation-name: twoFrame;
+  animation-duration:3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in;
+  /*animation-direction: alternate;*/
+  animation-fill-mode: both;
+}
+
+@keyframes twoFrame {
+  0%{transform:translate(0) rotate(0deg) scale(1); }
+  100%{transform:translate(30rem) rotate(720deg) scale(2);}
+}
+
+.ani_box li:nth-child(4){
+  animation-name: threeFrame;
+  animation-duration:1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
+  animation-play-state: running;
+}
+
+.ani_box:hover li:nth-child(4){animation-play-state: paused;}
+
+.ani_box li:nth-child(5){
+  animation-name: threeFrame;
+  animation-duration:1000ms;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease;
+  /*animation-play-state: paused;*/
+}
+
+@keyframes threeFrame {
+  0%{background-color:#111;}
+  100%{background-color: #f00; width: 150px; transform:scale(1.2);}
+}
+
+
+.ani_box li:nth-child(6){
+  animation: set 2000ms 5 alternate; /* 이름 시간 반복 방향 */
+}
+
+@keyframes set {
+  0%{width: 100px; height: 100px; background-color: #f07;}
+  50%{transform:translate(3rem) rotate(360deg);}
+  100%{width: 500px; height: 300px; background-color: #00f;}
+}
+
+
+/*.check:checked + ul>li{transform:translate(10rem); transition: all 1000ms;}*/
+
+/*
+
+*animaiton
+*animation이란? transition과 달리 반복성을 가지거나, 단일성이아닌 여러복합성의 기능을 수행할때
+ 
+*****animation:name duration count diection; 기본 사용 순서
+
+  -animation-name: ; -> animation 기능을 수행할 함수(@keyframes)를 선택
+  -animation-duration: ; -> animation 진행할 시간
+  -animation-direction: ; -> animation이 종료 후 진행할 방향 설정
+      - normal(기본) | reverse(반대로) | alternate(왔다 갔다) | alternate-reverse(반대로 시작해서 왔다 갔다)
+
+  -animation-fill-mode: ; -> animation 시작하기전/끝이후에 어떻게 적용할것인가
+      - none |backwards(끝나면 처음자리로 돌아가라) | forwards(끝나면 끝난 제자리에 있다.) 
+      | both(둘다: 경우에 맞게 사용해라) 
+
+  -animation-iteration-count: ; -> animation 반복여부, 무한반복( infinite )
+  -animation-timing-function: ; -> 속도조절
+
+  -animation-play-state: ; -> 멈춤,재생설정
+      - running(play) | pause
+  -animation-delay: ; -> 지연시간
+----------------------------------------------------------------------------
+   *@keyfranmes {}
+   *@keyfranmes{}란? animation에서 지정한 이름의 기능을 수행하기 위한 처리내용, 일종의 함수
+   *********@keyfranmes는 선택자 내부에 작성하는 것이 아니다~~!!!
+
+@media screen () {}
+@charset "";
+@import url();
+@keyframes {}
+
+div{}
+
+var Fbox = function(){};
+Fbox();
+
+@keyframes aniName {}
+div{animation-name:aniName;}
+별도로 따로 만들데 호출해서 사용할수있다
+오로지 @keyframes은 animation에만 사용할수있는 기능이다.
+
+*/
