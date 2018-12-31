@@ -56,7 +56,9 @@ h2+div{margin: auto; margin-bottom: 2rem;
   behavior:url("../css3pie/PIE.htc");
 }
 
-/* box-shadow:x축 y축 blur offset color inset; 
+/* 
+
+box-shadow:x축 y축 blur offset color inset; 
 
  * box-shadow:x축 y축; - 최소수치
  * box-shadow:x축 y축 color;

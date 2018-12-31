@@ -1,0 +1,18 @@
+@charset 'utf-8';
+/* jquery_on_01.js */
+
+#wrap{height: 62.5rem; padding-top: 10rem;}
+.btn_area{margin-top: 1rem; padding-top: 1rem; padding-bottom: 0.5rem; width: 60rem; height: auto; background-color: #dad;}
+
+.btn_area li{padding: 1rem; margin-right: 0.5rem; float:left; height: 2rem; background-color: #fff;}
+.btn_area li>a{display: block; width: 100%; height: 100%; font-weight: bold;}
+
+p{margin-top: 1rem; padding: 0.5rem; 
+  background-color: #dadada; }
+p>span{display: inline-block; box-sizing: border-box; border:1px; width: 500px; height: 3rem; font-weight: bold; background-color: #111; color:#fff;}
+
+.focus{padding: 1rem; background-color: #acc;}
+.focus:after{content: " "; display: block; clear: both;}
+.focus>li{border: 1px solid #171717; width: 150px; height: 40px; text-align: center; line-height: 40px; float:left; margin-right: 1rem;}
+.focus>li>.btn{display: block; width: 100%; height: 100%; border: 0; background-color: #fff; cursor:pointer;}
+.btn:focus{outline:4px solid #fa0; outline-offset: 0;}
