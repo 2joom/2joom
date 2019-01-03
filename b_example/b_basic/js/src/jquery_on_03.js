@@ -5,7 +5,7 @@
   var btn2 = $('.btn').children('button').eq(1);
   var viewBox = $('.view_box')
 
-  function(e){
+  (function(e){
     e.preventDefault();
     viewBox.css({transform:'translate(0)',
                 transition:'all 300ms ease'});

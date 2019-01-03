@@ -1,0 +1,75 @@
+@charset 'utf-8';
+/* accordion_01.css */
+
+#wrap{margin: auto; width: 100%; height: auto; min-height: 10rem; background-color: #dfdfdf;}
+
+/* #headBox =========================== */
+#headBox{width: 100%; height: auto; min-height: 10rem;  background-color: #aaa;}
+h1{width: 400px; height: 70px; 
+  color:#111; font-weight:bold; background-color: transparent; line-height: 70px; text-indent: 1rem;}
+h2.hidden{border: 0;}
+h2{width: 100%; height: 30px; font-size:1.2rem; border-bottom: 1px solid #333; text-indent: 1rem; margin-bottom: 1rem;}
+/*nav{margin: auto; width: 600px; height: 500px; background-color: #faa;  }
+.dl_true{float:left; width: 198px; height: 90%; font-size: 1.3rem;
+  text-align: center; border-right:1px solid #111; box-sizing: border-box;}
+.dl_true:nth-child(4){border-right: none;} 
+
+.dl_true>dt{width: 100%; height: 10%;}
+.dl_true>dt>button{margin-bottom:1rem;  width: 100%; height: 100%; font-weight: bold; font-size: 2rem;}
+.dl_true>dd{margin-bottom: 1rem; font-size: 1.5rem; /*display: none;}
+
+.dl_true>dt:focus{color:#f00; font-size: 1.7rem; font-weight: bold;}*/
+
+
+
+#gnb{margin: auto; position:relative; z-index:300; top:0; width:900px; height:30px; background-color:#fff;}
+#gnb>div{width: 100%; height: 100%;}
+#gnb dl{float: left; padding: 0 0.5rem; box-sizing: border-box; width: 20%; height: 100%; }
+#gnb dl>dt{width: 100%; height: 100%; font-size: 1.2rem; line-height: 30px;
+      text-transform: uppercase; background-color: #933; text-indent: 1rem; }
+#gnb dl>dt>a{display: block; width: 100%; height: 100%; color:#fff;}
+
+#gnb dl>dd{display: none;
+  width: 100%; height: auto; padding-top: 1rem; padding-bottom: 0.5rem;
+  background-color: #333; text-indent: 1rem;}
+
+#gnb dl>dd>ul{width: 100%; height: auto;}
+#gnb dl>dd>ul>li{ margin-bottom: 0.5rem; width: 100%; height: 2rem;border-bottom: 1px solid #fff;}
+#gnb dl>dd>ul>li:last-child{margin-bottom: 0; border-bottom: 0;}
+#gnb ul a{display: block; width: 100%; height: 100%; line-height:2rem; color:#fff;}
+
+
+
+
+/* #conBox =========================== */
+#conBox{padding:1rem; box-sizing: border-box;
+  width: 100%; height: auto; min-height: 50rem; background-color: #777;}
+
+.accordion{margin: auto; width: 70%; min-width: 600px; 
+  height: auto; min-height: 5rem; border: 2px solid #fff;}
+.accordion>dl{width: 100%; height: auto;}
+.accordion dt{width: 100%; height: 40px; border-bottom: 1px solid #fff; 
+  background-color: #140; }
+.accordion dt:last-of-type{border: none;}
+
+.accordion dt>button{width: 100%; height: 100%; border: 0; background-color: transparent; cursor:pointer;
+  color:#fff; text-align: left; text-indent: 1rem; font-size: 1.2rem; 
+  font-family: "맑은고딕", snas-serif;}
+
+.accordion dt>button:focus,
+.accordion dt>button:hover{background-color: #133; font-weight: bold;}
+
+.accordion dt>button>i{float:right; margin-top: 0.3rem; margin-right: 1rem;}
+.accordion dt>button.active>i{transform: rotateX(180deg); color:#dd1;}
+
+
+.accordion dd{padding: 0.5rem; box-sizing: border-box; width: 100%; 
+  height:7rem; /*min-height: 7rem;*/ background-color: #cca; display: none;}
+
+
+
+
+
+
+/* #footBox =========================== */
+#footBox{width: 100%; height: 10rem; background-color: #555;}
