@@ -1,0 +1,27 @@
+@charset 'utf-8';
+/* stop_01.css */
+
+#wrap{width: 50rem; height: 50rem; background-color: #aaa;}
+
+.box{width: 100px; height: 100px; background-color: #ccc;}
+.start,.stop{width: 50px; height: 50px;}
+
+/* -------------------------------------------------- */
+
+.tab_menu{position:relative; margin: auto; width: 30rem; height: 20rem; background-color: #abb;}
+ul{width: 100%; height: 10%;}
+li{float:left; margin: auto; margin-right:4px;
+  width: 22%; height: 100%; background-color: #bfb;
+  border-radius: 5px;}
+li:first-of-type{width: 30.6%;}
+li:last-of-type{margin:none; float:right;}
+
+.content{position:absolute; top:9%;
+  width: 100%; height: 90%; overflow: hidden;}
+.content>div{float:left; width: 100%; height: 100%; background-color: #9bb;}
+
+.content_01{position:absolute; top:0;}
+.content_02{position:absolute; top:0;}
+.content_03{position:absolute; top:0;}
+.content_04{position:absolute; top:0;}
+

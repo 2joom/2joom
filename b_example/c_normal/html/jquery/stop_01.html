@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- stop_01.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../../css/base/reset.css" />  
+    <link rel="stylesheet" href="../../css/base/common.css" />
+    <link rel="stylesheet" href="../../css/src/jquery/stop_01.css"/>
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../../ie/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.png">
+    <title>제목</title>
+
+  </head>
+  <body>
+  <!-- Layout -->
+    <div id="wrap">
+      <div class="box"></div>
+      <button type="button" class="start">start</button>
+      <button type="button" class="stop">stop</button>
+      <hr />
+
+<!-- 스스로 해보기!!!!! -->
+      <br /><h1>Active Tab</h1><br />
+      <div class="tab_menu">
+
+        <ul>
+          <li class="menu_01"><a href="#">menu_01</a></li>
+          <li class="menu_02"><a href="#">menu_02</a></li>
+          <li class="menu_03"><a href="#">menu_03</a></li>
+          <li class="menu_04"><a href="#">menu_04</a></li>
+        </ul>
+
+        <div class="content">
+          <div class="content_01">content_01
+              <br />
+              lorem100
+          </div>
+          <div class="content_02">content_02
+              <br />
+              lorem50
+          </div>
+          <div class="content_03">content_03
+              <br />
+              lorem30
+          </div>
+          <div class="content_04">content_04
+              <br />
+              lorem40
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  <!--  script   -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script>
+    (function($){
+      // var move = 0;
+
+      // $('.start').on('click',function(e){
+      //   e.preventDefault();
+      //   move += 100;
+      //   $('.box').animate({marginLeft:move+'px'},2000);
+      // });
+
+      // $('.stop').on('click',function(e){
+      //   e.preventDefault();
+      //   $('.box').stop(false, false);
+      // });
+
+      var li = $('li')
+      var liEq = $('li').eq()
+      li.on('mouseover',funciton(e){
+        e.preventDefault();
+        li.eq(liEq).css({z-index:'1'});
+        console.log()
+      });
+
+    })(jQuery);
+  </script>
+  </body>
+  </html>
