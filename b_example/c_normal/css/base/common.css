@@ -4,7 +4,7 @@ Preferences-setting-"word_wrap": true : 1그룹에서 꽉차보이게하는방�
 */
 
 @charset "utf-8";
-.hidden_wrap a, .hidden_wrap button{display: block; width: 100%; height: 100%;}
+.hidden_wrap a, .hidden_wrap button{display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position:50% 50%;}
 
 
 .hidden,

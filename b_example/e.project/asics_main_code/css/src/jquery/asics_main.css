@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* asics_main.css */
+@import url("./layout/asics_main_common.css");
+@import url("./layout/asics_main_mobile.css");
+@import url("./layout/asics_main_tablet.css");
+@import url("./layout/asics_main_labtop.css");
+@import url("./layout/asics_main_pcfull.css");
+/* 추가코드는 적지않는다,
+  필요시 : 마지막에 적는다 */
+
+
+
+
+
+
+
+
+

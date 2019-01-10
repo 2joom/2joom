@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* asics_main_pcfull.css */
+
+
+/* pc full */
+@media screen and (min-width: 961px){
+#wrap{font-size: 28px;}
+
+  #headBg{height: 90px;}
+  #headerBox{height: 100px; top:90px;}
+    h1{width: 528px; height: 268px;}
+    #navBox{ position:relative; width: 240px;}
+    #navBox>div{width:117px;}
+      .menu{position:absolute; z-index:-1; float:right; width: 435px; height: 100%;}
+      .menu>button{display: none; width: 100%; height: 100%;}
+      .gnb{display:inline; top:0; right:200px; width: 700px;}
+      .gnb>dl{display:block; float:left; margin-right:5%; width: 20%; height: 73px;}
+      .gnb>dl>dt{width:100%; height: 100%;}
+      .gnb dl dd{display:none;}
+      .gnb a{color:#111; font-weight: bold; line-height: 73px; font-size:20px;}
+
+      .gnb>dl:focus>dd,
+      .gnb>dl:hover>dd{display:block; width: 100%; height: 100%; background-color:#fff;}
+  
+  
+
+#mainBox{height: 1368px;} 
+  .main_big{position:relative;  top:190px; height:1280px;}
+  .main_big p{margin-top:-371px; left:50%; margin-left:-350px; width: 742px; height: 442px;}
+  .main_big button{width: 182px; height: 158px;}
+  .main_big button>i{width: 100%; height: 100%;}
+
+  .main_small{display:block;}
+    .main_text{display:block; position: absolute; z-index: 5;  bottom:38px; left:50%; margin-left:-174.5px; 
+      width: 349px; height: 90px;}
+    .main_button{display: none;}   
+
+#menuBox{height: 1660px; padding: 10rem 0rem; box-sizing: border-box;}
+  .menu_big{margin: auto; width: 90%; height: auto; background-color: #666}
+  .menu_big>div{width:100%; height: 309px; margin-bottom: 15px;}
+  .view_01{float: left; width: 25%; height: 70%; background-color: #dbd9d6; margin-top: 3rem;}
+  .view_02{float: left; width: 72%; height: 100%; background-color: #009444;}
+  .menu_big>div:nth-of-type(2n) .view_01{float: right;}
+  .menu_big>div:nth-of-type(2n-1) .view_01{margin-right: 3%;}
+
+#bannerBox{height: 2164px; padding-top: 200px; box-sizing: border-box;}
+  #bannerBox>h2{width: 253px; height: 58px; background-color: #ffce00; margin:auto; margin-bottom: 150px; }
+  .banner_bigBox{width: 98%; height:auto; margin:auto; background-color: #ccc;}  
+  .banner_mp4{float:left; width:50%; height: 1000px; background-color: #fa0;}
+  .banner_view{float:left; width:50%; height:1000px; background-color: #fff;}
+    .banner_img{width:91%; height: 100%; margin-left: 48px; margin-top: 34px;}
+    .banner_img>div{float:left; width: 43%; height:45%; 
+      margin-right:2%; margin-bottom:5%; background-color: #dbd9d6;}
+    .banner_img>div:nth-child(2n){margin-right: 0;}
+    .banner_img>div:nth-child(3n){margin-bottom: 0;}
+    .banner_img>div:nth-child(4n){margin-bottom: 0;}
+    .indicator{display: none;}
+
+#artBox{height: 698px; padding-top: 37px; box-sizing: border-box;}
+#artBox>h2{width: 252px; height: 58px; background-color:#FFCE00; margin:auto; margin-bottom: 47px;}
+  .art_box{width: 100%; height:471px; margin:auto;}
+  .art_box>div{float:left; width: 19%; height: 210px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div:nth-child(7){margin-bottom:0;}
+  .art_box>div:nth-child(8){margin-bottom:0;}
+  .art_box>div:nth-child(9){margin-bottom:0;}
+  .art_box>div:nth-child(10){margin-bottom:0;}
+  .art_box>div:nth-child(11){margin-bottom:0;}
+
+#footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
+  #footBox>h2{width: 171px; height: 60px; background-color:#FFCE00; margin:auto; margin-bottom: 47px;  font-size: 28px;}
+  #footBox01{width: 70%; height: 74px; margin:auto;}
+  #footBox01>div{float:left; width: 30%; height:100%; background-color: #009444; margin-right:5%;}
+  #footBox01>div:last-child{margin-right: 0;}
+  #footBox02{width: 80%; height: 264px; margin:auto; margin-top: 70px; }
+    .foot_box21{float: left; width:50%; height:351px; margin:auto; margin-left: 50px;}
+    .foot_box21>div{width: 90%; height: 29px; background-color: #009444; margin:auto; margin-bottom: 5%}
+    .foot_box22{float:right; width: 40%; height: 89px; margin-top: 250px;}
+    .foot_box22>div{float:left; border-radius: 50%; width:25%; height: 87px; background-color: #dbd9d6; margin-right:3%;}
+    .foot_box22>div:last-child{margin-bottom:0;}
+ 
+
+
+
+}
+/* pc full end */

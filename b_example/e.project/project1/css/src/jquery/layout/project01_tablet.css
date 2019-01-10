@@ -4,8 +4,9 @@
 
 /* tablet start */
 @media screen and (min-width: 481px) and (max-width: 768px){
-#haedBox{height: 51px;}
-  h1{width: 129px;}
+#haedBox{height: 408px;}
+  .logo{width: 222px;}
+  .sign_up{width: 87px; height: 85px;}
   #navBox{float:right; width: 202px;}
   #navBox>div{width:96px;}
   .menu>button:focus+.gnb,

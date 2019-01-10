@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* asics_labtop.css */
+
+
+/* pc start */
+@media screen and (min-width: 769px) and (max-width: 960px){
+/* #headBox ----------------------------------------- */
+#headBox{height:478px;}
+.header_bg{top:117px; height: 172px;}
+.container_bg{top:118px; height: 118px;}
+.logo{width: 348px; height: 175px;}
+.sign_up{width: 344px; height: 175px;}
+
+
+
+/* #mainBox ----------------------------------------- */
+#mainBox{height:1097px;}
+
+
+
+
+/* #menuBox ----------------------------------------- */
+#menuBox{height:1565px;}
+
+
+
+
+/* #bannerBox ----------------------------------------- */
+#bannerBox{height:1669px;}
+
+
+
+/* #viewBox ----------------------------------------- */
+#viewBox{height:459px;}
+
+
+
+
+/* #artBox ----------------------------------------- */
+#artBox{height:899px;}
+
+
+
+/* #footBox ----------------------------------------- */
+#footBox{height:424px;}
+
+
+}
+/* pc end */

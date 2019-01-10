@@ -3,8 +3,10 @@
 
 /* mob start */
 @media screen and (max-width: 480px){
-#haedBox{height: 36px; min-width:100vw;}
-  h1{width: 80px;}
+#haedBox{height: 100px; min-width:100vw;}
+  #containder_bg{height:127px;}
+  .logo{width: 198px;}
+  .sing_up{width: 71px; height: 70px;}
   #navBox{width: 142px;}
   #navBox>div{width:60px;}
   .menu>button:focus+.gnb,

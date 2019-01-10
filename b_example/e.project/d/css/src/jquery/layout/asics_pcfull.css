@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* project01_pcfull.css */
+
+
+/* pc full */
+@media screen and (min-width: 961px){
+
+/* #headBox ----------------------------------------- */
+#headBox{height:674px;}
+.header_bg{top:27px; height: 270px;}
+.container_bg{top:118px; height: 191px;}
+.logo{width: 528px; height: 268px;}
+.sign_up{width: 213px; height: 208px;}
+
+
+/* #mainBox ----------------------------------------- */
+#mainBox{height:1536px;}
+
+
+
+
+/* #menuBox ----------------------------------------- */
+#menuBox{height:2489px;}
+
+
+
+
+/* #bannerBox ----------------------------------------- */
+#bannerBox{height:2074px;}
+
+
+
+/* #viewBox ----------------------------------------- */
+#viewBox{height:660px;}
+
+
+
+
+/* #artBox ----------------------------------------- */
+#artBox{height:1040px;}
+
+
+
+/* #footBox ----------------------------------------- */
+#footBox{height:635px;}
+
+
+}
+/* pc full end */

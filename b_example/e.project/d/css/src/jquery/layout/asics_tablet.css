@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* asics_tablet.css */
+
+
+/* tablet start */
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+/* #headBox ----------------------------------------- */
+#headBox{height:408px;}
+.header_bg{top:85px; height: 111px;}
+.container_bg{top:27px; height: 86px;}
+.logo{float:left; width: 222px; height: 112px; background-color: #15a}
+.sign_up{width: 87px; height: 85px;}
+
+
+
+
+/* #mainBox ----------------------------------------- */
+#mainBox{height:1008px;}
+
+
+
+
+/* #menuBox ----------------------------------------- */
+#menuBox{height:1572px;}
+
+
+
+
+/* #bannerBox ----------------------------------------- 
+#bannerBox{height:1682px;}
+
+
+
+*/
+/* #viewBox ----------------------------------------- */
+#viewBox{height:540px;}
+
+
+
+
+/* #artBox ----------------------------------------- */
+#artBox{height:1280px;}
+
+
+
+#footBox{height:352px;}
+/* #footBox ----------------------------------------- */
+
+
+
+
+
+
+
+}
+/* tablet end */

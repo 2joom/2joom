@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*1 asics_main_mobile.css */
+
+/* mob start */
+@media screen and (max-width: 480px){
+
+#headBox{min-width:100vw;}
+  #headBg{height:27px;}
+  #headerBox{height: 70px; top:27px;} 
+      h1{width: 198px; height: 100px;}
+      .sign_up{width: 71px;}
+      #navBox{width: 142px;}
+      #navBox>div{width:60px;}
+      .menu>button:focus+.gnb,
+          .menu>button:hover+.gnb{display:block; }
+          .gnb a{display: block; width: 100%; height: 100%;}
+    
+  
+#mainBox{height: 673px;  top:97px;}
+.main_big{position: relative; height: 418px;}
+  .main_big{position:relative; width: 100%;} 
+  .media>iframe{width: 100%;height: 666px; background-size:cover;}
+  .main_big p{position:absolute; z-index:5; 
+    top:50%; margin-top:-136px; left:50%; margin-left:-136px; 
+    width:272px; height:272px; font-size: 20px;}
+  .banner_btn{width: 196px; height: 170px;}
+  .banner_btn>button{position: absolute; z-index:10; top:50%; margin-top:-30px; left:50%; margin-left:-28px; width: 100%; height: 100%;
+    width:196px; height:170px; }
+  .banner_btn i{font-size:4rem;}
+  
+  .main_small{margin-left:-173.5px; width: 347px; height: 128px; margin-top: 73px;}
+    .main_small>h2{width: 195px; height: 44px; font-size: 18px; margin:auto; margin-left:-97.5px;}
+    .main_button{width: 347px; height: 44px; margin-top: 84px;}
+      .main_b_box1{width: 144px;}
+      .main_b_box2{width: 144px;}  
+
+#menuBox{height: 645px; }
+  .menu_big{position:absolute; top:50%; margin-top:-219px; width: 100%; height: 438px; font-weight:bold; font-size: 20px; line-height: 92px; }
+    .main_big p{position:absolute; top:50%; margin-top:-136px; left:50%; margin-left:-136px; width:272px; height:272px; font-size: 20px;}
+    .main_big button{width: 2rem; height: 2rem; background-color: #ACF;}
+    .main_big button i{font-size: 2rem; color:#000;}
+    .menu_big>div{float:left; width: 100%; height: 92px; background-color: #009444; margin-bottom:15px;}
+    .menu_big>div:last-child{margin-bottom: 0;}
+    .view_02{display:none;}
+
+#bannerBox{height: 923px; padding-top:112px; box-sizing: border-box;}
+  #bannerBox>h2{width: 142px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:33px;}
+  .banner_bigBox{width: 100%; height: 100%;}  
+  .banner_mp4{width: 361px; height: 299px; background-color: #fa0; margin:auto; margin-bottom:74px; }
+  .banner_view{position: relative;
+    width: 100%; height: 326px; background-color: #fff; overflow: hidden;}
+    .banner_img{width: 598px; height: 217px; background-color: #aca; margin-bottom: 47px;}
+    .banner_img>div{float:left; width: 127px; height:100%; 
+      margin-right:30px; background-color: #dbd9d6;}
+    .banner_img>div:last-child{margin-right: 0;}
+    .indicator{position:absolute; left:50%; margin-left:-106px; bottom:1rem; width: 212px; height: 38px; background-color:transparent;}
+    .indicator>ul{width: 100%; height: 100%;}
+    .indicator>ul>li{float:left; width: 38px; height: 38px; margin-right: 19px; }
+    .indicator>ul>li:last-child{margin-right:0;}
+    .indicator>ul>li>a{border-radius:50%; background-color: #faa;}
+    .indicator>ul>li>a:hover,
+    .indicator>ul>li>a:focus{background-color: #ccc;}
+
+#artBox{height: 609px; padding-top:32px; box-sizing: border-box; }
+  #artBox>h2{width: 142px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:35px;}
+  .art_box{width: 100%; height: 482px; margin:auto;}
+  .art_box>div{float:left; width: 48%; height: 206px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div:nth-child(2){margin-bottom:0;}
+  .art_box>div:last-child{margin-bottom:0;}
+  .art05,.art06,.art07,.art08,.art09,.art010{display: none;}
+
+#footBox{height: 331px; padding-top:20px; box-sizing:border-box;}
+  #footBox>h2{width: 75px; height: 31px; background-color:#FFCE00; margin:auto; margin-bottom: 20px; font-size: 23px;}
+  #footBox01{width: 100%; height: 31px; margin:auto;}
+  #footBox01>div{float:left; width: 30%; height: 31px; background-color: #009444; margin-left:3%;}
+  #footBox01>div:first-child{margin-left: 0;}
+  #footBox02{width: 100%; height: 167px; margin-top: 42px;}
+    .foot_box21{float: left; width: 60%; height: 148px; margin:auto;}
+    .foot_box21>div{width: 95%; height: 16px; background-color: #009444; margin:auto; margin-bottom: 9px;}
+    .foot_box22{float:right; width: 30%; height: 30px; margin-top: 112px;}
+    .foot_box22>div{float:left; border-radius: 50%; width: 23%; height: 30px; background-color: #dbd9d6; margin-right:10%;}
+    .foot_box22>div:last-child{margin-right:0;}
+
+}
+/* mob end */
+

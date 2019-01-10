@@ -26,7 +26,6 @@
       var afterDevice = myDevice(nowWinWidth);
       if(winWidth !== nowWinWidth && beforeDevice !== afterDevice){
         location.reload();
-      }
     }
   });
   
@@ -113,7 +112,4 @@ mobList.on('click',function(e) {
   }
 
 });
-
-
-
 })(jQuery);
