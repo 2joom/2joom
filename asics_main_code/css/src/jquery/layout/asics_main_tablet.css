@@ -22,7 +22,7 @@
 
 /* #menuBox ----------------------------------------- */
 #menuBox{height: 1067px; }
-  .menu_big{position:absolute; top:50%; margin-top:-303px; width: 100%; height: 706px;  line-height: 150px; text-align: center;}
+  .menu_big{transform:translateY(25%); width: 100%; height: 706px;  line-height: 150px; text-align: center;}
   .menu_go{float:left; width: 100%; height: 23%; font-size: 3rem; margin-bottom:1.25%; border-radius:4rem;}
 
   .menu_big>div:last-child{margin-right:0;}
@@ -36,12 +36,13 @@
 
 
 /* #bannerBox ----------------------------------------- */
-#bannerBox{height: 1396px; padding-top: 30px; box-sizing: border-box;}
+#bannerBox{height: 30rem; padding-top: 30px; box-sizing: border-box;}
   #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
-  .banner_bigBox{width: 100%; height: 100%;}  
-  .banner_mp4{width: 100%; height: 482px; margin:auto; margin-bottom: 130px;} 
-  .banner_view{position: relative;
-    width: 100%; height: 498px; overflow: hidden;}
+  .banner_bigBox{width: auto; height: 100%;}  
+  .media2{width: 100%; height: auto;  min-height: 100vw; }
+  /*.media2>video{top:50%; left:50%; width:100%; height: auto;}*/
+
+  .banner_view{position:absolute; top:30rem; width: 100%; height: 498px; overflow-x: hidden;}
     .banner_img{width: 931px; height: 349px;}
     .banner_img>div{float:left; width: 204px; height:100%; 
       margin-right:30px; background-color: #dbd9d6;}

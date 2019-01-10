@@ -29,9 +29,8 @@
   /*.main_big button{width: 182px; height: 158px;} jQuery 실행시 필요*/
   /*.main_big button>i{width: 100%; height: 100%;} jQuery 실행시 필요*/
 
-  .media{/*position:absolute; top:0; right:0; */width: 100%; height: 100%; background-size: contain; overflow: hidden;}
-  /*.media>video:before{content:" "; display: block; position:absolute; z-index: -1; width: 100vw; height: 100%; background-color: #cc1;}*/
-  .media video{width: 100%; position:none; background-size:40%;}
+  .media{width: 100%; height: 100%; background-size: contain; overflow: hidden;}
+  .media>video{width: 100%; }
 
   .main_small{position: absolute; top:900px; left:30vw; width: 400px; height: 200px; text-align:center;}
   /*.main_text{display:block; position: absolute; z-index: 5;  bottom:38px; left:50%; margin-left:-174.5px; 
@@ -42,9 +41,9 @@
 
 
 /* #menuBox ------------------------------------------------------------- */
-#menuBox{height: 1060px; padding: 10rem 0rem; box-sizing: border-box;}
-  .menu_big{top:50%; margin-top: -250px; width: 100%; height: 500px; background-color: #666}
-  .menu_big>div{width:100%; height: 300px; margin-bottom: 15px;}
+#menuBox{height: 100%}
+  .menu_big{width: 100%; height: auto; background-color: #666}
+  .menu_big>div{width:100%; height: 309px; margin-bottom: 15px;}
   .view_01{float: left; width: 25%; height: 70%; background-color: #dbd9d6; margin-top: 3rem;}
   .view_02{float: left; width: 72%; height: 100%; background-color: #009444;}
   .menu_big>div:nth-of-type(2n) .view_01{float: right;}
@@ -56,10 +55,11 @@
 
 
 /* #bannerBox ------------------------------------------------------------- */
-#bannerBox{height: 2164px; pad: 200px; box-sizing: border-box;}
+#bannerBox{height: 1164px;}
   #bannerBox>h2{width: 253px; height: 58px; background-color: #ffce00; margin:auto; margin-bottom: 150px; }
-  .banner_bigBox{width: 98%; height:auto; margin:auto; background-color: #ccc;}  
-  .banner_view{float:left; width:50%; height:1000px; background-color: #fff;}
+  .banner_bigBox{width: 100%; height:auto; margin:auto; background-color: #ccc;}  
+  .media2{float:left; width:50%; min-width: 100%; height: 1000px; background-color: #fa0; overflow: hidden;}
+  .banner_view{float:right; width:50%; height:1000px; background-color: #fff;}
     .banner_img{width:91%; height: 100%; margin-left: 48px; margin-top: 34px;}
     .banner_img>div{float:left; width: 43%; height:45%; 
       margin-right:2%; margin-bottom:5%; background-color: #dbd9d6;}
