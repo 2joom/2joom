@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* project01_common.css */
+
+/*body{overflow-x: hidden;}*/
+
+#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto;}
+
+/* #headBox---------------------------------------- */
+#headBox{position: fixed; z-index: 500; width: 100%; height: auto;  }
+  #headBg{width: 100%; background-color:#00c3e6;}  
+  #headerBox{width: 100%; background-color:#001e62;}
+      .logo{float: left; color:#fff; background-image: url("../../../../img/img_psd/logo.png"); background-repeat: no-repeat; background-position: center; background-size:70%;}
+      .sign_up{float: right; font-weight: bold; font-size:18px; height: 100%; }
+      .sign_up>a{display: block; width: 100%; height: 100%; background-image: url("../../../../img/img_psd/signup_icon.png"); background-repeat: no-repeat; background-position: center;}
+      #navBox{float:right; width: 60%; margin: auto; height:100%; }
+        #navBox>div{height:100%;}
+          .menu{position:relative; float: right; width: 100%; height: 100%;}
+          .menu>button{width: 100%; height: 100%; font-size:20px; background-image: url("../../../../img/img_psd/menu_icon.png"); background-repeat: no-repeat; background-position: center;}
+          .gnb{/*display:none;*/ top:0; right: 0; float:right; width:500px; height: 100px;}
+
+          .gnb>dl{display:block; float:left; width: 93px; height: 100%; background-color: #b3b0a1}
+          .gnb>dl>dt{width: 100px; height: 33px; background-color:#001e62; color:#;}
+          .gnb>dl>dd{width: 100px; height: 15px; }
+          .gnb>dl>dt span{color:#fff; font-weight: bolder;   text-transform: capitalize; font-size: 1.5rem;}
+          .gnb dt a{height: 33px; line-height: 33px;}
+          .gnb span{color:#111; font-weight: bold;}
+
+          .w_a{position: relative; width: 100px; height:auto;}
+
+          
+            
+
+
+/* #mainBox---------------------------------------- */
+#mainBox{width:100%; height:100%; background-color:transparent;}
+.main_big:before{content: " "; position: absolute; z-index: -1; display: block; width:100%; min-width:100%; background-color: #a00;}
+.main_big{width: 100%; height: 75%; background-color: #abb; margin-bottom: 2%;}
+.main_video{position: relative; width: auto; min-width: 100%; height: auto; min-height: 100%; overflow: hidden;}
+.main_video>video{position: absolute;}
+
+.main_small{width: 100%; height: 23%; text-align: center; font-family: '맑은 고딕' , Malgun Gothic;}
+.main_txt{width: 100%; height: 50%; line-height: 75px; text-transform: capitalize;}
+.main_txt>p{font-size: 1.5rem; font-weight: bolder;}
+.main_btn{width: 100%; height: 45%;}
+.main_btn01{float:left; width: 45%; height: 100%; margin-right:5%;}
+.main_btn02{float:right; width: 45%; height: 100%;}
+
+.main_btn01>button{width: 80%; height: 100%; border-radius: 1.6rem; background-color: #00c3e6; color:#001e62;; font-size: 1.3rem; font-weight: bolder;}
+.main_btn02>button{width: 80%; height: 100%; border-radius: 1.6rem; background-color: #00c3e6; color:#001e62;; font-size: 1.3rem; font-weight: bolder;}
+
+
+
+
+/* #menuBox---------------------------------------- */
+#menuBox{position:relative; width:100%; height:100%; background-color: #001e62;}
+  .menu_big{position:absolute; width: 100%; height: auto;}
+    .menu_go{width: 100%; margin-bottom:10px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
+
+    .view_01{float:left; width: 50%; height: 100%;}
+    .view_01>a{width: 100%; height: 100%; font-weight: bolder; color:#001e62; text-transform: capitalize;}
+    .view_02{float:right; width: 50%; height: 100%;}
+
+.menu_img01{background-image: url("../../../../img/img_psd/men_img.png"); background-repeat: no-repeat;}
+.menu_img02{background-image: url("../../../../img/img_psd/women_img.png"); background-repeat: no-repeat;}
+.menu_img03{background-image: url("../../../../img/img_psd/kids_img.png"); background-repeat: no-repeat;}
+.menu_img04{background-image: url("../../../../img/img_psd/wa.png"); background-repeat: no-repeat;}
+
+
+
+
+
+/*# bannerBox---------------------------------------- */
+#bannerBox{position: relative; width: 100%; height: 100%; background-color: #58595b;}
+ .media2{width: 100%; height: 100%;} 
+ .media2>iframe{display:block;}
+
+
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 100%; background-color: #a4c;}
+ .view{margin: 50% 0; box-sizing:border-box; width: 100%; height: 100%; margin: auto; background-image: url("../../../../img/asics_img/view.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: cover;}
+
+
+
+ /* #artBox---------------------------------------- */
+#artBox{width: 100%; height: 100%; background-color: #939598;}
+
+
+/* #footBox---------------------------------------- */
+#footBox{width: 100%; height: 100%; background-color: #bcbec0;}
+
+
+

@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* asics_main_tablet.css */
+
+
+/* tablet start */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  #headBg{height: 35px;}
+  #headerBox{top:35px; height: 55px; line-height:55px; }
+    .logo{margin-left:1rem; width: 107px; height: 54px; background-size:100%;}
+    .sign_up{width: 87px;}
+    #navBox{float:right; width: 202px;}
+    #navBox>div{width:96px;}
+    .menu>button:focus+.gnb,
+    .menu>button:hover+.gnb{display:block; }
+    .gnb a{display: block; width: 100%; height: 100%;}
+      
+
+/* #mainBox ----------------------------------------- */
+#mainBox{height:908px;}
+.main_video>video{left: 50%; transform: translateX(-50%); width: auto; height: 100%;}
+}
+
+/* #menuBox ----------------------------------------- */
+#menuBox{height: 1067px; }
+  .menu_big{position:absolute; top:50%; margin-top:-303px; width: 100%; height: 706px;  line-height: 150px; text-align: center;}
+  .menu_go{float:left; width: 100%; height: 23%; font-size: 3rem; margin-bottom:1.25%; border-radius:4rem;}
+
+  .menu_big>div:last-child{margin-right:0;}
+  .menu_txt02,.menu_txt04{float:right;}
+  .menu_txt01,.menu_txt03{text-indent:1rem;}
+    
+    .menu_img01{background-position: 20px 20px; background-size: contain;}
+    .menu_img02{background-position: 20px 20px; background-size: contain;}
+    .menu_img03{background-position: 40px 20px; background-size: contain;}
+    .menu_img04{background-position: center; background-size: contain;}
+
+
+/* #bannerBox ----------------------------------------- */
+#bannerBox{height: 1396px; padding-top: 30px; box-sizing: border-box;}
+  #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
+  .banner_bigBox{width: 100%; height: 100%;}  
+  .banner_mp4{width: 100%; height: 482px; margin:auto; margin-bottom: 130px;} 
+  .banner_view{position: relative;
+    width: 100%; height: 498px; overflow: hidden;}
+    .banner_img{width: 931px; height: 349px;}
+    .banner_img>div{float:left; width: 204px; height:100%; 
+      margin-right:30px; background-color: #dbd9d6;}
+    .banner_img>div:last-child{margin-right: 0;}
+    .indicator{position:absolute; left:50%; margin-left:-106px; bottom:1px; width: 285px; height: 51px; background-color: transparent;}
+    .indicator>ul{width: 100%; height: 100%;}
+    .indicator>ul>li{float:left; width: 51px; height: 100%; margin-right: 26px;}
+    .indicator>ul>li:last-child{margin-right: 0;}
+    .indicator>ul>li>a{width: 52px; height: 52px; border-radius: 50%; background-color: #faa;}
+    .indicator>ul>li>a:hover,
+    .indicator>ul>li>a:focus{background-color: #ccc;}
+
+/* #viewBox ----------------------------------------- */
+#viewBox{height: 600px; max-height:960px; }
+
+
+
+/* #artBox ----------------------------------------- */
+#artBox{height: 761px; padding-top:105px; box-sizing: border-box; }
+ #artBox>h2{width: 228px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
+  .art_box{width: 100%; height: 471px; margin:auto;}
+  .art_box>div{float:left; width: 48%; height: 231px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div:nth-child(5){margin-bottom:0;}
+  .art_box>div:nth-child(6){margin-bottom:0;}
+  .art05,.art06,.art07,.art08,.art09,.art010{display: none;}
+  
+/* #footBox ----------------------------------------- */
+#footBox{height: 579px; padding-top:37px; box-sizing:border-box;}
+  #footBox>h2{width: 121px; height: 51px; background-color:#FFCE00; margin:auto; margin-bottom: 47px; font-size: 23px;}
+  #footBox01{width: 100%; height: 49px; margin:auto;}
+  #footBox01>div{float:left; width: 30%; height:100%; background-color: #009444; margin-right:5%;}
+  #footBox01>div:last-child{margin-right: 0;}
+  #footBox02{width: 100%; height: 258px; margin-top: 96px;}
+    .foot_box21{float: left; width: 55%; height: 258px; margin:auto;}
+    .foot_box21>div{width: 90%; height: 29px; background-color: #009444; margin:auto; margin-bottom: 5%}
+    .foot_box22{float:right; width:40%; height: 57px; margin-top: 201px;}
+    .foot_box22>div{float:left; border-radius: 50%; width: 59px; height: 57px; background-color: #dbd9d6; margin-right:5px;}
+    .foot_box22>div:last-child{margin-right:0;}
+
+
+}
+/* tablet end */
