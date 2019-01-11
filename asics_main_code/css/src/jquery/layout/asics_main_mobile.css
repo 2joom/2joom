@@ -19,7 +19,7 @@
 /* #mainBox----------------------------------------- */
 #mainBox{padding-top: 6rem; box-sizing: border-box; height:700px;} /* margin-top:#headBox높이 */
 .main_big:before{height: 59%; transform:skewY(20deg);}
-.main_video>video{top:100px; transform:translate(-25% , -22%); width: auto; height: 100%;}
+.main_video>video{top:100px; transform:translate(-25% , -29%); width: auto; height: 133%;}
 
 
 
@@ -46,11 +46,13 @@
 
 
 /* #bannerBox ----------------------------------------- */
-#bannerBox{height: 923px; padding-top:112px; box-sizing: border-box;}
+#bannerBox{height: auto;}
   #bannerBox>h2{width: 142px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:33px;}
-  .banner_bigBox{width: 100%; height: 100%;}  
-  .banner_mp4{width: 361px; height: 299px;margin:auto; margin-bottom:74px; }
-  .banner_view{position: relative;
+  .banner_bigBox{width: 100%; height: auto;}  
+  .media2{min-height: 100%;}
+  .media2>video{width: 100%; height: auto; }
+
+  .banner_view{position: relative; /*top:-500px;*/
     width: 100%; height: 326px; background-color: #fff; overflow: hidden;}
     .banner_img{width: 598px; height: 217px; background-color: #aca; margin-bottom: 47px;}
     .banner_img>div{float:left; width: 127px; height:100%; 
@@ -65,8 +67,8 @@
     .indicator>ul>li>a:focus{background-color: #ccc;}
 
 /* #viewBox ----------------------------------------- */
-#viewBox{height: 400px;/* max-width:479px;*/}
-.veiw{background-size: contain;}
+#viewBox{height:600px;/* max-width:479px;*/ margin-top:calc(100% - 923px); }
+.veiw{width: 100%; height: 50%;  background-size: contain; min-width: 100vw;}
 
 
 
