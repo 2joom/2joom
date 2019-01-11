@@ -36,22 +36,23 @@
 #mainBox{height:908px;}
 .main_video>video{left: 50%; transform: translateX(-50%); width: 100vw; height: auto; background-size: contain;}
 
-/* #bannerBox ------------------------------------------------ */
+/* #menuBox ------------------------------------------------ */
 #menuBox{height: 1095px; padding: 6rem 0rem; box-sizing: border-box;}
-  .menu_big{margin: auto; width: 80%; height: auto; background-color: #666}
+  .menu_big{margin: auto; width: 100%; height: auto; background-color: #666; transform: translateY(0);}
   .menu_big>div{width:100%; height: 209px; margin-bottom: 20px;}
 
-  .view_01{float: left; width: 25%; height: 100%; background-color: #dbd9d6;}
-  .view_02{float: left; width: 72%; height: 100%; background-color: #009444;}
-  .menu_big>div:nth-of-type(2n) .view_01{float: right;}
-  .menu_big>div:nth-of-type(2n-1) .view_01{margin-right: 3%;}
+  .view_01{float: left; width: 45%; height: 100%; background-color: #dbd9d6;}
+  .view_02{float: left; width: 55%; height: 100%; background-color: #009444;}
+  /*.menu_big>div:nth-of-type(2n) .view_01{float: right;}*/
+  /*.menu_big>div:nth-of-type(2n-1) .view_01{margin-right: 3%;}*/
 
 /* #bannerBox ------------------------------------------------ */
 #bannerBox{height: auto; padding-top: 10px; box-sizing: border-box;}
   #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px;}
   .banner_bigBox{width: 100%; height: 100%;}  
-  .banner_view{position: relative;
-    width: 100%; height:360px; overflow: hidden;}
+  .media2{float: left; width:50%;}
+
+  .banner_view{float:right; width: 100%; height:360px; overflow: hidden;}
     .banner_img{width:100%; height: 100%;}
     .banner_img>div{float:left; width: 22%; height:100%; 
       margin-right:4%; background-color: #dbd9d6;}
@@ -59,7 +60,8 @@
     .indicator{display: none;}
 
  /* #viewBox---------------------------------------- */
-
+#bannerBox+#viewBox{height:500px;}
+.view{top:0; left:0; width:auto; height: auto; min-width: 100%; min-height: 100%; transform: translate(0); background-size:100%;}
     
 
 /* #artBox ------------------------------------------------ */
@@ -69,6 +71,7 @@
   .art_box>div{float:left; width: 30%; height: 222px; background-color: #dbd9d6; margin-left:2.5%; margin-bottom:3%;}
   .art_box>div:nth-child(5){margin-bottom:0;}
   .art_box>div:nth-child(6){margin-bottom:0;}
+  .art05,.art06{display: block;}
   .art07,.art08,.art09,.art010{display: none;}
 
 /* #footBox ------------------------------------------------ */

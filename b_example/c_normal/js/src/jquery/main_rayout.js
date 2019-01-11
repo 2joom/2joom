@@ -20,6 +20,10 @@ var headOffset = headBox.offset().top;
 
   });
 
+  $('.container:before').css({backgroundColor:'#fa0'});
+  $('.container:after').css({backgroundColor:'#fa0'});
+
+
 
 
 

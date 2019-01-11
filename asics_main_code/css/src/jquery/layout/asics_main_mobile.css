@@ -26,7 +26,7 @@
 
 /* #menuBox----------------------------------------- */
 #menuBox{height: 654px;} 
-  .menu_big{position:absolute; top:50%; margin-top:-250px; width: 100%; height: 500px; line-height: 92px; }
+  .menu_big{width: 100%; height: 500px; line-height: 92px; }
     .menu_go{float:left; width: 100%; height: 110px; margin-bottom:10px;}
     .menu_go:last-child{margin-bottom: 0;}
 
@@ -47,28 +47,22 @@
 
 /* #bannerBox ----------------------------------------- */
 #bannerBox{height: auto;}
-  #bannerBox>h2{width: 142px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:33px;}
+  #bannerBox>.ban_h2{width: 152px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:33px;}
   .banner_bigBox{width: 100%; height: auto;}  
-  .media2{min-height: 100%;}
   .media2>video{width: 100%; height: auto; }
+  
+  .banner_img{width: atuo;}
+  .banner_view>.banner_img>div{height: 150px;}
 
-  .banner_view{position: relative; /*top:-500px;*/
-    width: 100%; height: 326px; background-color: #fff; overflow: hidden;}
-    .banner_img{width: 598px; height: 217px; background-color: #aca; margin-bottom: 47px;}
-    .banner_img>div{float:left; width: 127px; height:100%; 
-      margin-right:30px; background-color: #dbd9d6;}
-    .banner_img>div:last-child{margin-right: 0;}
-    .indicator{position:absolute; left:50%; margin-left:-106px; bottom:1rem; width: 212px; height: 38px; background-color:transparent;}
-    .indicator>ul{width: 100%; height: 100%;}
-    .indicator>ul>li{float:left; width: 38px; height: 38px; margin-right: 19px; }
-    .indicator>ul>li:last-child{margin-right:0;}
-    .indicator>ul>li>a{border-radius:50%; background-color: #faa;}
-    .indicator>ul>li>a:hover,
-    .indicator>ul>li>a:focus{background-color: #ccc;}
+  .banner_img+.indicator{width: 40%; height:30px; margin: auto;}
+  .banner_img+.indicator li{margin-right: 0.5rem;}
+
+
 
 /* #viewBox ----------------------------------------- */
-#viewBox{height:600px;/* max-width:479px;*/ margin-top:calc(100% - 923px); }
-.veiw{width: 100%; height: 50%;  background-size: contain; min-width: 100vw;}
+#bannerBox+#viewBox{height:500px;}
+.view{transform: translate(-50% , -25%);}
+
 
 
 

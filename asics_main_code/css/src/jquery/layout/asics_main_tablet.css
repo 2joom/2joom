@@ -3,7 +3,7 @@
 
 
 /* tablet start */
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){ 
   #headBg{height: 35px;}
   #headerBox{top:35px; height: 55px; line-height:55px; }
     .logo{margin-left:1rem; width: 107px; height: 54px; background-size:100%;}
@@ -36,27 +36,21 @@
 
 
 /* #bannerBox ----------------------------------------- */
-#bannerBox{height: 30rem; padding-top: 30px; box-sizing: border-box;}
+#bannerBox{height: auto; padding-top: 30px; box-sizing: border-box;}
   #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
   .banner_bigBox{width: auto; height: 100%;}  
-  .media2{width: 100%; height: auto;  min-height: 100vw; }
-  /*.media2>video{top:50%; left:50%; width:100%; height: auto;}*/
+  .media2{width: 100%; height: auto; overflow: hidden;}
+  .media2>video{width: 100%; height: auto; min-height: 100%;}
 
-  .banner_view{position:absolute; top:30rem; width: 100%; height: 498px; overflow-x: hidden;}
-    .banner_img{width: 931px; height: 349px;}
-    .banner_img>div{float:left; width: 204px; height:100%; 
-      margin-right:30px; background-color: #dbd9d6;}
-    .banner_img>div:last-child{margin-right: 0;}
-    .indicator{position:absolute; left:50%; margin-left:-106px; bottom:1px; width: 285px; height: 51px; background-color: transparent;}
-    .indicator>ul{width: 100%; height: 100%;}
-    .indicator>ul>li{float:left; width: 51px; height: 100%; margin-right: 26px;}
-    .indicator>ul>li:last-child{margin-right: 0;}
-    .indicator>ul>li>a{width: 52px; height: 52px; border-radius: 50%; background-color: #faa;}
-    .indicator>ul>li>a:hover,
-    .indicator>ul>li>a:focus{background-color: #ccc;}
+  .banner_img{width: 150%;}
+  .banner_img>div{height: 400px;}
+
+  .indicator{height:50px; margin: auto;}
+  .indicator li{margin-right: 0.85rem; } 
 
 /* #viewBox ----------------------------------------- */
-#viewBox{height: 600px; max-height:960px; }
+#viewBox{height: 900px;}
+.view{width: 100%;/* top:0; */height: auto; min-height: 100%; transform: translate(-50% , -25%);}
 
 
 
