@@ -58,14 +58,15 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     .menu_go{width: 100%; margin-bottom:10px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
 
     .view_01{float:left; width: 50%; height: 100%;}
-    .view_01>a{width: 100%; height: 100%; font-weight: bolder; color:#001e62; text-transform: capitalize;}
+    .view_01>a{position:relative; display: block; width: 100%; height: 100%; text-align: center; line-height: 1.1; font-size: 2.75rem; font-weight: bold; color:#001e62; text-transform: capitalize;}
+    .view_01>a>p{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto;}
+
     .view_02{float:right; width: 50%; height: 100%;}
 
 .menu_img01{background-image: url("../../../../img/img_psd/men_img.png"); background-repeat: no-repeat;}
 .menu_img02{background-image: url("../../../../img/img_psd/women_img.png"); background-repeat: no-repeat;}
 .menu_img03{background-image: url("../../../../img/img_psd/kids_img.png"); background-repeat: no-repeat;}
 .menu_img04{background-image: url("../../../../img/img_psd/wa.png"); background-repeat: no-repeat;}
-
 
 
 
@@ -78,9 +79,14 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
   .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
 
     .banner_img{height: auto; background-color: #aca; margin-bottom:2rem;}
-    .banner_img>div{float:left; width: 20%; height:100%; 
-      margin-right:2rem; background-color: #dbd9d6;}
+    .banner_img>div{float:left; margin-right:2rem;  width: 20%; height:100%; background-repeat: no-repeat; 
+       background-color: #dbd9d6; box-shadow:( 0.1rem 0.1rem 0.1rem 0.5);}
     .banner_img>div:last-child{margin-right: 0;}
+
+    .banner01{background-image: url("../../../../img/img_psd/Background copy.png"); }
+    .banner02{background-image: url("../../../../img/img_psd/pants.png"); }
+    .banner03{background-image: url("../../../../img/img_psd/outer.png"); }
+    .banner04{background-image: url("../../../../img/img_psd/shoes.png"); }
 
     .indicator{width: 30%; bottom:1rem; background-color:transparent;}
     .indicator>ul{width: 100%; height: 100%;}
@@ -104,9 +110,16 @@ background-size:  contain;}
 
 
 
- /* #artBox---------------------------------------- 
+  /*#artBox---------------------------------------- */
 #artBox{width: 100%; height: 100%; background-color: #939598;}
-
+.art01{background-image: url("../../../../img/img_psd/");}
+.art02{background-image: url("../../../../img/img_psd/");}
+.art03{background-image: url("../../../../img/img_psd/");}
+.art04{background-image: url("../../../../img/img_psd/");}
+.art05{background-image: url("../../../../img/img_psd/");}
+.art06{background-image: url("../../../../img/img_psd/");}
+.art07{background-image: url("../../../../img/img_psd/");}
+.art08{background-image: url("../../../../img/img_psd/");}
 
 /* #footBox---------------------------------------- */
 #footBox{width: 100%; height: 100%; background-color: #bcbec0;}

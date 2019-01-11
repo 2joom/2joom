@@ -34,13 +34,11 @@
     .view_02{float:right; width:50%; background-color: #fff;}
 
     .menu_txt02,.menu_txt04{float:right;}
-    .w_a{position: relative; width: 100%; height:auto; font-size:2rem; line-height: 120%; text-align:center;}
-    .w_a p{position: absolute; left:0; top:50%; transform:translateY(-50%); display: block; width: 100%; height:auto; font-size:2.5rem; text-align:center;}
 
-    .menu_img01{background-position: 0 2px; background-size: contain;}
-    .menu_img02{background-position: 0 2px; background-size: contain;}
-    .menu_img03{background-position: 20px 2px; background-size: contain;}
-    .menu_img04{background-position: center; background-size: contain;}
+    .menu_go>.menu_img01{background-position: 0 40px; background-size: 115%;}
+    .menu_go>.menu_img02{background-position: 0 40px; background-size: 110%;}
+    .menu_go>.menu_img03{background-position: 0 20px; background-size: contain;}
+    .menu_go>.menu_img04{background-position: center; background-size: 80%;}
     /*.view_01:nth-of-type(2){float:right;}*/
     /*.view_02:nth-of-type(2){float:left;}*/
 
@@ -56,6 +54,11 @@
 
   .banner_img+.indicator{width: 40%; height:30px; margin: auto;}
   .banner_img+.indicator li{margin-right: 0.5rem;}
+
+  .banner01{background-position: center; background-size: 155%;}
+  .banner02{background-position: center; background-size: 100%;}
+  .banner03{background-position: center; background-size: 130%;}
+  .banner04{background-position: center; background-size: 100%;}
 
 
 
