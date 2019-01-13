@@ -79,8 +79,11 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
   .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
 
     .banner_img{height: auto; background-color: #aca; margin-bottom:2rem;}
-    .banner_img>div{float:left; margin-right:2rem;  width: 20%; height:100%; background-repeat: no-repeat; 
-       background-color: #dbd9d6; box-shadow:( 0.1rem 0.1rem 0.1rem 0.5);}
+    .banner_img>div{float:left; margin-right:1rem;
+      width: 20%; height:100%;
+      background-repeat: no-repeat; 
+      background-color: #dbd9d6; 
+      /*box-shadow:{0 1rem 1rem rgba(23,23,23,0.5);*/}
     .banner_img>div:last-child{margin-right: 0;}
 
     .banner01{background-image: url("../../../../img/img_psd/Background copy.png"); }
@@ -111,15 +114,16 @@ background-size:  contain;}
 
 
   /*#artBox---------------------------------------- */
-#artBox{width: 100%; height: 100%; background-color: #939598;}
-.art01{background-image: url("../../../../img/img_psd/");}
-.art02{background-image: url("../../../../img/img_psd/");}
-.art03{background-image: url("../../../../img/img_psd/");}
-.art04{background-image: url("../../../../img/img_psd/");}
-.art05{background-image: url("../../../../img/img_psd/");}
-.art06{background-image: url("../../../../img/img_psd/");}
-.art07{background-image: url("../../../../img/img_psd/");}
-.art08{background-image: url("../../../../img/img_psd/");}
+#artBox{width: 100%; height: 100%; background-color: #fff;}
+.art_box>div{background-repeat: no-repeat; background-size: contain; background-size:#111;}
+.art01{background-image: url("../../../../img/img_psd/img1.png");}
+.art02{background-image: url("../../../../img/img_psd/img2.png");}
+.art03{background-image: url("../../../../img/img_psd/img3.png");}
+.art04{background-image: url("../../../../img/img_psd/img4.png");}
+.art05{background-image: url("../../../../img/img_psd/img5.png");}
+.art06{background-image: url("../../../../img/img_psd/img6.png");}
+.art07{background-image: url("../../../../img/img_psd/IMG_6376.png");}
+.art08{background-image: url("../../../../img/img_psd/img_.png");}
 
 /* #footBox---------------------------------------- */
 #footBox{width: 100%; height: 100%; background-color: #bcbec0;}

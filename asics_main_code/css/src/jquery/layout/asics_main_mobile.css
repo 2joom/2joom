@@ -45,7 +45,7 @@
 
 /* #bannerBox ----------------------------------------- */
 #bannerBox{height: auto;}
-  #bannerBox>.ban_h2{width: 152px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:33px;}
+  #bannerBox>.ban_h2{width: 152px; height: 31px; margin:auto; margin-bottom:33px;}
   .banner_bigBox{width: 100%; height: auto;}  
   .media2>video{width: 100%; height: auto; }
   
@@ -55,9 +55,9 @@
   .banner_img+.indicator{width: 40%; height:30px; margin: auto;}
   .banner_img+.indicator li{margin-right: 0.5rem;}
 
-  .banner01{background-position: center; background-size: 155%;}
+  .banner01{background-position: center; background-size: 175%;}
   .banner02{background-position: center; background-size: 100%;}
-  .banner03{background-position: center; background-size: 130%;}
+  .banner03{background-position: center; background-size: 150%;}
   .banner04{background-position: center; background-size: 100%;}
 
 
@@ -72,9 +72,13 @@
 
 /* #artBox ----------------------------------------- */
 #artBox{height: 609px; padding-top:32px; box-sizing: border-box; }
-  #artBox>h2{width: 142px; height: 31px; background-color: #ffce00; margin:auto; margin-bottom:35px;}
+  #artBox>h2{width: 142px; height: 31px; margin:auto; margin-bottom:35px;}
   .art_box{width: 100%; height: 482px; margin:auto;}
-  .art_box>div{float:left; width: 48%; height: 206px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div{float:left; width: 48%; height: 206px; margin-left:1%; margin-bottom:1%; background-size: 120%;}
+  
+  .art_box>.art01,
+  .art_box>.art03{background-position:-35px 0; background-size: 151%;}
+
   .art_box>div:nth-child(2){margin-bottom:0;}
   .art_box>div:last-child{margin-bottom:0;}
   .art05,.art06,.art07,.art08,.art09,.art010{display: none;}

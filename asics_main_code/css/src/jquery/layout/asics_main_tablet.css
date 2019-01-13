@@ -37,7 +37,7 @@
 
 /* #bannerBox ----------------------------------------- */
 #bannerBox{height: auto; padding-top: 30px; box-sizing: border-box;}
-  #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
+  #bannerBox>h2{width: 229px; height: 49px;  margin:auto; margin-bottom: 33px; font-size: 2rem;}
   .banner_bigBox{width: auto; height: 100%;}  
   .media2{width: 100%; height: auto; overflow: hidden;}
   .media2>video{width: 100%; height: auto; min-height: 100%;}
@@ -56,7 +56,7 @@
 
 /* #artBox ----------------------------------------- */
 #artBox{height: 761px; padding-top:105px; box-sizing: border-box; }
- #artBox>h2{width: 228px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px; font-size: 23px;}
+ #artBox>h2{width: 228px; height: 49px;  margin:auto; margin-bottom: 33px; font-size: 2rem;}
   .art_box{width: 100%; height: 471px; margin:auto;}
   .art_box>div{float:left; width: 48%; height: 231px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
   .art_box>div:nth-child(5){margin-bottom:0;}
@@ -65,7 +65,7 @@
   
 /* #footBox ----------------------------------------- */
 #footBox{height: 579px; padding-top:37px; box-sizing:border-box;}
-  #footBox>h2{width: 121px; height: 51px; background-color:#FFCE00; margin:auto; margin-bottom: 47px; font-size: 23px;}
+  #footBox>h2{width: 121px; height: 51px;  margin:auto; margin-bottom: 47px; font-size: 2rem}
   #footBox01{width: 100%; height: 49px; margin:auto;}
   #footBox01>div{float:left; width: 30%; height:100%; background-color: #009444; margin-right:5%;}
   #footBox01>div:last-child{margin-right: 0;}
