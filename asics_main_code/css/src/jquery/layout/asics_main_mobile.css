@@ -26,7 +26,7 @@
 
 /* #menuBox----------------------------------------- */
 #menuBox{height: 654px;} 
-  .menu_big{width: 100%; height: 500px; line-height: 92px; }
+  .menu_big{width: 100%; height: 500px; line-height: 92px;}
     .menu_go{float:left; width: 100%; height: 110px; margin-bottom:10px;}
     .menu_go:last-child{margin-bottom: 0;}
 
@@ -49,16 +49,17 @@
   .banner_bigBox{width: 100%; height: auto;}  
   .media2>video{width: 100%; height: auto; }
   
-  .banner_img{width: atuo;}
-  .banner_view>.banner_img>div{height: 150px;}
-
-  .banner_img+.indicator{width: 40%; height:30px; margin: auto;}
-  .banner_img+.indicator li{margin-right: 0.5rem;}
+  .banner_img{width: auto;}
+  .banner_view>.banner_img>div{display: inline; float:left; width: 50%; height: 150px;}
 
   .banner01{background-position: center; background-size: 175%;}
   .banner02{background-position: center; background-size: 100%;}
   .banner03{background-position: center; background-size: 150%;}
   .banner04{background-position: center; background-size: 100%;}
+
+  .banner_img+.indicator{width: 40%; height:30px; margin: auto;}
+  .banner_img+.indicator li{margin-right: 0.5rem;}
+
 
 
 

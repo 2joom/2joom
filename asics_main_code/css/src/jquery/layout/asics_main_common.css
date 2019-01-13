@@ -54,7 +54,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #menuBox---------------------------------------- */
 #menuBox{position:relative; width:100%; height:100%; background-color: #001e62;}
-  .menu_big{transform: translateY(-50%;); width: 100%; height: auto;}
+  .menu_big{position: absolute; top:50%; transform: translateY(-50%); width: 100%; height: auto;}
     .menu_go{width: 100%; margin-bottom:10px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
 
     .view_01{float:left; width: 50%; height: 100%;}
@@ -78,9 +78,9 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
   .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
 
-    .banner_img{height: auto; background-color: #aca; margin-bottom:2rem;}
+    .banner_img{width:210%; height: 100%; background-color: #aca; margin-bottom:2rem;}
     .banner_img>div{float:left; margin-right:1rem;
-      width: 20%; height:100%;
+      width: 30%; height:100%;
       background-repeat: no-repeat; 
       background-color: #dbd9d6; 
       /*box-shadow:{0 1rem 1rem rgba(23,23,23,0.5);*/}
