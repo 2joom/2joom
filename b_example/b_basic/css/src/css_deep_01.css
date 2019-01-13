@@ -107,8 +107,8 @@ box-shadow:x축 y축 blur offset color inset;
 /* ratoate는 아무것도 입력하지 않은상태가 rotateZ축을 기준으로 한다. */
 .option_3>ul>li:nth-child(6):hover{transform:skewX(45deg);}
 .option_3>ul>li:nth-child(6):hover>div{transform:skewX(-45deg);}
-.option_3>ul>li:nth-child(7):hover{transform:skewY(45deg);}
-.option_3>ul>li:nth-child(7):hover>div{transform:skewY(-45deg);}
+.option_3>ul>li:nth-child(7){transform:skewY(45deg);}
+.option_3>ul>li:nth-child(7)>div{transform:skewY(-45deg);}
 .option_3>ul>li:nth-child(8):hover>div{transform:scaleX(2);}
 .option_3>ul>li:nth-child(9):hover>div{transform:scale(0.5,2);}
 /* ratoate는 아무것도 입력하지 않은상태가 scaleX,Y축을 기준으로 한다.

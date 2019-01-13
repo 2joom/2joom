@@ -17,8 +17,10 @@
 
 /* #mainBox ----------------------------------------- */
 #mainBox{height:908px;}
-.main_video>video{left: 50%; transform: translateX(-50%); width: auto; height: 100%;}
-}
+.main_video>video{left: 50%; width: auto; height: 100%;
+  background-size:50%; transform: translate(-50% , 10%);}
+.main_btn button,
+.main_txt>p{font-size: 2.5rem;}
 
 /* #menuBox ----------------------------------------- */
 #menuBox{height: 1067px; }
@@ -46,7 +48,12 @@
   .banner_img>div{height: 400px;}
 
   .indicator{height:50px; margin: auto;}
-  .indicator li{margin-right: 0.85rem; } 
+  .indicator li{margin-right: 0.85rem;} 
+
+  .banner01{background-size:192%; background-position: center;}
+  .banner02{background-position: center;}
+  .banner03{background-position: center;}
+  .banner04{background-position: center;}
 
 /* #viewBox ----------------------------------------- */
 #viewBox{height: 900px;}
