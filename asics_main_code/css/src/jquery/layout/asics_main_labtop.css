@@ -38,17 +38,17 @@
 
 /* #menuBox ------------------------------------------------ */
 #menuBox{height: 1095px; padding: 6rem 0rem; box-sizing: border-box;}
-  .menu_big{margin: auto; width: 100%; height: auto; background-color: #666; transform: translateY(0);}
+  .menu_big{margin: auto; width: 100%; height: auto; }
   .menu_big>div{width:100%; height: 209px; margin-bottom: 20px;}
 
-  .view_01{float: left; width: 45%; height: 100%; background-color: #dbd9d6;}
-  .view_02{float: left; width: 55%; height: 100%; background-color: #009444;}
+  .view_01{float: left; width: 45%; height: 100%; }
+  .view_02{float: left; width: 55%; height: 100%; }
   .menu_big>div:nth-of-type(2n) .view_01{float: right;}
   /*.menu_big>div:nth-of-type(2n-1) .view_01{margin-right: 3%;}*/
 
 /* #bannerBox ------------------------------------------------ */
 #bannerBox{height: auto; padding-top: 10px; box-sizing: border-box;}
-  #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 33px;}
+  #bannerBox>h2{width: 229px; height: 49px; background-color: #ffce00; margin:auto; margin-bottom: 3px;}
   .banner_bigBox{width: 100%; height: 100%;}  
   .media2{float: left; width:50%;}
 
@@ -76,14 +76,14 @@
 
 /* #footBox ------------------------------------------------ */
 #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
-  #footBox>h2{width: 121px; height: 51px; background-color:#FFCE00; margin:auto; margin-bottom: 33px; font-size: 23px;}
+  /*#footBox>h2{width: 121px; height: 51px; background-color:#FFCE00; margin:auto; margin-bottom: 33px; font-size: 23px;}
   #footBox01{display: none;}
   #footBox02{width: 100%; height: 323px; margin-top: 2px;}
     .foot_box21{float: left; width:60%; height: 314px; margin:auto;}
     .foot_box21>div{width: 95%; height: 35px; background-color: #009444; margin:auto; margin-bottom: 15px;}
     .foot_box22{float:right; width: 40%; height: 77px; margin-top: 200px; }
     .foot_box22>div{float:right; border-radius: 50%; width:20%; height: 66px; background-color: #dbd9d6; margin-left:5%;}
-    .foot_box22>div:first-child{margin-right:30px;}
+    .foot_box22>div:first-child{margin-right:30px;}*/
 
 
 }

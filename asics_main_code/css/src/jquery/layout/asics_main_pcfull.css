@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* asics_main_pcfull.css */
+body{background-color: transparent;}
 
 
 /* pc full */
@@ -45,39 +46,27 @@
 
 /* #menuBox ------------------------------------------------------------- */
 #menuBox{height: 1200px;}
-  .menu_big{width: 100%; height: 900px; background-color: #666; transform: translateY(15%);}
+  .menu_big{width: 100%; height: 900px;}
   .menu_big>div{width:100%; height: 209px;  border-radius: 0;}
-  .view_01{float: left; width: 45%; height: 100%; background-color: #00c3e6;}
+  .view_01{float: left; width: 45%; height: 100%;}
   .view_01 p{font-size: 3.75rem}
-  .view_01 p:hover{height:200px; transition-property:all; transition-duration:1000ms;}
-  .view_02{float: left; width: 55%; height: 100%; background-color: #fff;}
+  
+  .view_02{float: left; width: 55%; height: 100%; background-color: transparent;}
   .menu_big>div:nth-of-type(2n) .view_01{float: right;}
-  /*.menu_big>div:nth-of-type(2n-1) .view_01{margin-right: 3%;}*/
-  .menu_img01{background-size: contain; background-position: center;}
+  .menu_img01{background-size: 50%; background-position: center;}
   .menu_img02{background-size: contain; background-position: center;}
   .menu_img03{background-size: contain; background-position: center;}
   .menu_img04{background-size: contain; background-position: center;}
-  .menu_txt01 p{
-  animation-name: menu_txt01;
-  animation-duration:3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function:ease-in;
-  /*animation-direction: alternate;*/
-  animation-fill-mode: both;
-}
-
-@keyframes menu_txt01 {
-  0%{transform:translate(0) rotate(0deg) scale(1); }
-  100%{transform:translate(30rem) rotate(720deg) scale(2);}
-}
-
-
-
+  
+  .menu_go>.menu_img02:hover,
+  .menu_go>.menu_img04:focus{transform:translateX(3rem);}
+  .menu_go>.menu_img01:hover,
+  .menu_go>.menu_img03:focus{transform:translateX(-3rem);}
 
 
 /* #bannerBox ------------------------------------------------------------- */
-#bannerBox{height: 1164px;}
-  #bannerBox>h2{width: 253px; height: 58px; background-color: transparent; margin:auto; margin-top: 100px; margin-bottom: 100px; font-size: 3rem;}
+#bannerBox{height: 1000px;}
+  #bannerBox>h2{width: 253px; height: 58px; background-color: transparent; margin:auto; margin-top: 100px; margin-bottom: 100px; font-size: 4rem;}
   .banner_bigBox{width: 100%; height:auto;  margin:auto; background-color: #ccc;}  
     .banner_bigBox>.media2{float:left; width:50%; height:500px; background-color: #fa0; overflow: hidden; min-width: auto;}
     .media2>video{width: auto; height: auto; min-height: 90%; min-width: 90%; transform:translate(-25% , -23%);}
@@ -85,55 +74,41 @@
     .banner_bigBox>.banner_view{float:right; width:50%; height: 500px; margin-top: 0;}
     .banner_img{width: 100%; height: 100%; margin-bottom: 0;}
     .banner_img>div{float:left; width: 47%; height:48%; margin-right: 0; margin-left: 0.7rem; margin-top: 0.5rem} 
+
+
+    .banner01{background-position: center; background-size: 100%; }
+    .banner02{background-position: center; background-size: 100%;}
+    .banner03{background-position: center; background-size: 100%;}
+    .banner04{background-position: center; background-size: 100%;}
     .indicator{display: none;}
 
-  ./*banner_view{float:right; width:50%; height:auto; background-color: #fff;}
-    .banner_img{width:91%; height: 100%; margin-left: 48px; margin-top: 34px;}
-    .banner_img>div{float:left; width: 43%; height:45%; 
-      margin-right:2%; margin-bottom:5%; background-color: #dbd9d6;}
-    .banner_img>div:nth-child(2n){margin-right: 0;}
-    .banner_img>div:nth-child(3n){margin-bottom: 0;}
-    .banner_img>div:nth-child(4n){margin-bottom: 0;}
-    .indicator{display: none;}*/
+  
 
 
  /* #viewBox---------------------------------------- */
-#bannerBox+#viewBox{height:500px;}
+#bannerBox+#viewBox{height:500px; margin-bottom: 300px;}
 .view{top:0; left:0; width:auto; height: auto; min-width: 100%; min-height: 100%; transform: translate(0); background-size:100%;}
 
 /* #artBox ------------------------------------------------------------- */
 #artBox{height: 698px; padding-top: 37px; box-sizing: border-box;}
-#artBox>h2{width: 252px; height: 58px; background-color:#FFCE00; margin:auto; margin-bottom: 47px;}
+#artBox>h2{width: 252px; height: 58px; margin:auto; margin-bottom: 100px; font-size:4rem;}
   .art_box{width: 100%; height:471px; margin:auto;}
-  .art_box>div{float:left; display: block; width: 24%; height: 210px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div{float:left; display: block; 
+    margin-left:1%; margin-bottom:1%;
+    width: 24%; height: 210px; 
+    background-color: #dbd9d6;
+    background-position: 0 -20px;
+    background-size: 100%;} 
   .art_box>div:nth-child(5){margin-bottom:1%;}
 
   .art_box>div:nth-child(6){margin-bottom:1%;}
 
-  /*.art_box>div:nth-of-type(2n-5){margin0;}*/
-  /*.art_box>div:nth-child(8){margin-bottom:0;}
-  .art_box>div:nth-child(9){margin-bottom:0;}
-  .art_box>div:nth-child(10){margin-bottom:0;}
-  .art_box>div:nth-child(11){margin-bottom:0;}
-  */
 
 
 
 /* #footBox ------------------------------------------------------------- */
 #footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
-  #footBox>h2{width: 171px; height: 60px; background-color:#FFCE00; margin:auto; margin-bottom: 47px;  font-size: 28px;}
-  #footBox01{width: 70%; height: 74px; margin:auto;}
-  #footBox01>div{float:left; width: 30%; height:100%; background-color: #009444; margin-right:5%;}
-  #footBox01>div:last-child{margin-right: 0;}
-  #footBox02{width: 80%; height: 264px; margin:auto; margin-top: 70px; }
-    .foot_box21{float: left; width:50%; height:351px; margin:auto; margin-left: 50px;}
-    .foot_box21>div{width: 90%; height: 29px; background-color: #009444; margin:auto; margin-bottom: 5%}
-    .foot_box22{float:right; width: 40%; height: 89px; margin-top: 250px;}
-    .foot_box22>div{float:left; border-radius: 50%; width:25%; height: 87px; background-color: #dbd9d6; margin-right:3%;}
-    .foot_box22>div:last-child{margin-bottom:0;}
- 
+  
 
 
-
-}
 /* pc full end */

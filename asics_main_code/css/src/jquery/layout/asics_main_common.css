@@ -55,22 +55,37 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 /* #menuBox---------------------------------------- */
 #menuBox{position:relative; width:100%; height:100%; background-color: #001e62;}
   .menu_big{position: absolute; top:50%; transform: translateY(-50%); width: 100%; height: auto;}
-    .menu_go{width: 100%; margin-bottom:10px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
+    .menu_go{width: 100%; margin-bottom:20px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
 
-    .view_01{float:left; width: 50%; height: 100%;}
+    .view_01{float:left; width: 40%; height: 100%;  background-color: #00c3e6;}
     .view_01>a{position:relative; display: block; width: 100%; height: 100%; text-align: center; line-height: 1.1; font-size: 2.75rem; font-weight: bold; color:#001e62; text-transform: capitalize;}
+
+/*.menu_txt01 p{
+  animation-name: menu_txt01;
+  animation-duration:3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes menu_txt01 {
+  0%{transform:translate(0) rotate(0deg) scale(1); }
+  100%{transform:translate(30rem) rotate(720deg) scale(2);}
+}*/
+
+
     .view_01>a>p{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto;}
 
-    .view_02{float:right; width: 50%; height: 100%;}
+    .view_02{float:right; width: 45%; height: 100%;}
 
 .menu_img01{background-image: url("../../../../img/img_psd/men_img.png"); background-repeat: no-repeat;}
 .menu_img02{background-image: url("../../../../img/img_psd/women_img.png"); background-repeat: no-repeat;}
 .menu_img03{background-image: url("../../../../img/img_psd/kids_img.png"); background-repeat: no-repeat;}
 .menu_img04{background-image: url("../../../../img/img_psd/wa.png"); background-repeat: no-repeat;}
 
-
-
-
+  
+ 
 /*# bannerBox---------------------------------------- */
 #bannerBox{position: relative; width: 100%; height: 100%; background-color: #fff;}
   .media2{ width: auto; min-width: 100%; height: auto;  overflow: hidden;}
@@ -78,9 +93,9 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
   .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
 
-    .banner_img{width:210%; height: 100%; background-color: #aca; margin-bottom:2rem;}
-    .banner_img>div{float:left; margin-right:1rem;
-      width: 30%; height:100%;
+    .banner_img{width:200%; height: 100%; background-color: #aca; margin-bottom:2rem;}
+    .banner_img>div{float:left; margin-right: 1%;
+      width: 24%; height:100%;
       background-repeat: no-repeat; 
       background-color: #dbd9d6; 
       /*box-shadow:{0 1rem 1rem rgba(23,23,23,0.5);*/}
@@ -89,7 +104,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     .banner01{background-image: url("../../../../img/img_psd/Background copy.png"); }
     .banner02{background-image: url("../../../../img/img_psd/pants.png"); }
     .banner03{background-image: url("../../../../img/img_psd/outer.png"); }
-    .banner04{background-image: url("../../../../img/img_psd/shoes.png"); }
+    .banner04{background-image: url("../../../../img/img_psd/Background copy.png"); }
 
     .indicator{width: 30%; bottom:1rem; background-color:transparent;}
     .indicator>ul{width: 100%; height: 100%;}
@@ -102,7 +117,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 
  /* #viewBox---------------------------------------- */
- #viewBox{position: relative; width: 100%; height: 100%; background-color: #a4c;}
+ #viewBox{position: relative; width: 100%; height: 100%;}
  .view{position: absolute; top:50%; left: 50%; 
   height: 100%; width: 100%;
   background-image: url("../../../../img/asics_img/view.jpg");
@@ -125,8 +140,10 @@ background-size:  contain;}
 .art07{background-image: url("../../../../img/img_psd/IMG_6376.png");}
 .art08{background-image: url("../../../../img/img_psd/img_.png");}
 
+
 /* #footBox---------------------------------------- */
 #footBox{width: 100%; height: 100%; background-color: #bcbec0;}
+dl{float:left;}
 
 
 
