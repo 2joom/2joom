@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* project01_common.css */
 
-/*body{overflow-x: hidden;}*/
+/*body{background-color: transparent;}*/
 
 #wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto;}
 h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: capitalize; }
@@ -23,8 +23,9 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
           .gnb>dl>dt{width: 100px; height: 33px; background-color:#001e62; color:#;}
           .gnb>dl>dd{width: 100px; height: 15px; }
           .gnb>dl>dt span{color:#fff; font-weight: bolder;   text-transform: capitalize; font-size: 1.5rem;}
-          .gnb dt a{height: 33px; line-height: 33px;}
-          .gnb span{color:#111; font-weight: bold;}
+          .gnb dt a{width: 100%; height: 100%; position:relative; display: block; width: 100%; height: 100%; text-align: center; line-height: 1.1; font-size: 2.75}
+          .gnb dt a>span{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto;}
+          .gnb span{color:#111; font-weight: bold; }
 
           .w_a{position: relative; width: 100px; height:auto;}
 
@@ -34,7 +35,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #mainBox---------------------------------------- */
 #mainBox{width:100%; height:100%; background-color:transparent;}
-.main_big:before{content: " "; position: absolute; z-index: -1; display: block; width:100%; min-width:100%; background-color: #a00;}
+/*.main_big:before{content: " "; position: absolute; z-index: -1; display: block; width:100%; min-width:100%; background-color: #a00;}*/
 .main_big{width: 100%; height: 75%; background-color: #abb; margin-bottom: 2%;}
 .main_video{position: relative; width: auto; min-width: 100%; height: auto; min-height: 100%; overflow: hidden;}
 .main_video>video{position: absolute;}
@@ -86,14 +87,14 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
   
  
-/*# bannerBox---------------------------------------- */
+/* #bannerBox---------------------------------------- */
 #bannerBox{position: relative; width: 100%; height: 100%; background-color: #fff;}
   .media2{ width: auto; min-width: 100%; height: auto;  overflow: hidden;}
   .media2>video{width:100%; height:100%; }
 
   .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
 
-    .banner_img{width:200%; height: 100%; background-color: #aca; margin-bottom:2rem;}
+    .banner_img{width:120%; height: 100%; margin-bottom:2rem;}
     .banner_img>div{float:left; margin-right: 1%;
       width: 24%; height:100%;
       background-repeat: no-repeat; 
@@ -101,7 +102,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
       /*box-shadow:{0 1rem 1rem rgba(23,23,23,0.5);*/}
     .banner_img>div:last-child{margin-right: 0;}
 
-    .banner01{background-image: url("../../../../img/img_psd/Background copy.png"); }
+    .banner01{background-image: url("../../../../img/img_psd/Background.jpg"); }
     .banner02{background-image: url("../../../../img/img_psd/pants.png"); }
     .banner03{background-image: url("../../../../img/img_psd/outer.png"); }
     .banner04{background-image: url("../../../../img/img_psd/Background copy.png"); }
@@ -142,9 +143,43 @@ background-size:  contain;}
 
 
 /* #footBox---------------------------------------- */
-#footBox{width: 100%; height: 100%; background-color: #bcbec0;}
-dl{float:left;}
-dd{display: none;}
+#footBox{position: relative; z-index: -1; width: auto; min-width:100%; height: 100%; background-color:#00c3e6;}
+.foot_bg{position: absolute; top:0; left:0; display: block; width:100%; height:85%; background-color:#001e62;}
+.foot_bg>h2{width: 25%; height: 10%; margin-top: 1rem;
+  margin-top: 1rem; margin-left:35vw; margin-bottom: 2rem; 
+  background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 0; 
+  background-size: contain;}
+  
+
+#footBox01{float:left; width: 75%; height: 50%; margin-left:}
+#footBox01>dl{float:left;  width: 30%; height: 100%; margin-left: 1%;}
+#footBox01 dt{width: 100%; height: 20%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
+#footBox01 dd{border-radius: 3rem;}
+
+#footBox01 dl>dt>a{color:#fff; width: 100%; height: 100%; display: block; font-size: 2rem; font-weight: bold;}
+#footBox01 dl>dd>a{color:#001e62; background-color: #fff; width: 100%; height: 100%;}
+#footBox01 dd>a{display: none;}
+#footBox01 a{text-transform: capitalize;}
+
+#footBox01 dl:hover>dd>a,
+#footBox01 dl:focus>dd>a{display: block;}
+
+#footBox02{float:left; width: 25%; height:60%;}
+#footBox02 dl{float:right; width: 100%; height: 50%;}
+#footBox02 dt{width: 100%; height:40%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
+.foot_box04 dd{float:left; padding-top: 0.5rem; box-sizing: border-box; width: 30%; height: 60%; margin-left: 1%; }
+
+.foot_box04 dt>a{display: block; width: 100%; height: 100%; float: left; color:#fff; text-transform:uppercase; font-size: 2rem; font-weight: bold}
+.foot_box04 dd>a{display: block; width: 100%; height: 100%; float: left;}
+
+.foot_box04>dd:nth-of-type(1)>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/face.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+.foot_box04>dd:nth-of-type(2)>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/Layer 1.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+.foot_box04>dd:nth-of-type(3)>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/001-instagram.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+
+address{float:left; width: 80%; height: 20%; color:#fff; font-style: normal; text-align:justify; }
+address+p{float:left; width: 100%; height: 5%; font-size: 1rem;}
 
 
 

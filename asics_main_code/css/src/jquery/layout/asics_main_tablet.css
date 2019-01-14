@@ -25,7 +25,8 @@
 /* #menuBox ----------------------------------------- */
 #menuBox{height: 1067px; }
   .menu_big{width: 100%; height: 706px;  line-height: 150px; text-align: center;}
-  .menu_go{float:left; width: 100%; height: 23%; font-size: 3rem; margin-bottom:1.25%; border-radius:4rem;}
+  .menu_go{float:left; width: 100%; height: 23%; font-size: 3rem; margin-bottom:1.25%; border-radius:4rem; }
+  .menu_go>div{ background-color: #fff;}
 
   .menu_big>div:last-child{margin-right:0;}
   .menu_txt02,.menu_txt04{float:right;}
@@ -38,50 +39,51 @@
 
 
 /* #bannerBox ----------------------------------------- */
-#bannerBox{height: auto; padding-top: 30px; box-sizing: border-box;}
+#bannerBox{height: auto; margin-top: 80px; /*box-sizing: border-box;*/}
   #bannerBox>h2{width: 229px; height: 49px;  margin:auto; margin-bottom: 33px; font-size: 2rem;}
   .banner_bigBox{width: auto; height: 100%;}  
   .media2{width: 100%; height: auto; overflow: hidden;}
   .media2>video{width: 100%; height: auto; min-height: 100%;}
 
   .banner_img{width: 130%;}
-  .banner_img>div{height:800px;}
+  .banner_img>div{height:500px;}
 
-  .indicator{height:50px; margin: auto;}
-  .indicator li{margin-right: 0.85rem;} 
+  .indicator{width: 40%; height:30px; margin: auto; margin-left: 40vw;}
+  .indicator>ul>li{margin-right: 0.85rem; width: 10%; height: 30px;} 
 
-  .banner01{background-size:192%; background-position: center;}
-  .banner02{background-position: center;}
-  .banner03{background-position: center;}
-  .banner04{background-position: center;}
+  .banner01{background-size:225%; background-position: center;}
+  .banner02{background-size:192%; background-position: center;}
+  .banner03{background-size:250%; background-position: center;}
+  .banner04{background-size:250%; background-position: center;}
 
 /* #viewBox ----------------------------------------- */
-#viewBox{height: 900px;}
+#viewBox{height: 600px;}
 .view{width: 100%;/* top:0; */height: auto; min-height: 100%; transform: translate(-50% , -25%);}
 
 
 
 /* #artBox ----------------------------------------- */
-#artBox{height: 761px; padding-top:105px; box-sizing: border-box; }
+#artBox{height: 761px; padding:105px; box-sizing: border-box; }
  #artBox>h2{width: 228px; height: 49px;  margin:auto; margin-bottom: 33px; font-size: 2rem;}
   .art_box{width: 100%; height: 471px; margin:auto;}
-  .art_box>div{float:left; width: 48%; height: 231px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;}
+  .art_box>div{float:left; width: 48%; height: 231px; background-color: #dbd9d6; margin-left:1%; margin-bottom:1%;  background-position: 0 0; background-size: 100%;}
   .art_box>div:nth-child(5){margin-bottom:0;}
   .art_box>div:nth-child(6){margin-bottom:0;}
   .art05,.art06,.art07,.art08,.art09,.art010{display: none;}
   
 /* #footBox ----------------------------------------- */
-#footBox{height: 579px; padding-top:37px; box-sizing:border-box;}
-  /*#footBox>h2{width: 121px; height: 51px;  margin:auto; margin-bottom: 47px; font-size: 2rem}
-  #footBox01{width: 100%; height: 49px; margin:auto;}
-  #footBox01>div{float:left; width: 30%; height:100%; background-color: #009444; margin-right:5%;}
-  #footBox01>div:last-child{margin-right: 0;}
-  #footBox02{width: 100%; height: 258px; margin-top: 96px;}
-    .foot_box21{float: left; width: 55%; height: 258px; margin:auto;}
-    .foot_box21>div{width: 90%; height: 29px; background-color: #009444; margin:auto; margin-bottom: 5%}
-    .foot_box22{float:right; width:40%; height: 57px; margin-top: 201px;}
-    .foot_box22>div{float:left; border-radius: 50%; width: 59px; height: 57px; background-color: #dbd9d6; margin-right:5px;}
-    .foot_box22>div:last-child{margin-right:0;}*/
+#footBox{height: 379px; padding-top:37px; box-sizing:border-box;}
+  .foot_bg>h2{width: 25%; height: 10%; 
+  margin-top: 1rem; margin-left:45vw; margin-bottom: 1rem; 
+  background-position: 0 0; 
+  background-size: contain;}
+
+  .foot_bg dl>dt>a,
+  #footBox01 dl:hover>dd>a,
+  #footBox01 dl:focus>dd>a{font-size: 1.1rem;}
+
+  address{font-size: 0.8rem; text-indent: 0.3rem; width: 95%; }
+  .foot_bg .foot_p{font-size: 0.8rem; margin-top: 0.5rem;}
 
 
 }

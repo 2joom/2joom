@@ -9,10 +9,6 @@
 #headBox{position: absolute; bottom: 0; left: 0; z-index: 1000;
   width: 100%; height: 7.5rem; background-color:#fff; box-shadow: 0 0.5rem 0.5rem rgba(23,23,23,0.5);}
 
-
-
-
-
 /* 몽키 이미지 */
 #headBox>.container{position: relative;}
 #headBox>.container:before,
@@ -103,27 +99,11 @@ h1>a{background-image:url("../../../img/monfee/monfee_big_logo.png"); background
 #adBanner>.view_outer>ul{width: 500%; height: 100%;}
 #adBanner>.view_outer>ul>li{float:left; width:calc(100% / 5); height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;}
 
-#adBanner>.view_outer>ul>li:nth-child(1){background-image: url("../../../img/monfee/adBanner/slide_01.png");}
-#adBanner>.view_outer>ul>li:nth-child(2){background-image: url("../../../img/monfee/adBanner/slide_02.png");}
-#adBanner>.view_outer>ul>li:nth-child(3){background-image: url("../../../img/monfee/adBanner/slide_03.png");}
-#adBanner>.view_outer>ul>li:nth-child(4){background-image: url("../../../img/monfee/adBanner/slide_04.png");}
-#adBanner>.view_outer>ul>li:nth-child(5){background-image: url("../../../img/monfee/adBanner/slide_05.png");}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#adBanner>.view_outer>ul>li.ban_1{background-image: url("../../../img/monfee/adBanner/slide_01.png");}
+#adBanner>.view_outer>ul>li.ban_2{background-image: url("../../../img/monfee/adBanner/slide_02.png");}
+#adBanner>.view_outer>ul>li.ban_3{background-image: url("../../../img/monfee/adBanner/slide_03.png");}
+#adBanner>.view_outer>ul>li.ban_4{background-image: url("../../../img/monfee/adBanner/slide_04.png");}
+#adBanner>.view_outer>ul>li.ban_5{background-image: url("../../../img/monfee/adBanner/slide_05.png");}
 
 
 /* #bestNews ============================================ */

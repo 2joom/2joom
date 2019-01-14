@@ -53,9 +53,9 @@
   .banner_view>.banner_img>div{float:left; height: 150px;}
 
   .banner01{background-position: center; background-size: 175%;}
-  .banner02{background-position: center; background-size: 100%;}
-  .banner03{background-position: center; background-size: 150%;}
-  .banner04{background-position: center; background-size: 150%;}
+  .banner02{background-position: center; background-size: 115%;}
+  .banner03{background-position: center; background-size: 165%;}
+  .banner04{background-position: center; background-size: 158%;}
 
   .banner_img+.indicator{width: 40%; height:35px; margin: auto; margin-top: 3rem;}
   .banner_img+.indicator li{margin-right: 0.5rem;}
@@ -85,18 +85,18 @@
   .art05,.art06,.art07,.art08,.art09,.art010{display: none;}
 
 /* #footBox ----------------------------------------- */
-#footBox{height: 331px; padding-top:20px; box-sizing:border-box;}/*
-  #footBox>h2{width: 75px; height: 31px; background-color:#FFCE00; margin:auto; margin-bottom: 20px; font-size: 23px;}
-  #footBox01{width: 100%; height: 31px; margin:auto;}
-  #footBox01>div{float:left; width: 30%; height: 31px; background-color: #009444; margin-left:3%;}
-  #footBox01>div:first-child{margin-left: 0;}
-  #footBox02{width: 100%; height: 167px; margin-top: 42px;}
-    .foot_box21{float: left; width: 60%; height: 148px; margin:auto;}
-    .foot_box21>div{width: 95%; height: 16px; background-color: #009444; margin:auto; margin-bottom: 9px;}
-    .foot_box22{float:right; width: 30%; height: 30px; margin-top: 112px;}
-    .foot_box22>div{float:left; border-radius: 50%; width: 23%; height: 30px; background-color: #dbd9d6; margin-right:10%;}
-    .foot_box22>div:last-child{margin-right:0;}
-*/
+#footBox{height:265px; padding-top:20px; box-sizing:border-box;}
+  .foot_bg>h2{width: 25%; height: 10%; 
+  margin-top: 1rem; margin-left:40vw; margin-bottom: 1rem; 
+  background-position: 0 0; 
+  background-size: contain;}
+
+  .foot_bg dl>dt>a{font-size: 13px;}
+  #footBox01 dl:hover>dd>a,
+  #footBox01 dl:focus>dd>a{font-size: 13px;}
+
+  address{font-size: 0.3rem; text-indent: 0.3rem; width: 95%; }
+  #footBox p{font-size: 0.3rem; }
 }
 /* mob end */
 

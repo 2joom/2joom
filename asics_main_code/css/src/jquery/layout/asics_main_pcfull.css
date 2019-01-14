@@ -86,7 +86,7 @@ body{background-color: transparent;}
 
 
  /* #viewBox---------------------------------------- */
-#bannerBox+#viewBox{height:500px; margin-bottom: 300px;}
+#bannerBox+#viewBox{height:500px; margin-bottom: 100px;}
 .view{top:0; left:0; width:auto; height: auto; min-width: 100%; min-height: 100%; transform: translate(0); background-size:100%;}
 
 /* #artBox ------------------------------------------------------------- */
@@ -97,8 +97,9 @@ body{background-color: transparent;}
     margin-left:1%; margin-bottom:1%;
     width: 24%; height: 210px; 
     background-color: #dbd9d6;
-    background-position: 0 -20px;
-    background-size: 100%;} 
+    background-position: center;
+    background-size: 140%;}
+
   .art_box>div:nth-child(5){margin-bottom:1%;}
 
   .art_box>div:nth-child(6){margin-bottom:1%;}
@@ -108,7 +109,12 @@ body{background-color: transparent;}
 
 /* #footBox ------------------------------------------------------------- */
 #footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
-  
+.foot_bg>.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
+   margin-left:40vw; margin-bottom: 2rem; 
+  background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 0; 
+  background-size: contain;}
 
 
 /* pc full end */
