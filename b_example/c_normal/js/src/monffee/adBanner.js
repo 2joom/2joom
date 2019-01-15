@@ -72,40 +72,68 @@
   // });
 
   // 2차 기능처리
-  prevBtn.on('click',function(e){
-    e.preventDefault();
-    if(showI <= 0){
-      showI = -1;
-      viewBanner.css({ left: showI * -100 + '%'}); // css앞에 걸로 이동한다?
-      // 0.5초 뒤에 마지막 위치로 이동
-      //setTimeout(function(){},500); 0.5초 뒤에 이 함수를 실행하라
-      setTimeout(function(){
-        showI = len - 2; // 마지막 요서
-        viewBanner.css({ left: showI * -100 + '%', transition:'none'})
-        viewBanner.css({transition:'left 500ms ease'})
-      }, 1000);
-    }
-  });
+    prevBtn.on('click', function(e){
+      e.preventDefault();
+      if(showI <= 0){
+        showI = -1;
+        viewBanner.css({ left: showI * -100 + '%' });
+        console.log(showI);
+        // 0.5초 뒤에 마지막 위치로 이동
+        // setTimeout(function(){}, 500);
+        setTimeout(function () { 
+          showI = len - 2;
+          console.log(showI);
+          viewBanner.css({ left: showI * -100 + '%', transition:'none'});
+
+          setTimeout(function(){
+            viewBanner.css({ transition: 'left 500ms ease' });
+          },10);
+
+        }, 500);
+
+      }else{
+        showI -= 1;
+        SlideBanner(showI);
+      }
+    });
+
 
 
   // 인디케이터
-  // console.log( indiLi.length );
 
-  indiLi.on('click',function(e){
+  
+  indiLi.on('click',function(e) {
     e.preventDefault();
     showI = $(this).index();
     console.log(showI);
-
-    indiLi.removeClass('active');
-    indiLi.eq(showI).addClass('active');
+   
     SlideBanner(showI);
   });
 
   // 위 문제점: 전체를 순환하는 기능을 만들어야한다!
     // 왼버튼클릭시 showI -= 1 --> -1 이었던 아이를 leng-2의 수치로 변경하여, 해당위치로 이동하게 만들자!
+    // 일부 오류발생
 
   // 덤: 일정 시간마다 자동으로 순환하는 기능을 수행하게 만들자!
-  setInterval()
+  // setInterval(function(){}, 1000);  // 일정시간(1000)마다 동작하게 하는 함수
+  // clearInterval(function(){});  // setInterval을 강제로 멈추게(setInterval을 삭제)하는 함수
+
+  var movingSlide;
+
+  var startMove = function(){
+    movingSlide = setInterval(function(){
+      console.log('go!go!go!');
+      nextBtn.trigger('click');
+    }, 1000);
+  };
+
+  var stopMove = function(){
+    clearInterval( movingSlide );
+  };
+  
+  startMove();
+  banner.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
+
 
 
 
