@@ -24,72 +24,77 @@
 
 
 
-/* #menuBox----------------------------------------- */
-#menuBox{height: 654px;} 
-  .menu_big{width: 100%; height: 500px; line-height: 92px;}
-    .menu_go{float:left; width: 100%; height: 110px; margin-bottom:10px;}
-    .menu_go:last-child{margin-bottom: 0;}
+/* #bannerBox---------------------------------------- */
+#bannerBox{margin:100px 0; ;width: 100%; height:30rem; 
+  background-color:#001e62;} 
+  .ban_h2{width:35%; height:15%; margin: auto; margin-bottom: 1rem; background-color: transparent; color:#fff; line-height: 72px; font-size: 2rem;} 
+  .banner_big{margin-top:2rem; width: 100%; height:70%; background-color: transparent;}
+  .banner_big>div{float:left; margin-right:2%;
+    width: 49%; height: 100%; background-color: #a91;}
+  .banner_big>div:nth-of-type(2){margin-right: 0;}
 
-    .view_01>a{float:left; background-color: #fff; text-align:center; font-size: 2.2rem;}
-    .view_02{float:right; width:50%; background-color: #fff;}
+  .banner_01>a{background-position: center; background-size: 200%;}
+  .banner_02>a{background-position: center; background-size: 200%;}
 
-    .menu_txt02,.menu_txt04{float:right; margin-right:1rem;}
-
-    .menu_go>.menu_img01{background-position: 0 0; background-size: 95%;}
-    .menu_go>.menu_img02{background-position: 0 0; background-size: 95%;}
-    .menu_go>.menu_img03{background-position: 0 0; background-size: contain;}
-    .menu_go>.menu_img04{background-position: 0 0; background-size: contain;}
-    /*.view_01:nth-of-type(2){float:right;}*/
-    /*.view_02:nth-of-type(2){float:left;}*/
-
-
-/* #bannerBox ----------------------------------------- */
-#bannerBox{height: auto; margin-bottom: 100px;}
-  #bannerBox>.ban_h2{width: 152px; height: 31px; margin:auto; margin-bottom:33px; margin-top: 33px;}
-  .banner_bigBox{width: 100%; height: auto;}  
-  .media2>video{width: 100%; height: auto; }
+  .banner_big>div>a>span{top:50%; left:50%;
+    transform: translate(-50%,-50%); 
+    font-weight: bold; font-size: 1.5rem;}
   
-  .banner_img{width: 150%;}
-  .banner_view>.banner_img>div{width: 23%; margin-right: 2%; float:left; height: 150px;}
-  .banner_view>.banner_img>div>a{box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
+  .banner_big>div:nth-of-type(3){display: none;}
+ 
+/* #bestBox---------------------------------------- */
+#bestBox{width: 100%; height:40rem; margin:100px 0;  background-color:#fff; }  
+  .best_h2{margin:auto; margin-bottom: 33px; 
+    width: 285px; height: 52px; font-size: 2rem; background-color: transparent; color:#001e62;}
+  .best_big{margin: auto; width: 90%; height: 80%; background-color: transparent;}
+  .best{float:left; margin: 0; margin-bottom:3%; 
+    width: 100%; height: 49%; background-color: transparent;}
+  .best:nth-child(2){margin-bottom: 0;}
 
-  .banner01>a{background-position: center; background-size: 175%;}
-  .banner02>a{background-position: center; background-size: 115%;}
-  .banner03>a{background-position: center; background-size: 165%;}
-  .banner04>a{background-position: center; background-size: 158%;}
+  .best>div:nth-child(1){width: 100%; height: 80%; background-color: transparent;}
+  .best>div:nth-child(2){width: 100%; height: 10%; background-color: transparent; text-transform: uppercase;}
+  .best>div:nth-child(3){width: 100%; height: 10%; 
+    background-color: transparent;}
 
-  .banner_img+.indicator{width: 40%; height:30px; margin: auto; margin-top: 3rem;}
-  .banner_img+.indicator li{margin-right: 0.5rem;}
+  .best>div a{display: block; width: 100%; height: 100%; text-indent: 0;}
+  .best_name>a>span{display: block; width: 100%; height: 100%; text-indent: 0.5rem; line-height: 25px; text-align: left; color:#001e62; font-weight: bold;}
+  .best_price>a>span{display: block; width: 100%; height: 100%; text-indent: 0.5rem; line-height: 25px; text-align: left; color:#001e62; font-weight: bold;}
+
+  .best_img01>a{
+    background-position: center; 
+    background-size: 140%;}
+  .best_img02>a{
+    background-position: center; 
+    background-size: 120%;}
+
+  .best03,.best04,.best05,.best06,.best07,.best08,.best09{display: none;}
+
+
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 20rem; margin-bottom: 10rem;}
+ .view{height: 100%; width: 100%; background-color: transparent;}
+ .view>a{background-position: center; background-size:120%; background-color: transparent;}
 
 
 
+/* #sportBox---------------------------------------- */
+  #sportBox{width: 100%; height:30rem; background-color:transparent; }  
+    .sport_h2{margin: auto; margin-bottom: 5%;
+      width:28%; height:15%; font-size: 2rem;
+      background-color: transparent; line-height: 72px;} 
+  .sport_big{width: 100%; height:70%; margin-bottom: 10%; background-color: transparent;}
+  .sport_big>div{float:left; margin-right:2%;
+    width: 32%; height: 100%; background-color: transparent;}
+  .sport_img03:last-child{margin-right: 0;}
+  .sport_img01>a{background-position: center; background-size: 270%;}
+  .sport_img02>a{background-position: center; background-size: 270%;}
+  .sport_img03>a{background-position: center; background-size: 270%;}
 
-/* #viewBox ----------------------------------------- */
-#bannerBox+#viewBox{height:300px;}
-.view{transform: translate(-50% , -25%);}
-
-
-
-
-
-/* #artBox ----------------------------------------- */
-#artBox{height: 609px; padding-top:32px; box-sizing: border-box; }
-  #artBox>.art_h2{width: 142px; height: 31px; margin:auto; margin-bottom:35px; font-size: 1.5rem}
-  .art_box{width: 100%; height: 482px; margin:auto;}
-  h2+.art_box>div{float:left; width: 48%; height: 206px; margin-left:1%; margin-bottom:1%; background-size: 110%;}
-  
-  .art_box>.art01,
-  .art_box>.art03{background-position:-50px 0; background-size: 151%;}
-
-  .art_box>div:nth-child(2){margin-bottom:0;}
-  .art_box>div:last-child{margin-bottom:0;}
-  h2+.art_box>.art05,
-  h2+.art_box>.art06,
-  h2+.art_box>.art07,
-  h2+.art_box>.art08{display: none;}
+  .sport_big>div>a>span{bottom: 0.5rem; left:0.5rem; 
+    color:#fff; font-weight: bold; font-size: 1.5rem;}
 
 /* #footBox ----------------------------------------- */
-#artBox+#footBox{height:265px; padding-top:20px; box-sizing:border-box;}
+#footBox{height:165px; padding-top:20px; box-sizing:border-box;}
   .foot_bg>.art_h2{width: 25%; height: 10%; 
   margin-top: 1rem; margin-left:40vw; margin-bottom: 1rem; 
   background-position: 0 0; 
