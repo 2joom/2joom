@@ -12,26 +12,29 @@
   var headBox = $('#headBox');
   headBox.load(allUrl + 'header.html'); //불러오는 메소드 load();
 
-  // 파일을 불러오는 두번째 방법!!^_^
-  // var link = function(file, url, fileName){
-  //   // if(file){ var f = file; }else{ var f = 'header'; }
-  //   // 파일명의 이름을 가지면 file 아니며 header가되라
-  //   var f = file      || 'header'; 
-  //   var u = url       || allUrl;
-  //   var fn = fileName || '.html';
+  //파일을 불러오는 두번째 방법!!^_^
+  var link = function(file, url, fileName){
+    // if(file){ var f = file; }else{ var f = 'header'; }
+    // 파일명의 이름을 가지면 file 아니며 header가되라
+    var f = file      || 'header'; 
+    var u = url       || allUrl;
+    var fn = fileName || '.html';
 
-  //   var result = u+f+fn;
-  //   return result;
-  // };
-  //   var a = link('sunhyun') ; 
-  //   //ㅋㅋㅋㅋㅋ항시 result먼저 쓰고 console.log
-  //   console.log(a);
+    var result = u+f+fn;
+    console.log(result);
+    return result;
+  };
 
 // 2. section#adBanner를 생성하여 불러오기
 headBox.after('<section id="adBanner"></section>');
 var adBanner = $('#adBanner');
 var mainUrl = './main/';
 adBanner.load(mainUrl + 'adBanner.html');
+
+// news.html 생성하기
+  var bestNews = $('#bestNews');
+  bestNews.children('h2').after('<div class="news"></div>');
+  $('.news').load(link('news',mainUrl));
 
 
 

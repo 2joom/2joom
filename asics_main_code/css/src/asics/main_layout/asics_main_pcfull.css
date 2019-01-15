@@ -67,31 +67,31 @@ body{background-color: transparent;}
 /* #bannerBox ------------------------------------------------------------- */
 #bannerBox{height: 1000px;}
   #bannerBox>h2{width: 253px; height: 58px; background-color: transparent; margin:auto; margin-top: 100px; margin-bottom: 100px; font-size: 4rem;}
-  .banner_bigBox{width: 100%; height:auto;  margin:auto; background-color: #ccc;}  
+  .banner_bigBox{width: 100%; height:auto;  margin:auto; }  
     .banner_bigBox>.media2{float:left; width:50%; height:500px; background-color: #fa0; overflow: hidden; min-width: auto;}
     .media2>video{width: auto; height: auto; min-height: 90%; min-width: 90%; transform:translate(-25% , -23%);}
 
     .banner_bigBox>.banner_view{float:right; width:50%; height: 500px; margin-top: 0;}
     .banner_img{width: 100%; height: 100%; margin-bottom: 0;}
-    .banner_img>div{float:left; width: 47%; height:48%; margin-right: 0; margin-left: 0.7rem; margin-top: 0.5rem} 
+    .banner_img>div{float:left; width: 47%; height:46%; margin-right: 0; margin-left: 0.7rem; margin-top: 0.5rem; box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
 
-
-    .banner01{background-position: center; background-size: 100%; }
-    .banner02{background-position: center; background-size: 100%;}
-    .banner03{background-position: center; background-size: 100%;}
-    .banner04{background-position: center; background-size: 100%;}
+    .banner01>div>a{background-position: -100px 0; background-size: contain; }
+    .banner02>div>a{background-position: -100px 0; background-size: contain;}
+    .banner03>div>a{background-position: -100px 0; background-size: contain;}
+    .banner04>div>a{background-position: -100px 0; background-size: contain;}
     .indicator{display: none;}
+    }
 
   
 
 
  /* #viewBox---------------------------------------- */
-#bannerBox+#viewBox{height:500px; margin-bottom: 100px;}
+.view_box{height:500px;}
 .view{top:0; left:0; width:auto; height: auto; min-width: 100%; min-height: 100%; transform: translate(0); background-size:100%;}
 
 /* #artBox ------------------------------------------------------------- */
 #artBox{height: 698px; padding-top: 37px; box-sizing: border-box;}
-#artBox>h2{width: 252px; height: 58px; margin:auto; margin-bottom: 100px; font-size:4rem;}
+.art_h2{width: 252px; height: 58px; margin:auto; margin-bottom: 100px; font-size:4rem;}
   .art_box{width: 100%; height:471px; margin:auto;}
   .art_box>div{float:left; display: block; 
     margin-left:1%; margin-bottom:1%;
@@ -109,7 +109,7 @@ body{background-color: transparent;}
 
 /* #footBox ------------------------------------------------------------- */
 #footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
-.foot_bg>.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
+.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
    margin-left:40vw; margin-bottom: 2rem; 
   background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
   background-repeat: no-repeat; 

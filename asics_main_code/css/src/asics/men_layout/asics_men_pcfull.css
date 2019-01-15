@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* asics_main_pcfull.css */
+body{background-color: transparent;}
+
+
+/* pc full */
+@media screen and (min-width: 961px){
+
+  #headBg{height: 50px;}
+  #headerBox{height: 100px; top:50px;}
+    .logo{width: 253px; height: 100px;}
+    .sign_up{width: 102px; height: 100px;}
+    .sign_up a{background-size:45%;}
+      .menu{float:right; width: 500px; height: 100%;}
+      .menu>button{display: none; width: 100%; height: 100%;}
+      .gnb{display:inline; width: 500px;}
+      .gnb>dl{display:block; float:left; margin-right:5px; width: 120px; height: 100%;}
+      .gnb>dl>dt{width:100%; height: 100%; text-align: center;}
+      .gnb dl dd{display:none;}
+      
+      .w_a_gnb{left:0; top:50%;/* transform:translateY(50%); */font-size:0.5rem; text-align:center;}
+      .gnb>dl:focus>dd,
+      .gnb>dl:hover>dd{display:block; width: 100%; height: 100%; background-color:#fff;}
+  
+  
+/* #mainBox ------------------------------------------------------------- */
+#mainBox{height: 1100px;} 
+  .main_big{position:relative; top:150px; width:100%; height:600px;}
+  /*.main_big p{margin-top:-371px; left:50%; margin-left:-350px; width: 742px; height: 442px;}*/
+  /*.main_big button{width: 182px; height: 158px;} jQuery 실행시 필요*/
+  /*.main_big button>i{width: 100%; height: 100%;} jQuery 실행시 필요*/
+
+  .main_video{width: 100%; height: auto; min-height: 100%; overflow: hidden;}
+  .main_video>video{width: auto; min-width: 100vw; height: 133%; transform: translateY(-12%);}
+
+  .main_small{position: absolute; top:800px; left:50vw; margin-left:-300px; width: 600px; height: 200px; text-align:center;}
+  /*.main_text{display:block; position: absolute; z-index: 5;  bottom:38px; left:50%; margin-left:-174.5px; 
+      width: 100%; height: 30%;}*/
+  .main_button{width: 100%; height: 30%;}
+      .main_b_box1{width: 40%;}
+      .main_b_box2{width: 45%;}
+
+.main_btn button,
+.main_txt>p{font-size: 2.5rem;}
+
+
+
+
+
+/* #footBox ------------------------------------------------------------- */
+#footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
+.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
+   margin-left:40vw; margin-bottom: 2rem; 
+  background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
+  background-repeat: no-repeat; 
+  background-position: 0 0; 
+  background-size: contain;}
+
+
+/* pc full end */

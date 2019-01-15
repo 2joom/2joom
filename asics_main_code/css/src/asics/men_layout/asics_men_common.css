@@ -36,7 +36,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 /* #mainBox---------------------------------------- */
 #mainBox{width:100%; height:100%; background-color:transparent;}
 /*.main_big:before{content: " "; position: absolute; z-index: -1; display: block; width:100%; min-width:100%; background-color: #a00;}*/
-.main_big{width: 100%; height: 75%; background-color: #abb; margin-bottom: 2%;}
+.main_big{width: 100%; height: 75%; background-color: #abb;}
 .main_video{position: relative; width: auto; min-width: 100%; height: auto; min-height: 100%; overflow: hidden;}
 .main_video>video{position: absolute;}
 
@@ -53,93 +53,58 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 
 
-/* #menuBox---------------------------------------- */
-#menuBox{position:relative; width:100%; height:100%; background-color: #001e62;}
-  .menu_big{position: absolute; top:50%; transform: translateY(-50%); width: 100%; height: auto;}
-    .menu_go{width: 100%; margin-bottom:20px; border-radius: 3rem; background-color: #fff; overflow: hidden;}
-
-    .view_01{float:left; width: 40%; height: 100%;  background-color: #00c3e6;}
-    .view_01>a{position:relative; display: block; width: 100%; height: 100%; text-align: center; line-height: 1.1; font-size: 2.75rem; font-weight: bold; color:#001e62; text-transform: capitalize;}
-
-/*.menu_txt01 p{
-  animation-name: menu_txt01;
-  animation-duration:3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function:ease-in;
-  animation-direction: alternate;
-  animation-fill-mode: both;
-}
-
-@keyframes menu_txt01 {
-  0%{transform:translate(0) rotate(0deg) scale(1); }
-  100%{transform:translate(30rem) rotate(720deg) scale(2);}
-}*/
-
-
-    .view_01>a>p{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto;}
-
-    .view_02{float:right; width: 45%; height: 100%;}
-
-.menu_img01{background-image: url("../../../../img/img_psd/men_img.png"); background-repeat: no-repeat;}
-.menu_img02{background-image: url("../../../../img/img_psd/women_img.png"); background-repeat: no-repeat;}
-.menu_img03{background-image: url("../../../../img/img_psd/kids_img.png"); background-repeat: no-repeat;}
-.menu_img04{background-image: url("../../../../img/img_psd/wa.png"); background-repeat: no-repeat;}
-
-  
- 
 /* #bannerBox---------------------------------------- */
-#bannerBox{position: relative; width: 100%; height: 100%; background-color: #fff;}
-  .media2{ width: auto; min-width: 100%; height: auto;  overflow: hidden;}
-  .media2>video{width:100%; height:100%; }
+#bannerBox{width: 100%; height:30rem; background-color:#cad; } 
+  .ban_h2{width:15%; height:10%; background-color: #1cc;} 
+  .banner_big{width: 100%; height:80%; background-color: #55c;}
+  .banner_big>div{float:left; margin-right:1.75rem;
+    width: 31%; height: 100%; background-color: #a91;}
+  /*.banner_big>div:last-of-child{margin-right:0;}*/
+ 
+/* #bestBox---------------------------------------- */
+#bestBox{width: 100%; height:50rem; margin:100px 0;  background-color:#cfd; }  
+  .best_h2{margin:auto; margin-bottom: 33px; 
+    width: 285px; height: 52px; font-size: 3rem;}
+  .best_big{width: 90%; height: 80%; background-color: #ee3;}
+  .best{float:left; margin-top: 1%; margin-left: 1%; 
+    width: 30%; height: 30%; background-color: #1b1;}
 
-  .banner_view{width: 100%; height: 100%; background-color: #fff; overflow: hidden; margin-top: 1rem;}
+  .best>div:nth-child(1){width: 100%; height: 80%; background-color: #149;}
+  .best>div:nth-child(2){width: 100%; height: 10%; background-color: #551; text-transform: uppercase;}
+  .best>div:nth-child(3){width: 100%; height: 10%; 
+    background-color: #a51;}
 
-    .banner_img{width:120%; height: 100%; margin-bottom:2rem;}
-    .banner_img>div{float:left; margin-right: 1%;
-      width: 24%; height:100%;
-      background-repeat: no-repeat; 
-      background-color: #dbd9d6; 
-      /*box-shadow:{0 1rem 1rem rgba(23,23,23,0.5);*/}
-    .banner_img>div:last-child{margin-right: 0;}
+  .best>div a{display: block; width: 70%; height: 100%; text-indent: 0;}
+  .best>div a>span{display: block; width: 50%; height: 100%; text-indent: 0;}
 
-    .banner01{background-image: url("../../../../img/img_psd/Background.jpg"); }
-    .banner02{background-image: url("../../../../img/img_psd/pants.png"); }
-    .banner03{background-image: url("../../../../img/img_psd/outer.png"); }
-    .banner04{background-image: url("../../../../img/img_psd/Background copy.png"); }
-
-    .indicator{width: 30%; bottom:1rem; background-color:transparent;}
-    .indicator>ul{width: 100%; height: 100%;}
-    .indicator>ul>li{float:left; width: 20%; height: 100%; }
-    .indicator>ul>li:last-child{margin-right:0;}
-    .indicator>ul>li>a{border-radius:50%; background-color: #faa;}
-    .indicator>ul>li>a:hover,
-    .indicator>ul>li>a:focus{background-color: #ccc}
-
+  .best_img01>a{background-image: url("../../../../img_psd/");}
+  .best_img02>a{background-image: url("../../../../img_psd/");}
+  .best_img03>a{background-image: url("../../../../img_psd/");}
+  .best_img04>a{background-image: url("../../../../img_psd/");}
+  .best_img05>a{background-image: url("../../../../img_psd/");}
+  .best_img06>a{background-image: url("../../../../img_psd/");}
+  .best_img07>a{background-image: url("../../../../img_psd/");}
+  .best_img08>a{background-image: url("../../../../img_psd/");}
+  .best_img09>a{background-image: url("../../../../img_psd/");}
 
 
  /* #viewBox---------------------------------------- */
- #viewBox{position: relative; width: 100%; height: 100%;}
- .view{position: absolute; top:50%; left: 50%; 
-  height: 100%; width: 100%;
-  background-image: url("../../../../img/asics_img/view.jpg");
+ #viewBox{width: 100%; height: 100%;}
+ .view{height: 100%; width: 100%; background-color: #aa1;
+  background-image: url("../../../../img/img_psd/asics_run.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  /*transform: translate(-50% , -25%);*/
-background-size:  contain;}
+  background-position: center;
+  background-size:  contain;}
 
 
 
-  /*#artBox---------------------------------------- */
-#artBox{width: 100%; height: 100%; background-color: #fff;}
-.art_box>div{background-repeat: no-repeat; background-size: contain; background-size:#111;}
-.art01{background-image: url("../../../../img/img_psd/img1.png");}
-.art02{background-image: url("../../../../img/img_psd/img2.png");}
-.art03{background-image: url("../../../../img/img_psd/img3.png");}
-.art04{background-image: url("../../../../img/img_psd/img4.png");}
-.art05{background-image: url("../../../../img/img_psd/img5.png");}
-.art06{background-image: url("../../../../img/img_psd/img6.png");}
-.art07{background-image: url("../../../../img/img_psd/IMG_6376.png");}
-.art08{background-image: url("../../../../img/img_psd/img_.png");}
+/* #sportBox---------------------------------------- */
+  #sportBox{width: 100%; height:50rem; background-color:#cad; }  
+    /*.sport_h2*/
+
+
+
+
 
 
 /* #footBox---------------------------------------- */
@@ -155,10 +120,10 @@ background-size:  contain;}
 
 #footBox01{float:left; width: 75%; height: 50%; margin-left:}
 #footBox01>dl{float:left;  width: 30%; height: 100%; margin-left: 1%;}
-#footBox01 dt{width: 100%; height: 20%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
+#footBox01 dt{width: 100%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
 #footBox01 dd{border-radius: 3rem;}
 
-#footBox01 dl>dt>a{color:#fff; width: 100%; height: 100%; display: block; font-size: 2rem; font-weight: bold;}
+#footBox01 dl>dt>a{color:#fff; width: 100%; height: 100%; display: block;font-weight: bold;}
 #footBox01 dl>dd>a{color:#001e62; background-color: #fff; width: 100%; height: 100%;}
 #footBox01 dd>a{display: none;}
 #footBox01 a{text-transform: capitalize;}
@@ -167,8 +132,8 @@ background-size:  contain;}
 #footBox01 dl:focus>dd>a{display: block;}
 
 #footBox02{float:left; width: 25%; height:60%;}
-#footBox02 dl{float:right; width: 100%; height: 50%;}
-#footBox02 dt{width: 100%; height:40%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
+#footBox02 dl{float:right; width: 100%; }
+#footBox02 dt{width: 100%; height:auto; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
 .foot_box04 dd{float:left; padding-top: 0.5rem; box-sizing: border-box; width: 30%; height: 60%; margin-left: 1%; }
 
 .foot_box04 dt>a{display: block; width: 100%; height: 100%; float: left; color:#fff; text-transform:uppercase; font-size: 2rem; font-weight: bold}
