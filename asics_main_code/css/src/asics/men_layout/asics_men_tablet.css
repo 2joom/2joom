@@ -4,15 +4,24 @@
 
 /* tablet start */
 @media screen and (min-width: 481px) and (max-width: 768px){ 
-  #headBg{height: 35px;}
-  #headerBox{top:35px; height: 55px; line-height:55px; }
-    .logo{margin-left:1rem; width: 107px; height: 54px; background-size:100%;}
+  #headBg{height: 45px;}
+  #headerBox{top:45px; height: 80px; line-height:55px; }
+    .logo{margin-left:1rem; width: 130px; height: 100%;}
+    .logo>a{background-size: 100%;}
+
     .sign_up{width: 87px;}
+    .sign_up>a{background-position:center; background-size:60%;}
+    .menu>button{background-position:center; background-size:60%;}
     #navBox{float:right; width: 202px;}
     #navBox>div{width:96px;}
-    .menu>button:focus+.gnb,
-    .menu>button:hover+.gnb{display:block; }
-    .gnb a{display: block; width: 100%; height: 100%;}
+    
+      .menu>button:focus+.gnb_box,
+      .menu>button:hover+.gnb_box{display:block;}
+      
+    .gnb_box{top:80px; width:100px; height: 299px;}
+    .gnb{ background-color: rgba(255,255,255,0.1);}
+      .gnb>li>a>span{font-size: 1.4rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}
+      .gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1;}
       
 
 

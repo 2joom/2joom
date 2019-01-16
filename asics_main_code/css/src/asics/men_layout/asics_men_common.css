@@ -11,27 +11,48 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 #headBox{position: fixed; z-index: 500; width: 100%; height: auto;  }
   #headBg{width: 100%; background-color:#00c3e6;}  
   #headerBox{width: 100%; background-color:#001e62;}
-      .logo{float: left; color:#fff; background-image: url("../../../../img/img_psd/logo.png"); background-repeat: no-repeat; background-position: center; background-size:70%;}
-      .sign_up{float: right; font-weight: bold; font-size:18px; height: 100%; }
-      .sign_up>a{display: block; width: 100%; height: 100%; background-image: url("../../../../img/img_psd/signup_icon.png"); background-repeat: no-repeat; background-position: center;}
-      #navBox{float:right; width: 60%; margin: auto; height:100%; }
-        #navBox>div{height:100%;}
-          .menu{position:relative; float: right; width: 100%; height: 100%;}
-          .menu>button{width: 100%; height: 100%; font-size:20px; background-image: url("../../../../img/img_psd/menu_icon.png"); background-repeat: no-repeat; background-position: center;}
+    .logo{float:left;}
+    .logo>a{width: 100%; height: 100%; float: left; color:#fff; background-image: url("../../../../img/img_psd/logo.png"); background-repeat: no-repeat; background-position: center; background-size:70%;}
+    .sign_up{float: right; font-weight: bold; font-size:18px; height: 100%; }
+    .sign_up>a{display: block; width: 100%; height: 100%; background-image: url("../../../../img/img_psd/signup_icon.png"); background-repeat: no-repeat; background-position: center;}
+    #navBox{position: relative; float:right; width: 60%; margin: auto; height:100%; }
+    #navBox>div{height:100%;}
+    .menu{position:relative; float: right;}
+    .menu>button{width: 100%; height: 100%; font-size:20px; background-image: url("../../../../img/img_psd/menu_icon.png"); background-repeat: no-repeat; background-position: center;}
 
-.gnb{display:none; top:0; right: 0; float:right; width:500px; height: 100px;}
+.gnb_box{display:none; position: absolute; float:right; width:70px; height: 200px;}
 
-.gnb>dl{display:block; float:left; width: 93px; height: 100%; background-color: #b3b0a1}
-.gnb>dl>dt{width: 100px; height: 33px; background-color:#001e62; color:#;}
-.gnb>dl>dd{width: 100px; height: 15px; }
-.gnb dt span{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto; color:#fff; font-weight: bolder;   text-transform: capitalize; line-height: 1.1; font-size: 1.5rem;}
+.gnb_box>.gnb{display:block; width: 100%; height: 100%;}
+.gnb>li{display:block; float:left; width: 100%; height: 25%; }
+.gnb>li>a{position: relative; display: block; width: 100%; height: 100%;}
+.gnb>li>a>span{display: block; position: absolute; top:50%; left:50%; transform:translate(-50% , -50%); color:#fff;  text-align: center; font-size: 2rem; text-transform: capitalize; font-weight: bold; }
 
-.gnb dt a{position:relative; display: block;
-  width: 100%; height: 100%; text-align: center;}
-.gnb dt span{position: absolute; top:50%;
-  transform: translateY(-25%); width: 100%; height:100%;}
+.gnb>li>a>span:hover,
+.gnb>li>a>span:focus{color:#00c3e6;}
 
-.gnb dd span{color:#111; font-weight: bold; }
+.gnb>.w_a>a>span{font-size: 1.45rem;}
+.gnb>.w_a>a>span>.of{text-transform: none;}
+.gnb>.w_a>a>span>.asics{text-transform: uppercase;}
+
+/* gnb:ul의 목차들  */
+.gnb_p{display: none;
+  position: relative; width: 100%; height: 90%; background-color:rgba(255,255,255,0.1);}
+.gnb_p>li{position: absolute; top:0; left:0; float:left; width: 100%; height: 100%;}
+.gnb_p>li>dl{float:left; margin-top: 1rem; width: 25%; height: 100%; border-right: 1px solid rgba(0,30,98,0.5);}
+.gnb_p dl:last-of-type{border-right:0;}
+.gnb_p dl>dt{width: 100%; height: 10%;}
+.gnb_p dl>dd{width: 100%; height: 10%;}
+.gnb_p dl>dt>a{width: 100%; height: 100%;}
+.gnb_p dl>dd>a{width: 100%; height: 100%;}
+
+
+.gnb_p dl>dt span{width: 100%; height:10%; color:#001e62; font-weight: bold; font-size: 1.1rem; text-align: left;}
+.gnb_p dl>dd span{width:100%; height:10%; font-size: 1.1rem; color:#001e62; text-align: left;}
+
+.gnb_p>.men_p{display: none;}
+.gnb_p>.women_p{display: none;}
+.gnb_p>.kids_p{display: none;}
+.gnb_p>.w_a_p{display: none;}
 
 
           
@@ -40,7 +61,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #mainBox---------------------------------------- */
 #mainBox{width:100%; height:100%; background-color:transparent;}
-.main_big{width: 100%; height: 75%; background-color: #abb;}
+.main_big{width: 100%; height: 75%;}
 .main_video{position: relative; width: auto; min-width: 100%; height: auto; min-height: 100%; overflow: hidden;}
 .main_video>video{position: absolute;}
 
@@ -59,10 +80,10 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #bannerBox---------------------------------------- */
 #bannerBox{width: 100%; height:30rem; background-color:#001e62; } 
-  .ban_h2{width:15%; height:10%; background-color: #1cc; font-family: '맑은 고딕' , Malgun Gothic;} 
-  .banner_big{width: 100%; height:80%; background-color: #55c;}
+  .ban_h2{width:15%; height:10%; font-family: '맑은 고딕' , Malgun Gothic; color:#fff;} 
+  .banner_big{width: 100%; height:80%; }
   .banner_big>div{float:left; margin-right:1.75rem;
-    width: 31%; height: 100%; background-color: #a91; box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
+    width: 31%; height: 100%; box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
   .banner_big>div>a{position: relative; display: block; width: 100%; height: 100%;}
   .banner_big>div>a>span{position: absolute; width: 100%; color:rgba(255,255,255,0.7);}  
 
@@ -87,24 +108,23 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
  
 /* #bestBox---------------------------------------- */
-#bestBox{width: 100%; height:50rem; margin:100px 0;  background-color:#cfd; }  
+#bestBox{width: 100%; height:50rem; margin:100px 0; }  
   .best_h2{margin:auto; margin-bottom: 33px; 
     width: 285px; height: 52px; font-size: 3rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
-  .best_big{width: 90%; height: 80%; background-color: #ee3;}
+  .best_big{width: 90%; height: 80%; }
   .best{float:left; margin-top: 1%; margin-left: 1%; 
-    width: 30%; height: 30%; background-color: #1b1;}
+    width: 30%; height: 30%;}
 
-  .best>div:nth-child(1){width: 100%; height: 80%; background-color: #149; 
+  .best>div:nth-child(1){margin-bottom: 0.5rem; width: 100%; height: 80%; 
     box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
-  .best>div:nth-child(2){width: 100%; height: 10%; background-color: #551; text-transform: uppercase;}
-  .best>div:nth-child(3){width: 100%; height: 10%; 
-    background-color: #a51;}
+  .best>div:nth-child(2){width: 100%; height: 10%;  text-transform: uppercase;}
+  .best>div:nth-child(3){width: 100%; height: 10%; }
   
   .best_name>a,.best_img>a,
   .best_price>a{display: block; width: 100%; height: 100%;}
 
   .best_name span,
-  .best_price span{display: block; width:100%; height: 100%;  color:#001e62; font-weight: bold; text-indent: 0;}
+  .best_price span{display: block; color:#001e62; font-weight: bold;}
 
 
   .best_img01>a{
@@ -158,7 +178,6 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
  #viewBox{width: 100%; height: 100%;}
  .view{height: 100%; width: 100%;}
  .view>a{display: block; width: 100%; height: 100%;
-  background-color: #aa1;
   background-image: url("../../../../img/img_psd/asics_run.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -166,11 +185,11 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 
 /* #sportBox---------------------------------------- */
-  #sportBox{width: 100%; height:30rem; background-color:#a51; }  
-    .sport_h2{width:15%; height:10%; background-color: #1fc; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;} 
-  .sport_big{width: 100%; height:80%; background-color: #f5c;}
+  #sportBox{width: 100%; height:30rem; }  
+    .sport_h2{width:15%; height:10%; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;} 
+  .sport_big{width: 100%; height:80%; }
   .sport_big>div{float:left; margin-right:1.75rem;
-    width: 31%; height: 100%; background-color: #f91;
+    width: 31%; height: 100%; 
     box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
 
   .sport_big>div>a{position: relative; display: block; width: 100%; height:100%;}
@@ -227,7 +246,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 .foot_box04>dd>a{display: block; width: 100%; height: 100%; float: left;}
 
 .face>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/face.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
-.kakao>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/Layer 1.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+.kakao>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/ka.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
 .instar>a{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/001-instagram.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
 
 address{float:left; width: 80%; height: 20%; color:#fff; font-style: normal; text-align:justify; }

@@ -7,32 +7,23 @@
 
   #headBg{height: 50px;}
   #headerBox{height: 80px; top:50px; line-height:80px;}
-    .logo{margin-left:1rem; width: 100px; height: 80px; background-size: 101%; }
-    #navBox{position:relative;}
+    .logo{margin-left:1rem; width: 130px; height: 80px;}
+    .logo>a{background-size: contain; }
     #navBox>div{width:83px; }
     .sign_up{float:right; width: 102px;}
     .sign_up>a{ background-size: 40%;}
 
-    .menu{float:right; width: 500px; height: 100%;}
+    .menu{width: 500px; height: 100%;}
     .menu>button{display: none; width: 100%; height: 100%;}
 
-    .gnb{display:inline; height: 80px;}
-    .gnb>dl{display:block; float:left; margin-right:15px; width: 103px; height: 80px;}
-    .gnb>dl>dt{width:100%; height: 100%; text-align:center; }
-    .gnb dl dd{display:none;}
-    .gnb a{width: 100%; height: 100%; color:#111; font-weight: bold; font-size: 1.5rem;}
-    
-    .gnb>dl>dt>a>span{font-size: 1.3rem;}
-    .gnb>dl>dt>.w_a>span{font-size: 1.25rem;}
-    .gnb .w_a{width: 100%; height: 100%; font-size: 18px; line-height: 110%;}
-    .w_a a{line-height: 0;}
-    
-    /*.w_a span{display: block; padding-top:20px; width: 100%; height:0;  line-height: 120%; text-align:center;}*/
-    .w_a>span{position: absolute; left:0; top:50%; transform:translateY(-25%); font-size:1rem; text-align:center;}
+.gnb_box{display:block; float: left; top:0; right:0; transform: translateX(-25%); width:25rem; height:100%;}
 
-    .gnb>dl:focus>dd,
-    .gnb>dl:hover>dd{display:block; width: 100%; height: 100%; background-color: #fff; }
+.gnb_box>.gnb{display:block; width: 100%; height: 100%;}
+.gnb>li{display:block; float:left; width: 23%; height: 100%;}
+.gnb>li:last-of-type{width: 30%;}
+.gnb>li>a>span{top:50%; left:50%; transform:translate(-50% , -50%); color:#fff;  font-size: 1.5rem;}
 
+.gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.2; top:50%; left:25%; transform:translate(-25%,-50%);}
 
 /* #mainBox ------------------------------------------------ */
 #mainBox{height:908px;}
@@ -70,8 +61,7 @@
   .best>div:nth-child(1){width: 100%; height: 80%;  
     box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
   .best>div:nth-child(2){width: 100%; height: 10%;  text-transform: uppercase;}
-  .best>div:nth-child(3){width: 100%; height: 10%; 
-    }
+  .best>div:nth-child(3){width: 100%; height: 10%;}
   
   .best_name span,
   .best_price span{text-align: left; text-indent: 0.5rem;}
@@ -91,7 +81,6 @@
  #viewBox{width: 100%; height: 100%;}
  .view{height: 100%; width: 100%;}
  .view>a{display: block; width: 100%; height: 100%;
-  
   background-position: center;
   background-size:  contain;}
 
@@ -118,6 +107,9 @@
   .sport_img03>a{
     background-position: 0 0;
     background-size: cover;}
+
+  .sport_big>div>a>span{bottom: 0.65rem; left:0.65rem; 
+    color:#fff; font-weight: bold; font-size: 1.8rem;}
 
 /* #footBox ------------------------------------------------ */
 #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
