@@ -13,12 +13,14 @@ body{background-color: transparent;}
     .sign_up a{background-size:45%;}
       .menu{float:right; width: 500px; height: 100%;}
       .menu>button{display: none; width: 100%; height: 100%;}
-      .gnb{display:inline; width: 500px;}
-      .gnb>dl{display:block; float:left; margin-right:5px; width: 120px; height: 100%;}
+      .gnb{display:inline; position: absolute; width: 700px; right:50%;  transform: translateX(-25%);}
+      .gnb>dl{display:block; float:left; margin-right:5px; width: 170px; height: 100%;}
       .gnb>dl>dt{width:100%; height: 100%; text-align: center;}
       .gnb dl dd{display:none;}
       
-      .w_a_gnb{left:0; top:50%;/* transform:translateY(50%); */font-size:0.5rem; text-align:center;}
+      .gnb>dl>dt>a>span{width:100%; text-align: center; font-size: 2rem; }
+      .gnb>dl>dt>.w_a>span{font-size:1.7rem; line-height: 1.1;}
+
       .gnb>dl:focus>dd,
       .gnb>dl:hover>dd{display:block; width: 100%; height: 100%; background-color:#fff;}
   
@@ -26,16 +28,10 @@ body{background-color: transparent;}
 /* #mainBox ------------------------------------------------------------- */
 #mainBox{height: 1100px;} 
   .main_big{position:relative; top:150px; width:100%; height:600px;}
-  /*.main_big p{margin-top:-371px; left:50%; margin-left:-350px; width: 742px; height: 442px;}*/
-  /*.main_big button{width: 182px; height: 158px;} jQuery 실행시 필요*/
-  /*.main_big button>i{width: 100%; height: 100%;} jQuery 실행시 필요*/
-
   .main_video{width: 100%; height: auto; min-height: 100%; overflow: hidden;}
-  .main_video>video{width: auto; min-width: 100vw; height: 133%; transform: translateY(-12%);}
+  .main_video>video{top:50%; left: 50%; transform: translate(-50% , -50%); width: auto; height: auto; min-height: 100%; min-width:100%; background-size:cover;}
 
   .main_small{position: absolute; top:800px; left:50vw; margin-left:-300px; width: 600px; height: 200px; text-align:center;}
-  /*.main_text{display:block; position: absolute; z-index: 5;  bottom:38px; left:50%; margin-left:-174.5px; 
-      width: 100%; height: 30%;}*/
   .main_button{width: 100%; height: 30%;}
       .main_b_box1{width: 40%;}
       .main_b_box2{width: 45%;}
@@ -45,16 +41,113 @@ body{background-color: transparent;}
 
 
 
+/* #bannerBox---------------------------------------- */
+#bannerBox{margin:150px 0; width: 100%; height:65rem; background-color: rgba(0,30,98,0.5);}
+#bannerBox>.container{ padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
+    width:100%; height: 100%; max-width: 90rem; background-color: #001e62;}
+  .ban_h2{margin: auto; margin-bottom: 10%; width:30%; height:10%; font-family: '맑은 고딕' , Malgun Gothic; line-height:80px; text-align: center; font-size: 2.8rem;} 
+  .banner_big{margin-bottom: 10%; width: 100%; height:70%;}
+  .banner_big>div{float:left; margin-right:2%;
+    width: 32%; height: 100%;  box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0,1.5);}
+  .banner_big>.banner_03{margin-right: 0;}
+
+  .banner_big>div>a>span{top:50%; left:50%; transform:translate(-50% , -50%); font-size: 2rem; font-weight: bold; color:rgba(255,255,255,0.6);}  
+
+  .banner_01>a{background-position: 50% 0; background-size: cover;}
+  .banner_02>a{background-position: 50% 0; background-size: cover;}
+  .banner_03>a{background-position: 40% 0; background-size: cover;}
+
+ 
+/* #bestBox---------------------------------------- */
+#bestBox{width: 100%; height:80rem; margin:100px 0;}
+  .container{ padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
+    width:100%; height: 100%; max-width: 90rem; }
+  .best_h2{margin:auto; margin-bottom: 33px; 
+    width: 285px; height: 52px; font-size: 2.8rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
+  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-right: ; width: 95%; height: 80%; }
+  .best{float:left; margin-top: 1%; margin-left: 2%;
+    width: 31%; height: 32%; }
+  .best01,.best02,.best03{margin-top: 0;}
+
+  .best>div:nth-child(1){width: 100%; height: 80%;  
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
+  .best>div:nth-child(2){width: 100%; height: 10%;  text-transform: uppercase;}
+  .best>div:nth-child(3){width: 100%; height: 10%; 
+    }
+  
+  .best_name span,
+  .best_price span{text-align: left; text-indent: 0.5rem;}
+
+  .best_img01>a{background-position: 50% 50%; background-size: cover;}
+  .best_img02>a{background-position: 50% 50%; background-size: cover;}
+  .best_img03>a{background-position: 0 0; background-size: cover;}
+  .best_img04>a{background-position: 0 0; background-size: cover;}
+  .best_img05>a{background-position: 50% 50%; background-size: cover;}
+  .best_img06>a{background-position: 50% 50%; background-size: cover;}
+  .best_img07>a{background-position: 50% 50%; background-size: cover;}
+  .best_img08>a{background-position: 0 50%; background-size: cover;}
+  .best_img09>a{background-position: 50% 50%; background-size: cover;}
+
+
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 100%; margin:300px 0;}
+ .view{height: 100%; width: 100%;}
+ .view>a{display: block; width: auto; height: auto; min-height:100%; min-width:100%; background-position: center;
+  background-size:100%;}
+
+
+/* #sportBox---------------------------------------- */
+  #sportBox{width: 100%; height:50rem; margin-bottom: 200px;  }
+  .container{ padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
+    width:100%; height: 100%; max-width: 90rem; }  
+  .sport_h2{margin: auto; margin-bottom: 5%;
+      width:20%; height:10%; line-height: 45px; font-size: 2.8rem;} 
+  .sport_big{width: 100%; height:80%; }
+  .sport_big>div{float:left; margin-right:2%;
+    width: 32%; height: 100%; 
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
+  .sport_big>div:nth-of-type(3){margin-right: 0;}
+
+  .sport_big>div>a{position: relative; display: block; width: 100%; height:100%;}
+  .sport_big>div>a>span{position: absolute;}
+
+  .sport_img01>a{
+    background-position: 0 0;
+    background-size: cover;}
+  .sport_img02>a{
+    background-position: 0 0;
+    background-size: cover;}
+  .sport_img03>a{
+    background-position: 0 0;
+    background-size: cover;}
+
+
+
 
 
 /* #footBox ------------------------------------------------------------- */
-#footBox{height: 696px; padding-top:89px; box-sizing:border-box;}
-.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
+#footBox{height: 396px; padding-top:89px; box-sizing:border-box;}
+/*.foot_h2{width: 25%; height: 10%; margin-top: 3rem;
    margin-left:40vw; margin-bottom: 2rem; 
   background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
   background-repeat: no-repeat; 
   background-position: 0 0; 
+  background-size: contain;}*/
+  #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
+  .foot_bg>.art_h2{width: 25%; height: 10%; 
+  margin-top: 1rem; margin-left:40vw; margin-bottom: 1rem; 
+  background-position: 0 0; 
   background-size: contain;}
+
+  .foot_bg>.foot_h2{width: 10%; height: 15%; margin-top: 25px; margin-bottom: 25px; }
+  
+  .foot_bg dl>dt>a{font-size: 1.8rem;}
+  #footBox01 dl:hover>dd>a,
+  #footBox01 dl:focus>dd>a{font-size: 1.3rem;}
+  #footBox02{height: 60%;}
+  address{font-size: 1rem; text-indent: 0.3rem; width: 95%; }
+  #footBox p{font-size: 1rem; }
+ 
 
 
 /* pc full end */

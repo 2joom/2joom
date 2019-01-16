@@ -5,6 +5,7 @@
 
 #wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto;}
 h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: capitalize; }
+.container{width: 100%; height: 100%;}
 
 /* #headBox---------------------------------------- */
 #headBox{position: fixed; z-index: 500; width: 100%; height: auto;  }
@@ -17,17 +18,21 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
         #navBox>div{height:100%;}
           .menu{position:relative; float: right; width: 100%; height: 100%;}
           .menu>button{width: 100%; height: 100%; font-size:20px; background-image: url("../../../../img/img_psd/menu_icon.png"); background-repeat: no-repeat; background-position: center;}
-          .gnb{display:none; top:0; right: 0; float:right; width:500px; height: 100px;}
 
-          .gnb>dl{display:block; float:left; width: 93px; height: 100%; background-color: #b3b0a1}
-          .gnb>dl>dt{width: 100px; height: 33px; background-color:#001e62; color:#;}
-          .gnb>dl>dd{width: 100px; height: 15px; }
-          .gnb>dl>dt span{color:#fff; font-weight: bolder;   text-transform: capitalize; font-size: 1.5rem;}
-          .gnb dt a{width: 100%; height: 100%; position:relative; display: block; width: 100%; height: 100%; text-align: center; line-height: 1.1; font-size: 2.75}
-          .gnb dt a>span{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto;}
-          .gnb span{color:#111; font-weight: bold; }
+.gnb{display:none; top:0; right: 0; float:right; width:500px; height: 100px;}
 
-          .w_a{position: relative; width: 100px; height:auto;}
+.gnb>dl{display:block; float:left; width: 93px; height: 100%; background-color: #b3b0a1}
+.gnb>dl>dt{width: 100px; height: 33px; background-color:#001e62; color:#;}
+.gnb>dl>dd{width: 100px; height: 15px; }
+.gnb dt span{display: block; position: absolute; top:50%; left:0;  padding-left: 0.5rem; box-sizing: border-box; transform: translateY(-50%); width: 100%; height: auto; color:#fff; font-weight: bolder;   text-transform: capitalize; line-height: 1.1; font-size: 1.5rem;}
+
+.gnb dt a{position:relative; display: block;
+  width: 100%; height: 100%; text-align: center;}
+.gnb dt span{position: absolute; top:50%;
+  transform: translateY(-25%); width: 100%; height:100%;}
+
+.gnb dd span{color:#111; font-weight: bold; }
+
 
           
             
@@ -53,7 +58,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 
 /* #bannerBox---------------------------------------- */
-#bannerBox{width: 100%; height:30rem; background-color:#cad; } 
+#bannerBox{width: 100%; height:30rem; background-color:#001e62; } 
   .ban_h2{width:15%; height:10%; background-color: #1cc; font-family: '맑은 고딕' , Malgun Gothic;} 
   .banner_big{width: 100%; height:80%; background-color: #55c;}
   .banner_big>div{float:left; margin-right:1.75rem;
@@ -95,11 +100,11 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
   .best>div:nth-child(3){width: 100%; height: 10%; 
     background-color: #a51;}
   
-  .best_name>a,
+  .best_name>a,.best_img>a,
   .best_price>a{display: block; width: 100%; height: 100%;}
 
   .best_name span,
-  .best_price span,{display: block; width: 50%; height: 100%; text-indent: 0;}
+  .best_price span{display: block; width:100%; height: 100%;  color:#001e62; font-weight: bold; text-indent: 0;}
 
 
   .best_img01>a{
@@ -113,7 +118,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     background-position: 0 0; 
     background-size: contain;}
   .best_img03>a{
-    background-image: url("../../../../img/img_psd/best_img03.jpg");
+    background-image: url("../../../../img/img_psd/best_img03.png");
     background-repeat: no-repeat;
     background-position: 0 0; 
     background-size: contain;}
@@ -123,12 +128,12 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     background-position: 0 0; 
     background-size: contain;}
   .best_img05>a{
-    background-image: url("../../../../img/img_psd/best_img05.jpg");
+    background-image: url("../../../../img/img_psd/best_img05.png");
     background-repeat: no-repeat;
     background-position: 0 0; 
     background-size: contain;}
   .best_img06>a{
-    background-image: url("../../../../img/img_psd/best_img06.jpg");
+    background-image: url("../../../../img/img_psd/best_img06.png");
     background-repeat: no-repeat;
     background-position: 0 0; 
     background-size: contain;}
@@ -143,7 +148,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     background-position: 0 0; 
     background-size: contain;}
   .best_img09>a{
-    background-image: url("../../../../img/img_psd/best_img09.jpg");
+    background-image: url("../../../../img/img_psd/best_img09.png");
     background-repeat: no-repeat;
     background-position: 0 0; 
     background-size: contain;}
@@ -169,7 +174,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
 
   .sport_big>div>a{position: relative; display: block; width: 100%; height:100%;}
-  .sport_big>div>a>span{position: absolute;}
+  .sport_big>div>a>span{position: absolute; color:rgba(255,255,255,0.7);}
 
   .sport_img01>a{
     background-image: url("../../../../img/img_psd/Layer 4.png");
@@ -195,8 +200,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 /* #footBox---------------------------------------- */
 #footBox{position: relative; z-index: -1; width: auto; min-width:100%; height: auto; background-color:#00c3e6;}
 .foot_bg{position: absolute; top:0; left:0; display: block; width:100%; height:85%; background-color:#001e62;}
-.foot_bg>h2{width: 27%; height: 10%; margin-top: 1rem;
-  margin-top: 1rem; margin-left:35vw; margin-bottom: 1rem; 
+.foot_h2{width: 27%; height: 10%; margin: auto;
   background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
   background-repeat: no-repeat; 
   background-position: 0 0; 
@@ -206,7 +210,6 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 #footBox01{float:left; width: 73%; height: 60%; margin-left:}
 #footBox01>dl{float:left;  width: 30%; height: 100%; margin-left: 2.5%;}
 #footBox01 dt{width: 100%; height: 20%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
-#footBox01 dd{border-radius: 3rem;}
 
 #footBox01 dl>dt>a{color:#fff; width: 100%; height: 100%; display: block;font-weight: bold;}
 #footBox01 dl>dd>a{color:#001e62; background-color: #fff; width: 100%; height: 100%;}
@@ -217,7 +220,7 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 #footBox01 dl:focus>dd>a{display: block;}
 
 #footBox02{float:left; width: 25%; height:60%;}
-.foot_box04{width: 100%; height: 50%; }
+.foot_box04{width: 100%; height: 80%; }
 .foot_box04>dt{width: 100%; height:50%; border-radius: 3rem; box-shadow: 0.3rem 0.3rem 0 #111;}
 .foot_box04>dt>a{display: block; width: 100%; height: 100%; float: left; color:#fff; text-transform:uppercase; font-size: 2rem; font-weight: bold}
 .foot_box04>dd{float:left; padding-top: 0.5rem; box-sizing: border-box; width: 30%; height: 60%; margin-left: 1%; }
