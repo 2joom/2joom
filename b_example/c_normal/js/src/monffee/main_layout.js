@@ -21,21 +21,24 @@
     var fn = fileName || '.html';
 
     var result = u+f+fn;
-    console.log(result);
+    // console.log(result);
     return result;
   };
 
-// 2. section#adBanner를 생성하여 불러오기
-headBox.after('<section id="adBanner"></section>');
-var adBanner = $('#adBanner');
-var mainUrl = './main/';
-adBanner.load(mainUrl + 'adBanner.html');
-
-// news.html 생성하기
+  // 2. section#adBanner를 생성하여 불러오기
+  headBox.after('<section id="adBanner"></section>');
+  var adBanner = $('#adBanner');
+  var mainUrl = './main/';
+  adBanner.load(mainUrl + 'adBanner.html');
+  
+  // news.html 생성하기
   var bestNews = $('#bestNews');
   bestNews.children('h2').after('<div class="news"></div>');
   $('.news').load(link('news',mainUrl));
-
+  
+  // issueText.html 생성하기
+  bestNews.children('.news').after('<div class="issue_text"></div>');
+  $('.issue_text').load(mainUrl + 'issueText.html');
 
 
 

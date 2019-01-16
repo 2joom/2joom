@@ -15,7 +15,7 @@
   viewBanner.prepend(viewBannerLast); // ul안에 첫 순서로 넣어 생성하라
   
   // 내용 변경 후 갯수 다시 파악  
-  var viewBannerList = viewBanner.children('li');
+  viewBannerList = viewBanner.children('li');
 
   // - 감싸는 영역의 크기를 갯수의 * 100% 크기만큼으로 변경
   // - 첫번째 보이는 요소는 첫배너로 처리하기위해 전체를 왼쪽으로 이동/ li내용의 크기값 재 수정
@@ -88,33 +88,31 @@
   //   SlideBanner(showI);
   // });
 
-<<<<<<< HEAD
   // 2차 기능처리
-    prevBtn.on('click', function(e){
-      e.preventDefault();
-      if(showI <= 0){
-        showI = -1;
-        viewBanner.css({ left: showI * -100 + '%' });
-        console.log(showI);
-        // 0.5초 뒤에 마지막 위치로 이동
-        // setTimeout(function(){}, 500);
-        setTimeout(function () { 
-          showI = len - 2;
-          console.log(showI);
-          viewBanner.css({ left: showI * -100 + '%', transition:'none'});
+    // prevBtn.on('click', function(e){
+    //   e.preventDefault();
+    //   if(showI <= 0){
+    //     showI = -1;
+    //     viewBanner.css({ left: showI * -100 + '%' });
+    //     console.log(showI);
+    //     // 0.5초 뒤에 마지막 위치로 이동
+    //     // setTimeout(function(){}, 500);
+    //     setTimeout(function () { 
+    //       showI = len - 2;
+    //       console.log(showI);
+    //       viewBanner.css({ left: showI * -100 + '%', transition:'none'});
 
-          setTimeout(function(){
-            viewBanner.css({ transition: 'left 500ms ease' });
-          },10);
+    //       setTimeout(function(){
+    //         viewBanner.css({ transition: 'left 500ms ease' });
+    //       },10);
 
-        }, 500);
+    //     }, 500);
 
-      }else{
-        showI -= 1;
-        SlideBanner(showI);
-      }
-=======
-
+    //   }else{
+    //     showI -= 1;
+    //     SlideBanner(showI);
+    //   }
+    // });
 
 
     // 2차 기능처리
@@ -161,9 +159,8 @@
       }else{        //아니면
         showI -= 1; // 1씩 빼줘라
         SlideBanner(showI);
-      };
+      }
 
->>>>>>> 19d7f40d8f4d7fb7f2337755bc58eebb49a30487
     });
 
 
@@ -186,26 +183,7 @@
   // 덤: 일정 시간마다 자동으로 순환하는 기능을 수행하게 만들자!
   // setInterval(function(){}, 1000);  // 일정시간(1000)마다 동작하게 하는 함수
   // clearInterval(function(){});  // setInterval을 강제로 멈추게(setInterval을 삭제)하는 함수
-<<<<<<< HEAD
 
-  var movingSlide;
-
-  var startMove = function(){
-    movingSlide = setInterval(function(){
-      console.log('go!go!go!');
-      nextBtn.trigger('click');
-    }, 1000);
-  };
-
-  var stopMove = function(){
-    clearInterval( movingSlide );
-  };
-  
-  startMove();
-  banner.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
-
-=======
->>>>>>> 19d7f40d8f4d7fb7f2337755bc58eebb49a30487
 
   var movingSlide;
 
@@ -225,4 +203,3 @@
 
   
 })(jQuery);
-

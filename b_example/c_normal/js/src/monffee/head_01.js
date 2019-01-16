@@ -22,7 +22,7 @@ var scrollOffset = 0;
 
     //1-2의 문제 해결: 화면의 높이를 기준으로 절반아래로 header가 있으면 위로 하위메뉴가 나오게 처리
     var heightVs = scrollOffset < winH/2; //브라우저높이의 절반보다 작다면:상단에있고 크다면 :하단에있다.
-    console.log(heightVs); // true:상단 ; false:하단;
+    // console.log(heightVs); // true:상단 ; false:하단;
     if(heightVs){
       // heightVs의 값이 true인경우
       headCon.addClass('up');
