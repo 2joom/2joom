@@ -1,4 +1,4 @@
-// ascis_men.js
+// ascis_women.js
 (function($){
     // console.log('gnbLieq');
 
@@ -42,3 +42,4 @@ var gnbLieq, gnbpLieq;
 
 
 })(jQuery);
+

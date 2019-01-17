@@ -23,26 +23,21 @@ body{background-color: transparent;}
 
 .gnb>.w_a>a>span{font-size: 1.7rem; line-height: 1.1; left:32%; transform: translate(-50%,-50%); }
 
-.gnb_p{display: block;}
 .gnb_p>li{display: block;}
 
 
-.gnb_p{display: none;
+.gnb_p{
   position: relative; top:0; right:13%; width: 45rem; height: 20rem;}
 .gnb_p>li{position: absolute; top:0; left:0; float:left; width: 100%; height: 100%;}
 .gnb_p>li>dl{float:left; margin-top: 1rem; width: 25%; height: 100%; border-right: 1px solid rgba(0,30,98,0.5); box-sizing: border-box; color:#111;}
 .gnb_p>li>dl:last-of-type{border-right:0;}
 
-.gnb_p>li>dl>dt span{width: 11.25rem; height:10%; color:#001e62; font-weight: bold; font-size: 1.1rem;}
-.gnb_p>li>dl>dd span{width:100%; height:10%; font-size: 1.1rem; color:#001e62;}
+.active{display: block;}
+
+.gnb_p>li>dl>dt span{width: 11.25rem; height:10%; font-weight: bold; font-size: 1.1rem;}
+.gnb_p>li>dl>dd span{width:100%; height:10%; font-size: 1.1rem;}
 
 
-/*.gnb_box .men>a:hover .gnb_box .men_p>{display: block;}*/
-/*.gnb_box .women>a:hover .gnb_box .women_p>{display: block;}*/
-/*.gnb_box .kids>a:hover .gnb_box .kids_p>{display: block;}*/
-/*.gnb_box .w_a>a:hover .gnb_box .w_a_p>{display: block;}*/
-
-  
   
 /* #mainBox ------------------------------------------------ */
 #mainBox{height: 1100px;} 
