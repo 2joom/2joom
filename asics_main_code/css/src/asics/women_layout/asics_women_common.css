@@ -3,7 +3,7 @@
 
 /*body{background-color: transparent;}*/
 
-#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto;}
+#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; font-family: '맑은 고딕' , Malgun Gothic; color:#001e62;}
 h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: capitalize; }
 .container{width: 100%; height: 100%;}
 
@@ -57,37 +57,52 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #mainBox============================================= */
 #mainBox{position: relative; z-index: 400; 
-  width:100%; height:40rem; background-color:#f3f;}
+  /*반응형별로 정리하여 top주기*/ 
+  width:100%; height: 100%; background-color:#f3f;}
 /* ==========인디케이터 =============================== */
-.main_small{position: absolute; z-index: 50; left:50%; transform: translateX(-50%); margin:5% 0;
-  width: 100%; height: 10%; background-color: #55a;}
-.main_indicator{width: 30%; height: 100%; background-color: #991;}
-.main_indicator>li{float:left; margin-right: 1%; width: 22%; height: 100%;}
+.main_small{position: absolute; z-index: 50; bottom:0; left:50%; transform: translate(-50%);
+  width: 100%; height:5%; background-color: #55a;}
+.main_indicator{margin: auto; width: 18%; height: 100%; background-color: #991;}
+.main_indicator>li{float:left; margin-right: 0.7rem; width: 20%; height: 100%;}
 .main_indicator>li:last-child{margin-right: 0;}
 .main_indicator>li>a{display: block; width: 100%; height: 100%; border-radius:100%; background-color: #001e62;}
 
-#adBanner>.indicator li>button:hover,
-#adBanner>.indicator li>button:focus{background-color: #00c3e6;}
-/*#adBanner>.indicator li.active>button{background-color:#00c3e6;}*/
+.main_indicator>li>a:hover,
+.main_indicator>li>a:focus{background-color: #00c3e6;}
+/* .main_indicator li.active>a{background-color:#00c3e6;}*/
 
 /* ==========좌우버튼 =============================== */
 .main_btn{position: absolute; z-index: 50; top:50%; left:0;
-  width: 100%; height: 20%; background-color: #a99; a35; transform:translateY(-125%);}/*버튼을 위해서 높이값 감싸는 바스에 0만들어줘야함*/
-.main_btn>button{width: 20%; height: 100%; background-color: #155;}
-.next_btn{float:right;}
-.prev_btn{float:left;}
-.main_btn>button>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+  width: 100%; height: 0; background-color: #a99; transform:translateY(-125%);}/*버튼을 위해서 높이값 감싸는 바스에 0만들어줘야함*/
+.main_btn>.next_btn{display: block; float:right; margin-right: 1.5rem;
+  width: 4%; height: 5.5rem;
+  background-image: url("../../../../img/img_psd/right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+background-color: #000;}
+.main_btn>.prev_btn{display: block; float:left; margin-left: 1.5rem;
+  width: 4%; height: 5.5rem;
+  background-image: url("../../../../img/img_psd/left.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+background-color: #000;}
 /* ==========광고 배너 =============================== */
-.main_big{width: 100%; height: 70%; background-color: #aa2; overflow: hidden;}
+.main_big{width: 100%; height: 90%; background-color: #aa2; overflow: hidden;}
 .main_img{width: 160%; height: 100%; min-height: 100%; overflow: hidden;}
 .main_img>li{float: left; margin-right: 1%;
   width: 22%; height: 100%; background-color: #59c;}
 .main_img>li:last-child{margin-right: 0;}
-.main_img>li>a{display: block; width: 100%; height: 100%;  background-repeat: no-repeat; background-position: 0 0; background-size: contain; background-color: #c14}
+.main_img>li>a{display: block; width: 100%; height: 100%;  background-repeat: no-repeat; background-position: 0 0; background-size: cover; background-color: #c14;}
+
+.main_img>.main_img01>a{background-image: url("../../../../img/asics_img/main_1.jpg"); background-position: 0 50%;}
+.main_img>.main_img02>a{background-image: url("../../../../img/asics_img/main_2.jpg"); background-position: 0 40%;}
+.main_img>.main_img03>a{background-image: url("../../../../img/asics_img/main_3.jpg"); background-position: 0 50%;}
+.main_img>.main_img04>a{background-image: url("../../../../img/asics_img/main_4.jpg");}
+
 
 
 /* #bestBox---------------------------------------- */
-#bestBox{width: 100%; height:50rem; margin:100px 0; }  
+#bestBox{width: 100%; height:50rem; margin:100px 0; margin-top: 250px;}  
   .best_h2{margin:auto; margin-bottom: 33px; 
     width: 285px; height: 52px; font-size: 3rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
   .best_big{width: 90%; height: 80%; }
@@ -185,46 +200,67 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
  #viewBox{width: 100%; height: 100%;}
  .view{height: 100%; width: 100%;}
  .view>a{display: block; width: 100%; height: 100%;
-  background-image: url("../../../../img/img_psd/asics_run.jpg");
+  background-image: url("../../../../img/img_psd/women_view.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size:  contain;}
 
 
 /* videoBox---------------------------------------- */
-#videoBox{width: 100%; height: 41rem; background-color: #a8c;}
-  .video_h2{width:15%; height:5%; font-family: '맑은 고딕' , Malgun Gothic; color:#fff; background-color: #414;} 
-  .video_big{margin: auto; margin-bottom: 1.5%; width: 90%; height: 40%; background-color: #cac; }
-  .media{width: 100%; height: 100%; #background-color: #199;}
-  /*.media>video{  }*/
+#videoBox{width: 100%; height: 100%; background-color: #a8c;}
+  .video_h2{margin: auto; margin-bottom: 1rem; width:15%; height:5%; font-family: '맑은 고딕' , Malgun Gothic; color:#fff; background-color: #414;font-size: 2rem;} 
+  .video_big{margin: auto; margin-bottom: 1rem; width: 100%; height: 40%; background-color: #cac; }
+  .media{position: relative; width: 100%; height: 100%; background-color: #199; overflow: hidden;}
+  .media>video{position: absolute; top:50%; left:0; transform: translateY(-50%);
+    width: 100%; height: auto; min-height: 100%; }
 
-  .video_small{margin: auto;  width: 90%; height: 50%; background-color: #478;}
+  .video_small{margin: auto;  width: 70%; height: 50%; background-color: #478;}
   .video_img{width: 100%; height: 100%;}
   .art{float: left; margin: 0 2.5%;
    width: 45%; height: 45%; background-color: #a0f;}
   .art_01,.art_02{margin-top: 0; margin-bottom: 1rem;}
 
-  .art>.art_img{float:left; width: 100%; height: 70%; background-color:#33a;}
-  .art>.art_name{float:left; width: 100%; height: 15%; background-color:#a3a; color:#001e62; font-family: '맑은 고딕' , Malgun Gothic;}
-  .art>.art_price{float:left; width: 100%; height: 15%; background-color:#3aa; color:#001e62; font-family: '맑은 고딕' , Malgun Gothic;}
+  .art>.art_img{float:left; margin-bottom:0.7rem; width: 100%; height: 78%; background-color:#33a;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
+  .art>.art_name{float:left; width: 100%; height: 10%; background-color:#a3a; color:#001e62; font-family: '맑은 고딕' , Malgun Gothic;}
+  .art>.art_price{float:left; width: 100%; height: 10%; background-color:#3aa; color:#001e62; font-family: '맑은 고딕' , Malgun Gothic;}
+
+    .art_img>a{display: block; width: 100%; height: 100%; background-repeat: no-repeat;}
+    
+    .art_img01>a{background-image: url("../../../../img/img_psd/art_img01.png"); background-position: 0 50%; background-size: 123%;}
+    .art_img02>a{background-image: url("../../../../img/img_psd/art_img02.png"); background-position: center; background-size: 100%;}
+    .art_img03>a{background-image: url("../../../../img/img_psd/art_img03.png"); background-position: 0 50%; background-size: 120%;}
+    .art_img04>a{background-image: url("../../../../img/img_psd/art_img04.png"); background-position: center; background-size: 100%;}
+
+    .art_name>a{display: block; width: 100%; height: 100%;}
+    .art_price>a{display: block; width: 100%; height: 100%;}
+
+      .art_name>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.5rem; padding-left: 0.5rem; box-sizing: border-box; color:#001e62; line-height: 1.5rem; text-transform: uppercase;}
+      .art_price>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.8rem;  color:#001e62;  line-height: 1.5rem;}
+
+
+
+
+
 
 /* #womenBox---------------------------------------- */
-#womenBox{width: 100%; height:20rem; background-color: #fa3;}
-#womenBox>.container{width: 100%; height: 100%; background-color: #aa2; max-width: 80rem;}
-.women_img{float:left; width: 50%; height: 100%; background-color: #c89c;}
-.women_img>a{display: block; width: 100%; height: 100%; background-repeat:no-repeat; background-position: 0 0; background-size: contain;}
+#womenBox{margin:200px 0; width: 100%; height:100%; background-color: #fa3;}
+#womenBox>.container{width: 100%; height: 100%; background-color: #aa2; max-width: 70rem; padding:0;}
+.women_img{float:right; width: 50%; height: 100%; background-color: #c89c;}
+.women_img>a{display: block; width: 100%; height: 100%; 
+  background-image: url("../../../../img/img_psd/art_img.png"); background-repeat:no-repeat; background-position: 0 0; background-size: cover;}
 
-.women_text{float:left; width: 50%; height: 100%; background-color: #c0c;}
-.women_text_box{width: 100%; height: 100%; background-color: #c0c;}
-.women_text_box>a{float:left; display: block; width: 100%; height: 25%; background-color: #35b;}
-.women_text_box>a>span{display: block; width: 100%; height: 50%;}
-.women_text_box>a>span:frist-child{text-align:center; font-size: 1rem; background-color: #add;}
-.women_text_box>a>span:last-child{text-align:justify; font-size: 0.8rem; background-color: #aad;}
+.women_text{position: relative; float:left; width: 50%; height: 100%; background-color: #828282;}
+.women_text_box{position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100%; height:50%; background-color: #c0c;}
+.women_text_box>a{float:left; display: block; width: 100%; height: 70%; background-color: #35b;}
+.women_text_box>a>span{display: block; width: 100%; height: 50%; color:#fff;}
+.women_text_box>a>span:first-child{text-align:center; font-size: 1.8rem; line-height: 3.5rem; background-color: #add;}
+.women_text_box>a>span:last-child{margin: auto; padding-top:10px; box-sizing: border-box; width: 60%; text-align:justify; font-size: 1rem;  background-color: #aad; }
 
-.women_btn{width: 100%; height: 25%; background-color: #345;}
-.btn_01{float:right; width:50%; height: 100%; background-color: #330;}
-.btn_02{float:left; width:50%; height: 100%; background-color: #030;}
-
+.women_btn{margin: auto; width: 40%; height: 30%; background-color: #345;}
+.btn_01{float:left; width:40%; height: 100%; background-color: #330;}
+.btn_02{margin-left:5%; float:right; width:55%; height: 100%; background-color: #030;}
+.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.1rem; line-height: 3.3rem; color:#fff;}
 
 
 
