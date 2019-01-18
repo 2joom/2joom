@@ -13,7 +13,7 @@
       #navBox{width: 100px;}
       #navBox>div{width:60px; float:right;}
 
-      .menu:hover>.gnb_box{display:block;}
+      .menu:hover .gnb_box{display:block;}
   
       .gnb{ background-color: rgba(255,255,255,0.1);}
       .gnb>li>a>span{font-size: 1rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}

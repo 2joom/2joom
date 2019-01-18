@@ -15,9 +15,9 @@
     #navBox{float:right; width: 202px;}
     #navBox>div{width:96px;}
     
-      .menu>button:focus+.gnb_box,
-      .menu>button:hover+.gnb_box{display:block;}
+      .menu:hover .gnb_box{display:block;}
       
+
     .gnb_box{top:80px; width:100px; height: 299px;}
     .gnb{ background-color: rgba(255,255,255,0.1);}
       .gnb>li>a>span{font-size: 1.4rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}

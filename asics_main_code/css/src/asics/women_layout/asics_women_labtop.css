@@ -16,14 +16,14 @@
     .menu{width: 500px; height: 100%;}
     .menu>button{display: none; width: 100%; height: 100%;}
 
-.gnb_box{display:block; float: left; top:0; right:0; transform: translateX(-25%); width:25rem; height:100%;}
+.gnb_box{display:block; float: left; top:0; right:0; transform: translateX(-15%); width:25rem; height:100%;}
 
 .gnb_box>.gnb{display:block; width: 100%; height: 100%;}
 .gnb>li{display:block; float:left; width: 23%; height: 100%;}
 .gnb>li:last-of-type{width: 30%;}
 .gnb>li>a>span{top:50%; left:50%; transform:translate(-50% , -50%); color:#fff;  font-size: 1.5rem;}
 
-.gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.2; top:50%; left:25%; transform:translate(-25%,-50%);}
+.gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1; top:50%; left:25%; transform:translate(-25%,-50%);}
 .gnb_p>li{display: block;}
 
 
@@ -130,7 +130,7 @@
 .women_text_box>a>span:first-child{text-align:center; font-size: 1.8rem; line-height: 4.5rem; background-color: #add; height: 55%; }
 .women_text_box>a>span:last-child{margin: auto; padding-top:5px; width: 60%; text-align:justify; font-size: 0.8rem;  background-color: #aad; height: 45%; }
 
-.women_btn{margin: auto; width: 45%; height: 30%; background-color: #345;}
+.women_btn{margin: auto; width: 50%; height: 30%; background-color: #345;}
 .btn_01{float:left; width:40%; height: 100%; background-color: #330;}
 .btn_02{margin-left:5%; float:right; width:55%; height: 100%; background-color: #030;}
 .women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.1rem; line-height: 3.3rem; color:#fff;}
@@ -138,16 +138,22 @@
 
 
 /* #footBox ------------------------------------------------ */
-#footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
-  .foot_bg .foot_h2{width: 18%; height: 15%; margin-top: 25px; margin-bottom: 25px; }
+  #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
+  .foot_bg+.container{width: 80%; height: 100%;}
+  .foot_bg .foot_h2{width: 20%; height: 12%; margin-top: 25px; margin-bottom: 25px;}
   
-  .foot_bg dl>dt>a{font-size: 1.8rem;}
+  #footBox01 dl{width: 20%; margin-left: 4.5%;}
+  #footBox01 dt{height: 16%;}
+  #footBox01 dl>dd>a{padding-bottom:0.2rem;}
+  
+  .foot_bg dl>dt>a{font-size: 1.3rem;}
   #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 1.3rem;}
-  #footBox02{height: 50%;}
-  address{font-size: 1rem; text-indent: 0.3rem; width: 95%; }
-  #footBox p{font-size: 1rem; }
- 
+  #footBox01 dl:focus>dd>a{font-size: 1rem;}
+  
+  address{width: 100%;}
+  address>p{font-size: 0.9rem;}
+  address+p{margin: auto; float:left; width: 100%; height: 5%; font-size: 1rem;}
+
 
 }
 /* pc end */

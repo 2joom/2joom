@@ -15,8 +15,7 @@
     #navBox{float:right; width: 202px;}
     #navBox>div{width:96px;}
     
-      .menu>button:focus+.gnb_box,
-      .menu>button:hover+.gnb_box{display:block;}
+      .menu:hover .gnb_box{display:block;}
       
     .gnb_box{top:80px; width:100px; height: 299px;}
     .gnb{ background-color: rgba(255,255,255,0.1);}
@@ -27,35 +26,25 @@
 
 
 /* #mainBox ----------------------------------------- */
-#mainBox{height:908px;}
-.main_video>video{left: 50%; width: auto; height: 116%;
-  min-width: 100%; 
-  background-size:100%; transform: translate(-50% , -1%);}
+#mainBox{height:600px; padding-top: 125px}
 
-.main_btn button,
-.main_txt>p{font-size:1.8rem;}
+.main_indicator{margin: auto; width: 25%; height: 100%; background-color: #991;}
+.main_indicator>li{float:left; margin-right: 0.5rem; width: 20%; height: 100%;}
+.main_indicator>li:last-child{margin-right: 0;}
+
+.main_img>.main_img01>a{
+  background-position: center; background-size: cover;}
+.main_img>.main_img02>a{
+  background-position: center; background-size: cover;}
+.main_img>.main_img03>a{
+  background-position: center; background-size: cover;}
+.main_img>.main_img04>a{
+  background-position: center; background-size: cover;}
 
 
 
 
-/* #bannerBox---------------------------------------- */
-#bannerBox{margin:100px 0; ;width: 100%; height:50rem; 
-  } 
-  .ban_h2{width:35%; height:15%; margin: auto; margin-bottom: 1rem; padding-top:2rem; box-sizing: border-box;  color:#fff; line-height: 72px; font-size: 2rem;} 
-  .banner_big{margin-top:3rem; width: 100%; height:70%; }
-  .banner_big>div{float:left; margin-right:2%;
-    width: 32%; height: 100%; }
-  .banner_big>div:nth-of-type(3){margin-right: 0;}
 
-  .banner_01>a{background-position: 50% 20%; background-size: cover;}
-  .banner_02>a{background-position: 50% 20%; background-size: cover;}
-  .banner_03>a{background-position: 50% 100%; background-size: cover;}
-
-  .banner_big>div>a>span{top:50%; left:50%;
-    transform: translate(-50%,-50%); 
-    font-weight: bold; font-size: 1.5rem;}
-  
- 
 /* #bestBox---------------------------------------- */
 #bestBox{width: 100%; height:40rem; margin:100px 0;   }  
   .best_h2{margin:auto; margin-bottom: 33px; 
@@ -84,13 +73,6 @@
   .best03,.best04,.best05,.best06,.best07,.best08,.best09{display: none;}
 
 
- /* #viewBox---------------------------------------- */
- #viewBox{width: 100%; height: 21rem; margin-bottom: 10rem;}
- .view{height: 100%; width: 100%; }
- .view>a{background-position: center; background-size:100%; }
-
-
-
 /* #sportBox---------------------------------------- */
   #sportBox{width: 100%; height:35rem;  margin-bottom: 20%;}  
     .sport_h2{margin: auto; margin-bottom: 5%;
@@ -108,22 +90,64 @@
     color:#fff; font-weight: bold; font-size: 1.5rem;}
 
 
+
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 21rem; margin-bottom: 10rem;}
+ .view{height: 100%; width: 100%; }
+ .view>a{background-position: center; background-size:100%; }
+
+
+/* videoBox---------------------------------------- */
+#videoBox{height: 48rem;}
+  .video_h2{margin: auto; margin-bottom:2rem; width:25%; height:5%; font-size:2rem;}
+  
+  .video_big{height: 40%; }
+
+  .video_small{height: 48%;}
+  .art>.art_img{height: 70%; margin-bottom: 0.5rem}
+
+  .art{float: left; margin: 0.5% 0.2% 0 1%; 
+   width: 48%; height: 48%; background-color: #a0f;}
+  .art_01,.art_02{margin-top: 0; margin-bottom: 0.5rem;}
+  .art_03,.art_04{margin-bottom: 0;}
+
+  .art_name>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.5rem; padding-left: 0.5rem; box-sizing: border-box; color:#001e62; line-height: 1rem; text-transform: uppercase; font-size: 0.9rem;}
+  .art_price>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.8rem;  color:#001e62;  line-height: 1rem; font-size: 0.8rem;}
+
+
+
+
+/* #womenBox---------------------------------------- */
+#womenBox{margin:200px 0; width: 100%; height:15rem; background-color: #fa3;}
+.women_text_box{position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100%; height:50%; background-color: #c0c;}
+.women_text_box>a{float:left; display: block; width: 100%; height: 70%; background-color: #35b;}
+.women_text_box>a>span{display: block; width: 100%; color:#fff;}
+.women_text_box>a>span:first-child{text-align:center; font-size: 1.5rem; line-height: 3rem; background-color: #add; height: 55%; font-weight: bold;}
+.women_text_box>a>span:last-child{margin: auto; padding-top: 0; width: 60%; text-align:justify; font-size: 0.7rem;  background-color: #aad; height: 45%; }
+
+.women_btn{margin: auto; width: 50%; height: 30%; background-color: #345;}
+.btn_01{float:left; width:40%; height: 100%; background-color: #330;}
+.btn_02{margin-left:5%; float:right; width:55%; height: 100%; background-color: #030;}
+.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 0.9rem; line-height:2.3rem; color:#fff;}
+
   
 /* #footBox ----------------------------------------- */
-#footBox{height: 379px; padding-top:37px; box-sizing:border-box;}
-  .foot_bg>h2{width: 18%; height: 12%; margin-top: 20px; margin-bottom: 20px;
-  background-position: 0 0; 
-  background-size: contain;}
-
-  .foot_bg dl>dt>a,
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 1.1rem;}
+#footBox{height: 300px; padding-top:37px; box-sizing:border-box;}
+  .foot_bg+.container{width: 80%; height: 100%;}
+  .foot_bg .foot_h2{width: 20%; height: 15%; margin-top: 15px; margin-bottom: 15px;}
   
-  .foot_box04>dt{height: 40%;}
-  .foot_bg dl>dt>a{font-size: 1.2rem; line-height: 2.5rem;}
+  #footBox01 dl{width: 20%; margin-left: 4.5%;}
+  #footBox01 dt{height: 15%; box-shadow:inset 0.3rem 0.3rem 0.3rem rgba(200,200,200,0.3) ;}
 
-  address{font-size: 0.8rem; text-indent: 0.3rem; width: 95%; }
-  .foot_bg .foot_p{font-size: 0.8rem; margin-top: 0.5rem;}
+  #footBox01 dl>dd>a{padding-bottom:0.2rem; font-size: 1rem;}
+  
+  .foot_bg dl>dt>a{font-size: 1rem;}
+  #footBox01 dl:hover>dd>a,
+  #footBox01 dl:focus>dd>a{font-size:0.8rem;}
+
+  address{width: 100%; height: 18%; padding-top: 0.5rem;}
+  address>p{font-size: 0.7rem; width: 100%;}
+  address+p{float:left; width: 100%; height: 5%; font-size: 0.7rem;}
 
 
 }
