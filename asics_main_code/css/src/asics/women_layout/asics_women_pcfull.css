@@ -18,9 +18,9 @@ body{background-color: transparent;}
 
 .gnb_box>.gnb{display:block; width: 100%; height: 100%; }
 .gnb>li{display:block; float:left; width: 25%; height: 100%;}
-.gnb>li>a>span{top:50%; left:25%; transform:translate(-50%,-50%); color:#fff;  font-size: 2rem;}
+.gnb>li>a>span{top:50%; left:50%; transform:translate(-50%,-50%); color:#fff;  font-size: 2rem;}
 
-.gnb>.w_a>a>span{font-size: 1.7rem; line-height: 1.1; left:32%; transform: translate(-50%,-50%); }
+.gnb>.w_a>a>span{font-size: 1.6rem; line-height: 1.1; left:32%; transform: translate(-50%,-50%); }
 
 /*.gnb_p{display: block;}*/
 .gnb_p>li{display: block;}
@@ -39,7 +39,13 @@ body{background-color: transparent;}
 
   
 /* #mainBox ------------------------------------------------------------- */
-#mainBox{height:40rem; padding-top: 150px;} 
+#mainBox{height:45rem; padding-top: 150px;} 
+
+.main_indicator{margin: auto; width: 17%; height: 100%; background-color: #991;}
+.main_indicator>li{float:left; margin-right: 1rem; width: 18%; height: 100%;}
+.main_indicator>li:last-child{margin-right: 0;}
+
+
 
 
 /* #bannerBox---------------------------------------- */
@@ -89,19 +95,6 @@ body{background-color: transparent;}
   .best_img09>a{background-position: center; background-size: 70%;}
 
 
- /* #viewBox---------------------------------------- */
- #viewBox{width: 100%; height: 100%; margin:300px 0;}
- .view{height: 100%; width: 100%;}
- .view>a{display: block; width: auto; height: auto; min-height:100%; min-width:100%; background-position: center;
-  background-size:100%;}
-
-
-
-
-/* videoBox---------------------------------------- */
-#videoBox{height: 60rem;}
-
-
 /* #sportBox---------------------------------------- */
   #sportBox{width: 100%; height:50rem; margin-bottom: 200px;  }
   #sportBox>.container{ padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
@@ -128,6 +121,21 @@ body{background-color: transparent;}
     background-size: cover;}
 
 
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 30rem; margin-bottom:300px;}
+ .view{height: 100%; width: 100%;}
+ .view>a{display: block; width: auto; height: auto; min-height:100%; min-width:100%; background-position: center;
+  background-size:100%;}
+
+
+/* videoBox---------------------------------------- */
+#videoBox{height: 75rem;}
+ .video_h2{margin: auto; margin-bottom: 3rem; width:20%; height:5%; font-size:2.8rem;}
+ .video_big{margin-bottom: 40px; height: 37%; }
+ .video_small{margin: auto; width: 70%; height: 50%; background-color: #478;}
+  .video_img{width: 100%; height: 100%;}
+
+
 /* #womenBox---------------------------------------- */
 #womenBox{margin:200px 0; width: 100%; height:25rem; background-color: #fa3;}
 
@@ -136,12 +144,12 @@ body{background-color: transparent;}
 /* #footBox ------------------------------------------------------------- */
   #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
   .foot_bg+.container{width: 80%; height: 100%;}
-  .foot_bg .foot_h2{width: 10%; height: 15%; margin-top: 25px; margin-bottom: 25px; }
+  .foot_bg .foot_h2{width: 20%; height: 15%; margin-top: 25px; margin-bottom: 25px;}
   
   .foot_bg dl>dt>a{font-size: 1.8rem;}
   #footBox01 dl:hover>dd>a,
   #footBox01 dl:focus>dd>a{font-size: 1.3rem;}
-  #footBox02{height: 60%;}
+  #footBox02{height: 50%;}
   #footBox02 dt{height: 25%;}
   address{font-size: 1rem; text-indent: 0.3rem; width: 95%; }
   #footBox p{font-size: 1rem; }

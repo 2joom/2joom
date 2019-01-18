@@ -81,13 +81,13 @@ body{background-color: transparent;}
     .media2>video{width: auto; height: auto; min-height: 90%; min-width: 90%; transform:translate(-25% , -23%);}
 
     .banner_bigBox>.banner_view{float:right; width:50%; height: 500px; margin-top: 0;}
-    .banner_img{width: 100%; height: 100%; margin-bottom: 0;}
-    .banner_img>div{float:left; width: 47%; height:46%; margin-right: 0; margin-left: 0.7rem; margin-top: 0.5rem; box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
+    .banner_img{width: 100%; height: 100%; margin-bottom: 0; }
+    .banner_img>div{float:left; width: 47%; height:46%; margin-right: 0; margin-left: 0.7rem; margin-top: 0.5rem; box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5); }
 
-    .banner01>div>a{background-position: -100px 0; background-size: contain; }
-    .banner02>div>a{background-position: -100px 0; background-size: contain;}
-    .banner03>div>a{background-position: -100px 0; background-size: contain;}
-    .banner04>div>a{background-position: -100px 0; background-size: contain;}
+    .banner01>a{background-position: center; background-size: cover; }
+    .banner02>a{background-position: center; background-size: 70%;}
+    .banner03>a{background-position: center; background-size: 80%; }
+    .banner04>a{background-position: center; background-size: 90%;}
     .indicator{display: none;}
   
 
@@ -116,19 +116,16 @@ body{background-color: transparent;}
 
 /* #footBox ------------------------------------------------------------- */
   #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
-  .foot_h2{width: 25%; height: 10%; 
-  margin-top: 1rem; margin-left:40vw; margin-bottom: 1rem; 
-  background-position: 0 0; 
-  background-size: contain;}
-
-  .foot_bg>.foot_h2{width: 10%; height: 15%; margin-top: 25px; margin-bottom: 25px; }
+  .foot_bg+.container{width: 80%; height: 100%;}
+  .foot_bg .foot_h2{width: 20%; height: 15%; margin-top: 25px; margin-bottom: 25px;}
   
   .foot_bg dl>dt>a{font-size: 1.8rem;}
   #footBox01 dl:hover>dd>a,
   #footBox01 dl:focus>dd>a{font-size: 1.3rem;}
-  #footBox02{height: 60%;}
+  #footBox02{height: 50%;}
+  #footBox02 dt{height: 25%;}
   address{font-size: 1rem; text-indent: 0.3rem; width: 95%; }
   #footBox p{font-size: 1rem; }
-
+ 
 }
 /* pc full end */
