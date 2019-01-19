@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* asics_kids_pcfull.css */
+body{background-color: transparent;}
+
+
+/* pc full */
+@media screen and (min-width: 961px){
+  #headBg{height: 50px;}
+  #headerBox{height: 100px; top:50px;}
+    .logo{margin-left:1rem; width: 155px; height: 100px;}
+    .logo>a{background-size: contain; }
+    .sign_up{float:right; width: 102px;}
+    .sign_up>a{ background-size: 50%;}
+
+    .menu>button{display: none; width: 0%; height: 0%;}
+
+.gnb_box{display:block; float: left; top:0; right:30%; transform: translateX(-30%); width:35rem; height:100%;}
+
+.gnb_box>.gnb{display:block; width: 100%; height: 100%; }
+.gnb>li{display:block; float:left; width: 24%; height: 100%;}
+.gnb>.w_a{width: 28%}
+.gnb>li>a>span{top:50%; left:50%; transform:translate(-50%,-50%); color:#fff;  font-size: 2rem;}
+
+.gnb>.w_a>a>span{font-size: 1.5rem; /*line-height: 1.1;*/ top:50%; left:25%; transform: translate(-40%,-50%); }
+
+.gnb_p>li{display: block;}
+
+
+.gnb_p{ 
+  position: relative; top:0; right:13%; width: 45rem; height: 20rem;}
+.gnb_p>li{position: absolute; top:0; left:0; float:left; width: 100%; height: 100%;}
+.gnb_p>li>dl{float:left; margin-top: 1rem; width: 25%; height: 100%; border-right: 1px solid rgba(0,30,98,0.5); box-sizing: border-box; color:#111;}
+.gnb_p>li>dl:last-of-type{border-right:0;}
+
+.active{display: block;}
+
+.gnb_p>li>dl>dt span{width: 11.25rem; height:10%; font-weight: bold; font-size: 1.1rem;}
+.gnb_p>li>dl>dd span{width:100%; height:10%; font-size: 1.1rem;}
+
+  
+/* #mainBox ------------------------------------------------------------- */
+#mainBox{height:50rem; padding-top: 150px;} 
+.main_small{height:7%; }
+
+.main_indicator{margin: auto; width:20%; height: 100%;}
+.main_indicator>li{float:left; margin-right: 1rem; width: 20%; height: 100%;}
+.main_indicator>li:last-child{margin-right: 0;}
+
+.main_btn>.next_btn{width:7%; height:6rem; background-size:contain;}
+.main_btn>.prev_btn{width:7%; height:6rem; background-size:contain;}
+
+.main_img>.main_img01>a{background-position: 0 0; background-size: cover;}
+.main_img>.main_img02>a{background-position: 0 0; background-size: cover;}
+.main_img>.main_img03>a{background-position: 0 0; background-size: cover;}
+.main_img>.main_img04>a{background-position: 0 0; background-size: cover;}
+
+
+ 
+/* #bestBox---------------------------------------- */
+#bestBox{width: 100%; height:80rem; margin:150px 0;}
+  #bestBox>.container{ padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
+    width:80%; height: 100%; max-width: 90rem; }
+  .best_h2{margin:auto; margin-bottom: 33px; 
+    width: 285px; height: 52px; font-size: 2.8rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
+  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-right: ; width: 95%; height: 80%; }
+  .best{float:left; margin-top: 1%; margin-left: 2%;
+    width: 31%; height: 32%; }
+  .best01,.best02,.best03{margin-top: 0;}
+
+  .best>div:nth-child(1){width: 100%; height: 80%;  
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
+  .best>div:nth-child(2){width: 100%; height: 10%;  text-transform: uppercase;}
+  .best>div:nth-child(3){width: 100%; height: 10%;}
+  
+  .best_name span,
+  .best_price span{text-align: left; text-indent: 0.5rem;}
+
+  .best_img01>a{background-position: center; background-size: 70%;}
+  .best_img02>a{background-position: center; background-size: 70%;}
+  .best_img03>a{background-position: center; background-size: 70%;}
+  .best_img04>a{background-position: center; background-size: 70%;}
+  .best_img05>a{background-position: center; background-size: 70%;}
+  .best_img06>a{background-position: center; background-size: 70%;}
+  .best_img07>a{background-position: center; background-size: 70%;}
+  .best_img08>a{background-position: center; background-size: 70%;}
+  .best_img09>a{background-position: center; background-size: 70%;}
+
+
+/* #sportBox---------------------------------------- */
+  #sportBox{width: 100%; height:50rem; margin-bottom: 200px;  }
+  #sportBox>.container{padding-bottom:100px; box-sizing: border-box;
+    width:80%; height: 100%; max-width: 90rem; }  
+  .sport_h2{margin: auto; margin-bottom: 5%;
+      width:20%; height:10%; line-height: 45px; font-size: 2.8rem;} 
+  .sport_big{width: 100%; height:80%; }
+  .sport_big>div{float:left; margin-right:2%;
+    width: 32%; height: 100%; 
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);}
+  .sport_big>div:nth-of-type(3){margin-right: 0;}
+
+  .sport_big>div>a{position: relative; display: block; width: 100%; height:100%;}
+  .sport_big>div>a>span{position: absolute;}
+
+  .sport_img01>a{
+    background-position: center;
+    background-size: cover;}
+  .sport_img02>a{
+    background-position: center;
+    background-size: cover;}
+  .sport_img03>a{
+    background-position: center;
+    background-size: cover;}
+
+
+  .sport_big>div>a>span{bottom: 0.65rem; left:0.65rem; 
+    color:#fff; font-weight: bold; font-size: 2.5rem;}
+
+
+ /* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 30rem; margin-bottom:300px;}
+ .view{height: 100%; width: 100%;}
+ .view>a{display: block; width: auto; height: auto; min-height:100%; min-width:100%; background-position: 0 0;
+  background-size:100%;}
+
+
+/* videoBox---------------------------------------- */
+#videoBox{height: 75rem;}
+ .video_h2{margin: auto; margin-bottom: 3rem; width:20%; height:5%; font-size:2.8rem;}
+ .video_big{margin-bottom: 40px; height: 37%; }
+ .video_small{margin: auto; width: 70%; height: 50%;}
+ .video_img{width: 100%; height: 100%;}
+
+ .art_name>a>span{line-height: 1.3rem; font-size: 1.5rem;}
+ .art_price>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.8rem;  color:#001e62; font-size: 1.5rem;  line-height: 1.5rem;}
+
+
+/* #womenBox---------------------------------------- */
+#womenBox{margin:200px 0; width: 100%; height:25rem; background-color:rgba(130,130,130,0.3);}
+
+.women_text_box>a>span:first-child{text-align:center; font-size: 2.2rem; line-height:3.7rem; font-weight: bold; height: 47%;}
+.women_text_box>a>span:last-child{margin: auto; padding-top:3px; box-sizing: border-box; width: 60%; height: 53%; text-align:justify; font-size: 1rem;   }
+
+.women_btn{margin: auto; width: 55%; height: 30%; }
+.women_btn span{font-size: 1.2rem;}
+.btn_01{float:left; width:40%; height: 100%;  }
+.btn_02{margin-left:5%; float:right; width:55%; height: 100%;  }
+
+/* #footBox ------------------------------------------------------------- */
+  #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
+  .foot_bg+.container{width: 80%; height: 100%;}
+  .foot_bg .foot_h2{width: 20%; height: 15%; margin-top: 25px; margin-bottom: 25px;}
+  
+  #footBox01 dl{width: 20%; margin-left: 4.5%;}
+  #footBox01 dt{height: 16%;}
+  #footBox01 dl>dd>a{padding-bottom:0.2rem;}
+  
+  .foot_bg dl>dt>a{font-size: 1.3rem;}
+  #footBox01 dl:hover>dd>a,
+  #footBox01 dl:focus>dd>a{font-size: 1rem;}
+
+  address>p{font-size: 0.9rem;}
+  address+p{float:left; width: 100%; height: 5%; font-size: 1rem;}
+
+ 
+}
+/* pc full end */
+

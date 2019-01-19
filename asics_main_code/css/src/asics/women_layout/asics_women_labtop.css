@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* asics_main_labtop.css */
+/* asics_women_labtop.css */
 
 
 /* pc start */
@@ -45,9 +45,17 @@
 /* #mainBox ------------------------------------------------ */
 #mainBox{height:40rem; padding-top: 130px;} 
 
-.main_indicator{margin: auto; width:20%; height: 100%; background-color: #991;}
+.main_indicator{margin: auto; width:20%; height: 100%;}
 .main_indicator>li{float:left; margin-right: 0.4rem; width: 22%; height: 100%;}
 .main_indicator>li:last-child{margin-right: 0;}
+
+.main_btn>.next_btn{width:6%; height:5rem; background-size:contain;}
+.main_btn>.prev_btn{width:6%; height:5rem; background-size:contain;}
+
+.main_img>.main_img01>a{background-position: center; background-size: cover;}
+.main_img>.main_img02>a{background-position: center; background-size: cover;}
+.main_img>.main_img03>a{background-position: center; background-size: cover;}
+.main_img>.main_img04>a{background-position: center; background-size: cover;}
 
 
  
@@ -79,7 +87,7 @@
   .best_img09>a{background-position: 50% 50%; background-size: cover;}
 
 /* #sportBox---------------------------------------- */
-  #sportBox{width: 100%; height:30rem; margin-bottom: 200px;  }  
+  #sportBox{width: 100%; height:30rem; margin: 200px 0;  }  
     .sport_h2{margin: auto; margin-bottom: 5%;
       width:20%; height:10%; line-height: 45px; font-size: 2.8rem;} 
   .sport_big{width: 100%; height:80%; }
@@ -107,7 +115,7 @@
 
 
  /* #viewBox---------------------------------------- */
-#viewBox{width: 100%; height: 100%;}
+#viewBox{width: 100%; height: 40rem;}
  .view{height: 100%; width: 100%;}
  .view>a{display: block; width: 100%; height: 100%;
   background-position: center;
@@ -116,24 +124,24 @@
 
 
 /* videoBox---------------------------------------- */
-#videoBox{height: 66rem;}
-  .video_h2{margin: auto; margin-bottom:2rem; width:25%; height:5%; font-size:2.7rem;}
+#videoBox{height: 66rem; margin: 100px 0;}
+  .video_h2{margin: auto; margin-bottom:100px; width:25%; height:5%; font-size:2.7rem;}
   .art_03,.art_04{margin-bottom: 0;}
 
 
 /* #womenBox---------------------------------------- */
-#womenBox{margin:200px 0; width: 100%; height:25rem; background-color: #fa3;}
+#womenBox{margin:300px 0; width: 100%; height:28rem;}
 
-.women_text_box{position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100%; height:50%; background-color: #c0c;}
-.women_text_box>a{float:left; display: block; width: 100%; height: 70%; background-color: #35b;}
+.women_text_box{position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100%; height:50%; }
+.women_text_box>a{float:left; display: block; width: 100%; height: 70%;;}
 .women_text_box>a>span{display: block; width: 100%; color:#fff;}
-.women_text_box>a>span:first-child{text-align:center; font-size: 1.8rem; line-height: 4.5rem; background-color: #add; height: 55%; }
-.women_text_box>a>span:last-child{margin: auto; padding-top:5px; width: 60%; text-align:justify; font-size: 0.8rem;  background-color: #aad; height: 45%; }
+.women_text_box>a>span:first-child{text-align:center; font-size: 2rem; line-height: 4.5rem; height: 55%; }
+.women_text_box>a>span:last-child{margin: auto; padding-top:5px; width: 60%; text-align:justify; font-size: 1rem; height: 45%; }
 
-.women_btn{margin: auto; width: 50%; height: 30%; background-color: #345;}
-.btn_01{float:left; width:40%; height: 100%; background-color: #330;}
-.btn_02{margin-left:5%; float:right; width:55%; height: 100%; background-color: #030;}
-.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.1rem; line-height: 3.3rem; color:#fff;}
+.women_btn{margin: auto; width: 55%; height: 27%; margin-top: 3%;}
+.btn_01{float:left; width:40%; height: 100%; }
+.btn_02{margin-left:5%; float:right; width:55%; height: 100%;}
+.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.3rem; line-height: 3.5rem;}
 
 
 
