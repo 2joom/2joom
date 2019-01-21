@@ -60,10 +60,11 @@ var gnbLieq, gnbpLieq;
   // 본래 5개의 크기에서 복재까지 합쳐 6개를 대상으로 넓이를 다시확인.
 
 //좌,우 버튼을 클릭하든, 인디케이트를 클릭하든 공통의 기능을 하는 변수가 하나 필요하다!
-  var showI = 0;
   var mainBtn = mainBox.find('.main_btn');
   var nextBtn = mainBtn.children('.next_btn');
   var prevBtn = mainBtn.children('.prev_btn');
+  
+  var showI = 0;
   var mainIndi = mainBox.find('.main_indicator');
   var indiLi = mainIndi.find('li');
 
@@ -85,7 +86,7 @@ var gnbLieq, gnbpLieq;
   nextBtn.on('click', function(e) {
     e.preventDefault();
     // 맨뒤 eq(4):5번째 그림까지 가게만들어줬다.
-    if(showI >= len-1){ // eq(4) : 5번째 이미지에 왔을때
+    if(showI >= len-2){ // eq(4) : 5번째 이미지에 왔을때
       mainUl.stop(true,false).css({left: 100 + '%'}); // css는 콜백 함수의 기능이없다.css( ,funcution(){})안됨
       // 맨앞에 5번째로 가라 why? 스르륵 애니메이트 효과를 주기위해서
       showI = 0; // 다시 초기화 시켜서 한칸씩 가라 : 무한회전으로 보이도록
@@ -113,7 +114,7 @@ var gnbLieq, gnbpLieq;
           // function으로 실행하면서
           // 맨 뒤에 5로 이동하게 되었다.
           // showI값은 4가 되면서 -> eq(4) = 5번째 이미지
-          showI = len-1;
+          showI = len-2;
           mainUl.css({left:showI * -100 + '%'});
         });
       }else{        //아니면

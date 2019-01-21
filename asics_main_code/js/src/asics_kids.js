@@ -82,13 +82,13 @@ var gnbLieq, gnbpLieq;
 //좌,우 버튼 클릭시
 
 // nextBtn클릭시 변수 showI에 1씩 더하는 기능 부여
-// 최대 숫자는 전체 갯수-2 까지만 가능하게 (6개 중 5개까지 움직여아하니까 5개는 4번째라는 jquery식을 이용하여 -2했음)
+// 최대 숫자는 전체 갯수-2 까지만 가능하게 (5개 중 3개까지 움직여아하니까 3개는 4번째라는 jquery식을 이용하여 -2했음)
   nextBtn.on('click', function(e) {
     e.preventDefault();
     // 맨뒤 eq(4):5번째 그림까지 가게만들어줬다.
-    if(showI >= len-1){ // eq(4) : 5번째 이미지에 왔을때
+    if(showI >= len-2){ // eq(3) : 4번째 이미지에 왔을때
       mainUl.stop(true,false).css({left: 100 + '%'}); // css는 콜백 함수의 기능이없다.css( ,funcution(){})안됨
-      // 맨앞에 5번째로 가라 why? 스르륵 애니메이트 효과를 주기위해서
+      // 맨앞에 4번째로 가라 why? 스르륵 애니메이트 효과를 주기위해서
       showI = 0; // 다시 초기화 시켜서 한칸씩 가라 : 무한회전으로 보이도록
       // SlideBanner(showI);
       // viewBanner.animate({left:showI * -100 + '%'});
@@ -106,7 +106,7 @@ var gnbLieq, gnbpLieq;
   prevBtn.on('click',function(e){
       e.preventDefault();
       if(showI <= 0){ // 0보다 작거나 같다면,
-        showI = -1; // 무조건 -1이 되어라
+        showI = -2; // 무조건 -1이 되어라
         indiLi.removeClass('active');
         indiLi.eq(showI).addClass('active');
         mainUl.stop(true,true).animate({ left : showI * -100 + '%'},500,function(){ 
@@ -134,21 +134,21 @@ var gnbLieq, gnbpLieq;
     SlideBtn(showI);
   });
 
-  // var movingSlide;
+  var movingSlide;
 
-  // var startMove = function(){
-  //   movingSlide = setInterval(function(){
-  //     console.log('go!go!go!');
-  //     nextBtn.trigger('click');
-  //   }, 4000);
-  // };
+  var startMove = function(){
+    movingSlide = setInterval(function(){
+      console.log('go!go!go!');
+      nextBtn.trigger('click');
+    }, 4000);
+  };
 
-  // var stopMove = function(){
-  //   clearInterval( movingSlide );
-  // };
+  var stopMove = function(){
+    clearInterval( movingSlide );
+  };
 
-  // startMove();
-  // banner.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
+  startMove();
+  banner.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
 
 })(jQuery);
 
