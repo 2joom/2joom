@@ -79,7 +79,7 @@ body{background-color: transparent;}
     width:80%; height: 100%; max-width: 90rem; }
   .best_h2{margin:auto; margin-bottom: 33px; 
     width: 285px; height: 52px; font-size: 2.8rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
-  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-right: ; width: 95%; height: 80%; }
+  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-box; width: 95%; height: 80%; }
   .best{float:left; margin-top: 1%; margin-left: 2%;
     width: 31%; height: 32%; }
   .best01,.best02,.best03{margin-top: 0;}

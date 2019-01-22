@@ -27,6 +27,7 @@
 
 /* #mainBox ----------------------------------------- */
 #mainBox{height:600px; padding-top: 85px}
+.main_small{height: 6%;}
 
 .main_indicator{margin: auto; width: 25%; height: 100%; }
 .main_indicator>li{float:left; margin-right: 0.5rem; width: 20%; height: 100%;}
@@ -84,9 +85,9 @@
   .sport_big>div{float:left; margin-right:2%;
     width: 32%; height: 100%; }
   .sport_img03:last-child{margin-right: 0;}
-  .sport_img01>a{background-position: center; background-size: cover;}
-  .sport_img02>a{background-position: center; background-size: cover;}
-  .sport_img03>a{background-position: center; background-size: cover;}
+  .sport_img01>a{background-size: cover;}
+  .sport_img02>a{background-size: cover;}
+  .sport_img03>a{background-size: cover;}
 
   .sport_big>div>a>span{bottom: 0.5rem; left:0.5rem; 
     color:#fff; font-weight: bold; font-size: 1.5rem;}

@@ -1,0 +1,19 @@
+/* jquery_head.css */
+
+#wrap{position: relative; width: 100%; height:100%; background-color: #aac;}
+#headBox{position:absolute; left:10%; top:2rem; width: 80%; height: auto; background-color: #c51;}
+#headBox>.container{width: 100%; height: auto;}
+#navBox{width: 100%; height: 10rem; background-color: #ac1;}
+#navBox>h1{float: left; width: 10%; height: auto;}
+#navBox>ul{float: right; width: 90%; height: 100%;}
+#navBox>ul>li{width: 100%; height: 100%;}
+#navBox>ul>li>dl{float:left; width: 25%; height: 100%; background-color: #11c;}
+#navBox>ul>li>dl>dt{width: 100%; height: 20%; background-color: #1ac;}
+#navBox>ul>li>dl>dd{width: 100%; height: 20%; background-color: #1ac;}
+
+#headBox.active{position: fixed; top:0; left:0; width: 100%;}
+
+
+#adBox{width: 100%; height: 60rem;}
+.div{width: 100%; height: 100%; background-image: url("../../../img/monfee/adBanner/slide_01.png"); background-repeat: no-repeat; background-position: 0 0;}
+

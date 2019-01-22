@@ -177,19 +177,19 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
   .sport_big>div>a>span{position: absolute; color:rgba(255,255,255,0.7);}
 
   .sport_img01>a{
-    background-image: url("../../../../img/img_psd/Layer 4.png");
+    background-image: url("../../../../img/img_psd/women_sport1.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;}
   .sport_img02>a{
-    background-image: url("../../../../img/img_psd/Layer 5.png");
+    background-image: url("../../../../img/img_psd/women_sport2.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 50% 50%;
     background-size: contain;}
   .sport_img03>a{
-    background-image: url("../../../../img/img_psd/Layer 6.png");
+    background-image: url("../../../../img/img_psd/women_sport3.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 100% 0;
     background-size: contain;}
 
 

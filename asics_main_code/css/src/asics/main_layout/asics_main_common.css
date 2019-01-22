@@ -140,7 +140,7 @@ background-size:  contain;}
 
   /*#artBox---------------------------------------- */
 #artBox{width: 100%; height: 100%; background-color: #fff;}
-.art_box>div{background-repeat: no-repeat; background-size: contain; background-size:#111;}
+.art_box>div{background-repeat: no-repeat; background-size: contain;}
 .art01{background-image: url("../../../../img/img_psd/img1.png");}
 .art02{background-image: url("../../../../img/img_psd/img2.png");}
 .art03{background-image: url("../../../../img/img_psd/img3.png");}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- jquery_banner.html -->
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Competible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    
+    <link rel="stylesheet" href="../../fonts/nanumFont.css">
+    <link rel="stylesheet" href="../../css/base/reset.css" />  
+    <link rel="stylesheet" href="../../css/base/common.css" />
+     
+    <!--[if IE]>
+      <script src="../../ie/html5shiv/dist/html5shiv.min.js"</script>
+      <script src="../../ie/css3pie/PIE_IE9.js"</script>
+      <script src="../../ie/ie9.min.js"</script>
+      <script src="../../ie/respond/dest/respond.min.js"</script>
+    <![endif]-->
+   
+  
+    <!-- link:touch -->
+    <link rel="apple-touch-icon" href="../../ie/favicon.png">
+    <!-- link:favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../ie/icon/favicon.png">
+    <title>제목</title>
+
+    <style>
+      .min_banner{position: relative; margin: auto; width: 300px; height: 300px; border: 3px solid #333; margin-bottom: 100px;}  
+      .btn{position: absolute; top:110%; left:0; width: 100%;}
+      .btn>button{width: 100px; height: 50px; background-color: #caa; border: 0; font-size: 1.5rem; cursor: pointer;}
+      .btn>button{float:left;}
+      .btn>button:first-of-type{float:right;}
+
+      .product{width: 100%; height: 100%;}
+      .product>ul{width: 500%; height: 100%;}
+      .product>ul>li{float: left; width: calc(100% / 5); height: 100%; text-align: center; line-height: 300px; font-size: 2rem; font-weight: bold;}
+
+      .pr_01{background-color: #caffc1;}
+      .pr_02{background-color: #cc00c1;}
+      .pr_03{background-color: #ccfcff;}
+      .pr_04{background-color: #a12580;}
+      .pr_05{background-color: #fff015;}
+
+
+     h1{padding: 0.3rem; margin: auto; background-color: #0af; margin-bottom: 2rem; text-align: center;}
+      .main_banner{position: relative; margin: auto; width: 300px; height: 300px; border: 3px solid #333;}  
+      .main_btn{position: absolute; top:110%; left:0; width: 100%;}
+      .main_btn>button{width: 100px; height: 50px; background-color: #caa; border: 0; font-size: 1.5rem; cursor: pointer;}
+      .main_btn>button{float:left;}
+      .main_btn>button:first-of-type{float:right;}
+
+      .main_product{width: 100%; height: 100%;}
+      .main_product>ul{width: 500%; height: 100%;}
+      .main_product>ul>li{float: left; width: calc(100% / 5); height: 100%; text-align: center; line-height: 300px; font-size: 2rem; font-weight: bold;}
+
+      .pr_11{background-color: #ac1;}
+      .pr_22{background-color: #fc1;}
+      .pr_33{background-color: #acf;}
+      .pr_44{background-color: #fc4;}
+      .pr_55{background-color: #af5;}
+
+    </style>
+
+  </head>
+  <body>
+  <!-- Layout -->
+  <h1>banner</h1>
+  <div class="banner">
+    <div class="min_banner">
+      <div class="btn">
+        <button type="button">rBtn</button>
+        <button type="button">lBtn</button>
+      </div>
+      <div class="product">
+        <ul>
+          <li class="pr_01">pr_01</li>
+          <li class="pr_02">pr_02</li>
+          <li class="pr_03">pr_03</li>
+          <li class="pr_04">pr_04</li>
+          <li class="pr_05">pr_05</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="main_banner">
+      <div class="main_btn">
+        <button type="main_btn">rBtn</button>
+        <button type="main_btn">lBtn</button>
+      </div>
+      <div class="product main_product">
+        <ul>
+          <li class="pr_11">pr_01</li>
+          <li class="pr_22">pr_02</li>
+          <li class="pr_33">pr_03</li>
+          <li class="pr_44">pr_04</li>
+          <li class="pr_55">pr_05</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--  script   -->
+  <script src="../../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../../js/base/jquery-ui.min.js"></script>
+  <script>
+    // (function($){
+    //   var pr = $('.product').children('ul');
+    //   var prLi = pr.children('li');
+    //   prLi.eq(-3).nextAll().prependTo(pr); 
+    //   // eq(-3).nextAll():뒤에서 3번째 요소를 빼고 모두다 
+    //   // 지정한 자신을 빼고 모두라는 메소드
+    //   pr.css({marginLeft:-200+'%',
+    //           position:'relative', left:0});
+    //   prLi = pr.children('li');
+
+    //   var lbtn = $('.btn').children().eq(-1);
+    //   var lbtn = $('.btn').children().eq(0);
+
+    //   lbtn.on('click',function(e){
+    //     e.preventDefault();
+
+    //     pr.animate({left:100+'%'},function(){
+    //       prLi.eq(-1).prependTo(pr);
+
+    //     });
+    //   });
+    // })(jQuery);
+  </script>
+  </body>
+  </html>
+  

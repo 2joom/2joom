@@ -17,8 +17,8 @@
     
       .menu:hover .gnb_box{display:block;}
       
-    .gnb_box{top:80px; width:100px; height: 299px;}
-    .gnb{ background-color: rgba(255,255,255,0.1);}
+    .gnb_box{top:60px; width:100px; height: 299px;}
+    .gnb{top:-10px; background-color: rgba(255,255,255,0.5);}
       .gnb>li>a>span{font-size: 1.4rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}
       .gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1;}
       
@@ -26,10 +26,11 @@
 
 
 /* #mainBox ----------------------------------------- */
-#mainBox{height:600px; padding-top: 85px}
+#mainBox{height:700px; padding-top: 85px}
+.main_small{height: 5%;}
 
 .main_indicator{margin: auto; width: 25%; height: 100%; }
-.main_indicator>li{float:left; margin-right: 0.5rem; width: 20%; height: 100%;}
+.main_indicator>li{float:left; margin-right: 0.5rem; width: 21%; height: 100%;}
 .main_indicator>li:last-child{margin-right: 0;}
 
 .main_img>.main_img01>a{
@@ -75,12 +76,37 @@
   .best05,.best06,.best07,.best08,.best09{display: none;}
 
 
+ 
+
+
+/* #shopBox=========================================================== */
+ #shopBox{width: 100%; height: 25rem; background-color:transparent; /*rgba(0,26,108,0.4);*/ margin-bottom: 200px; padding:0 10%; box-sizing: border-box;}
+ .size{margin: auto; width: 80%;}
+
+  .size>.kids,
+  .size>div{width: 100%; height: 30%; margin-bottom:1rem;}
+  .size>div:last-child{margin-bottom:0;}
+
+  .shop_img{width: 40%;}
+  .shop_text{width: 60%;}
+  
+  .shop_text>ul{height:60%;}
+  .shop_text>ul>li>span{text-indent: 0.5rem; font-size:1rem;}
+
+  .shop_img>button{background-position: center; background-size:90%;}
+
+/* #viewBox---------------------------------------- */
+ #viewBox{width: 100%; height: 21rem; margin-bottom: 10rem;}
+ .view{height: 100%; width: 100%; }
+ .view>a{background-position: center; background-size:100%; }
+
+
+
+
 /* #sportBox---------------------------------------- */
-  #sportBox{width: 100%; height:35rem;  margin-bottom: 20%;}  
-    .sport_h2{margin: auto; margin-bottom: 5%;
-      width:28%; height:15%; font-size: 2rem;
-       line-height: 72px;} 
-  .sport_big{width: 100%; height:70%; margin-bottom: 10%; }
+  #sportBox{width: 100%; height:25rem;  margin-bottom: 100px;} 
+    .sport_h2{margin-bottom: 50px; font-size: 2rem;} 
+
   .sport_big>div{float:left; margin-right:2%;
     width: 32%; height: 100%; }
   .sport_img03:last-child{margin-right: 0;}
@@ -89,47 +115,24 @@
   .sport_img03>a{background-position: center; background-size: cover;}
 
   .sport_big>div>a>span{bottom: 0.5rem; left:0.5rem; 
-    color:#fff; font-weight: bold; font-size: 1.5rem;}
+    color:#fff; font-weight: bold; font-size: 1.3rem;}
+
+
+/* #bannerBox---------------------------------------- */
+#bannerBox{height:25rem; margin-bottom: 300px;} 
+  .ban_h2{margin: auto; margin-bottom:2rem; width:25%; height:10%; font-size: 2rem;} 
+
+  .banner_big>div{float:left; margin-right:2%;
+    width: 31%; height: 100%; box-shadow:0.5rem 0.5rem 0.5rem rgba(0,0,0,0.5);}
+  .sport_img03:last-child{margin-right: 0;}
+  .banner_big>div>a>span{font-size: 1.5rem;}  
+
+  .banner_01>a{background-position: center; background-size: cover;}
+  .banner_02>a{background-position: center; background-size: cover;}
+  .banner_03>a{background-position: center; background-size: cover;}
 
 
 
- /* #viewBox---------------------------------------- */
- #viewBox{width: 100%; height: 21rem; margin-bottom: 10rem;}
- .view{height: 100%; width: 100%; }
- .view>a{background-position: center; background-size:100%; }
-
-
-/* videoBox---------------------------------------- */
-#videoBox{height: 48rem;}
-  .video_h2{margin: auto; margin-bottom:2rem; width:25%; height:5%; font-size:2rem;}
-  
-  .video_big{height: 40%; }
-
-  .video_small{width: 80%; height: 48%;}
-  .art>.art_img{height: 70%; margin-bottom: 0.5rem}
-
-  .art{float: left; margin: 0.5% 2.5% 0 ; width: 45%; height: 48%;}
-  .art_01,.art_02{margin-top: 0; margin-bottom: 0.5rem;}
-  .art_03,.art_04{margin-bottom: 0;}
-
-  .art_name>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.5rem; padding-left: 0.5rem; box-sizing: border-box; color:#001e62; line-height: 1rem; text-transform: uppercase; font-size: 0.9rem;}
-  .art_price>a>span{display: block; width: 100%; height: 100%; text-align: left; font-weight: bold; text-indent: 0.8rem;  color:#001e62;  line-height: 1rem; font-size: 0.8rem;}
-
-
-
-
-/* #womenBox---------------------------------------- */
-#womenBox{margin:200px 0; width: 100%; height:15rem; }
-.women_text_box{position: absolute; top:50%; left:0; transform: translateY(-50%); width: 100%; height:50%; }
-.women_text_box>a{float:left; display: block; width: 100%; height: 70%; }
-.women_text_box>a>span{display: block; width: 100%;}
-.women_text_box>a>span:first-child{text-align:center; font-size: 1.5rem; line-height: 3rem;  height: 55%; font-weight: bold;}
-.women_text_box>a>span:last-child{margin: auto; padding-top: 0; width: 60%; text-align:justify; font-size: 0.7rem;   height: 45%; }
-
-.women_btn{margin: auto; width: 50%; height: 30%; }
-.btn_01{float:left; width:40%; height: 100%; }
-.btn_02{margin-left:5%; float:right; width:55%; height: 100%; }
-.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 0.9rem; line-height:2rem;}
 
   
 /* #footBox ----------------------------------------- */
