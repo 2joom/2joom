@@ -113,7 +113,7 @@ var gnbLieq, gnbpLieq;
           //  -1 x -100% : +100% 하면 사실 상 맨앞에 5였다.하지만, 
           // function으로 실행하면서
           // 맨 뒤에 5로 이동하게 되었다.
-          // showI값은 4가 되면서 -> eq(4) = 5번째 이미지
+          // showI값은 3가 되면서 -> eq(3) = 4번째 이미지
           showI = len-2;
           mainUl.css({left:showI * -100 + '%'});
         });
