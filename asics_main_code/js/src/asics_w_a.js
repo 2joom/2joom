@@ -36,4 +36,8 @@ var gnbLieq, gnbpLieq;
   gnbLi.on('mouseenter',Enter);
   gnbLi.on('mouseleave',Out);
     
+<<<<<<< HEAD
 // ************* #headBox end=======================================
+=======
+// ************* #headBox end=======================================
+>>>>>>> fa854134217711c1698429c4d79181d0126dd19c

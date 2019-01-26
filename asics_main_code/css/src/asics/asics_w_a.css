@@ -1,10 +1,22 @@
 @charset "utf-8";
 /* asics_w_a.css */
 @import url("./w_a_layout/asics_w_a_common.css");
+<<<<<<< HEAD
 @import url("./w_a_layout/asics_w_a_mobile.css");
 @import url("./w_a_layout/asics_w_a_tablet.css");
 @import url("./w_a_layout/asics_w_a_labtop.css");
 @import url("./w_a_layout/asics_w_a_pcfull.css");
+=======
+/*@import url("./w_a_layout/asics_w_a_mobile.css");*/
+/*@import url("./w_a_layout/asics_w_a_tablet.css");*/
+/*@import url("./w_a_layout/asics_w_a_labtop.css");*/
+/*@import url("./w_a_layout/asics_w_a_pcfull.css");*/
+
+
+
+
+
+>>>>>>> fa854134217711c1698429c4d79181d0126dd19c
 
 
 
