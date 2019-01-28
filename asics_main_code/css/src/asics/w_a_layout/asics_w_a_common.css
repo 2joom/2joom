@@ -62,7 +62,7 @@ i{font-style: normal;}
 .main_text>p{width: 100%; text-align: left; text-transform:uppercase; font-weight:1000; color:#313a41; }
 .main_text>p:first-child{font-size:4rem;}
 .main_text>p:last-child{font-size:1.5rem;}
-.main_btn{position: absolute; z-index: 300; top:50%; left:68vw;width: 120px; height:50px;}
+.main_btn{posi  -tion: absolute; z-index: 300; top:50%; left:68vw;width: 120px; height:50px;}
 .main_btn>button{display: block; width: 100%; height: 100%; font-weight: bold; font-size:1.1rem; letter-spacing:2.5px; color:#fff; border-radius: 1rem;  background-color: #001e62;}
 
 
@@ -104,7 +104,7 @@ i{font-style: normal;}
 #coachBox>.coach_box05{margin-right:0;}
 
 .coach_img{width: 100%; height: 50%; background-color: #a33; border-radius:100%; background-repeat: no-repeat; background-position:0 0; background-size:cover;}
-.coach_img01{background-image: url("../../../../img/asics_img/coach_01.jpg");}
+.coach_img01{background-image: url("../../../../img/asics_img/coach_01.jpg"); }
 .coach_img02{background-image: url("../../../../img/asics_img/coach_02.jpg"); }
 .coach_img03{background-image: url("../../../../img/asics_img/coach_03.jpg"); }
 .coach_img04{background-image: url("../../../../img/asics_img/coach_04.jpg"); }
