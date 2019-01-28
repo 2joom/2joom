@@ -3,13 +3,10 @@
 
 /*body{background-color: transparent;}*/
 
-<<<<<<< HEAD
 #wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; font-family: '맑은 고딕' , Malgun Gothic; color:#001e62;}
 h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: capitalize; }
-=======
 #wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; font-family: '돋움' , Dotum; color:#001e62;}
 h2{font-family: '돋움' , Dotum; color:#001e62; text-transform: capitalize; }
->>>>>>> fa854134217711c1698429c4d79181d0126dd19c
 .container{width: 100%; height: 100%;}
 i{font-style: normal;}
 
@@ -60,9 +57,7 @@ i{font-style: normal;}
 .gnb_p>.kids_p{display: none;}
 .gnb_p>.w_a_p{display: none;}
           
-<<<<<<< HEAD
             
-=======
 /* #mainBox============================================= */
 #mainBox{position: relative; overflow: hidden; width:auto; height: 739px; min-width:100%;  background-color: #ccc;}
 .main_img{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/main_bg.png"); background-repeat: no-repeat; background-position:0 0; background-size: cover;}
@@ -70,7 +65,7 @@ i{font-style: normal;}
 .main_text>p{width: 100%; text-align: left; text-transform:uppercase; font-weight:1000; color:#313a41; }
 .main_text>p:first-child{font-size:4rem;}
 .main_text>p:last-child{font-size:1.5rem;}
-.main_btn{posi  -tion: absolute; z-index: 300; top:50%; left:68vw;width: 120px; height:50px;}
+.main_btn{position: absolute; z-index: 300; top:50%; left:68vw;width: 120px; height:50px;}
 .main_btn>button{display: block; width: 100%; height: 100%; font-weight: bold; font-size:1.1rem; letter-spacing:2.5px; color:#fff; border-radius: 1rem;  background-color: #001e62;}
 
 
@@ -99,7 +94,6 @@ i{font-style: normal;}
 .ban_text{margin: auto; margin-top: 40px; width:80%; height: 150px;}
 .ban_text>dl{float:left; padding:40px 0; box-sizing: border-box; margin-right:5%; width: 30%; height: 100%;}
 .ban_text>dl:last-child{margin-right: 0;}
-<<<<<<< HEAD
 .ban_text>dl>dt{margin-bottom:10px; width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; line-height:20px;}
 .ban_text>dl>dd{width: 100%;}
 .ban_text>dl>dd:nth-of-type(1){margin-bottom:5px;}
@@ -122,28 +116,9 @@ i{font-style: normal;}
 /*.coach_info{}*/
 /*.info01{}*/
 /*.info02{}*/
-=======
 .ban_text>dl>dt{width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; background-color: #ca1; line-height:20px;}
 .ban_text>dl>dd{width: 100%; height: 70%; background-color: #155;}
 /*.ban_text01{}*/
-
-
-
-
-
-
-
-
-
->>>>>>> fa854134217711c1698429c4d79181d0126dd19c
-
-
-
-
-
-
->>>>>>> bbacb01a2761dd8ee73ff2badf33eb0e73327fb0
-
 
 
 /* #footBox---------------------------------------- */
