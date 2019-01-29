@@ -20,10 +20,12 @@ var gnbLieq, gnbpLieq;
       e.preventDefault();
       index    = $(this).index();
       gnbpLieq = gnbpLi.eq(index);
+      gnbpLi.stop(true, false).fadeOut();
       gnbpLieq.stop(true, false).fadeIn();
       gnbP.addClass('active');
       gnbpLieq.siblings('li').removeClass('active');
   };
+
   var Out = function(e){
     e.preventDefault();
     index    = $(this).index();
@@ -34,7 +36,7 @@ var gnbLieq, gnbpLieq;
   };
 
   gnbLi.on('mouseenter',Enter);
-  gnbLi.on('mouseleave',Out);
+  menu.on('mouseleave',Out);
     
 // ************* #headBox end=======================================
 })(jQuery);

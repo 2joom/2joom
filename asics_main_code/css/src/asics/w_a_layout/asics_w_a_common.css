@@ -3,27 +3,25 @@
 
 /*body{background-color: transparent;}*/
 
-#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; font-family: '맑은 고딕' , Malgun Gothic; color:#001e62;}
-h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: capitalize; }
-#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; font-family: '돋움' , Dotum; color:#001e62;}
-h2{font-family: '돋움' , Dotum; color:#001e62; text-transform: capitalize; }
-.container{width: 100%; height: 100%;}
+#wrap{position:relative; width: 100%; height: 100%; text-align: center; margin:auto; }
+h2{ color:#001e62; text-transform: capitalize; }
 i{font-style: normal;}
 
 /* #headBox---------------------------------------- */
-#headBox{position: fixed; z-index: 500; width: 100%; height: auto;  }
+#headBox{position: fixed; z-index:1000; width: 100%; height: auto; font-family: '맑은 고딕' , Malgun Gothic;}
   #headBg{width: 100%; background-color:#00c3e6;}  
-  #headerBox{width: 100%; background-color:#001e62;}
+  #headBg+.container{width: 100%; height: auto; background-color:#001e62;}
+  #headerBox{position: relative; width:auto; background-color:#001e62;}
     .logo{float:left;}
     .logo>a{width: 100%; height: 100%; float: left; color:#fff; background-image: url("../../../../img/img_psd/logo.png"); background-repeat: no-repeat; background-position: center; background-size:70%;}
     .sign_up{float: right; font-weight: bold; font-size:18px; height: 100%; }
     .sign_up>a{display: block; width: 100%; height: 100%; background-image: url("../../../../img/img_psd/signup_icon.png"); background-repeat: no-repeat; background-position: center;}
-    #navBox{position: relative; float:right; width: 60%; margin: auto; height:100%; }
+    #navBox{position: absolute; width: 60%; margin: auto; height:100%; }
     #navBox>div{height:100%;}
     .menu{position:relative; float: right;}
     .menu>button{width: 100%; height: 100%; font-size:20px; background-image: url("../../../../img/img_psd/menu_icon.png"); background-repeat: no-repeat; background-position: center;}
 
-.gnb_box{display:none; position: absolute; float:right; width:70px; height: 200px;}
+.gnb_box{display:none; position: absolute; width:70px; height: 200px;}
 
 .gnb_box>.gnb{display:block; width: 100%; height: 100%;}
 .gnb>li{display:block; float:left; width: 100%; height: 25%; }
@@ -50,7 +48,12 @@ i{font-style: normal;}
 
 
 .gnb_p dl>dt span{width: 100%; height:10%; color:#001e62; font-weight: bold; font-size: 1.1rem; text-align: left;}
-.gnb_p dl>dd span{width:100%; height:10%; font-size: 1.1rem; color:#001e62; text-align: left;}
+.gnb_p dl>dd span{font-size: 1.1rem; color:#001e62; text-align: left;}
+
+.gnb_p>li>dl>dt>a:hover,
+.gnb_p>li>dl>dt>a:focus,
+.gnb_p>li>dl>dd>a:hover,
+.gnb_p>li>dl>dd>a:focus{border-bottom:1px solid #001e62;}
 
 .gnb_p>.men_p{display: none;}
 .gnb_p>.women_p{display: none;}
@@ -59,7 +62,7 @@ i{font-style: normal;}
           
             
 /* #mainBox============================================= */
-#mainBox{position: relative; overflow: hidden; width:auto; height: 739px; min-width:100%;  background-color: #ccc;}
+#mainBox{position: relative; overflow: hidden; width:auto; height: 739px; min-width:100%;  background-color: #ccc; font-family: '돋움' , Dotum;}
 .main_img{width: 100%; height: 100%; background-image: url("../../../../img/img_psd/main_bg.png"); background-repeat: no-repeat; background-position:0 0; background-size: cover;}
 .main_text{position: absolute; z-index: 300; top:10%; left:68vw; width: 310px; height: 274px; background-color:transparent;}
 .main_text>p{width: 100%; text-align: left; text-transform:uppercase; font-weight:1000; color:#313a41; }
@@ -70,13 +73,13 @@ i{font-style: normal;}
 
 
 /* #artBox ==========================================================*/
-#artBox{margin-top:150px; width: 100%; height: 40rem; background-color: #cc1;}
-#artBox>h2{padding-top: 50px; width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222; background-color: #acb;}
-  .art_p{margin: auto; margin-top: 30px; width: 70%; height: 150px;}
-.art_p>p{text-transform: uppercase; text-indent:0.5rem; letter-spacing:2px; text-align: left; font-size:1.5rem; line-height: 1.6;color:#222222;}
+#artBox{margin:200px 0; width: 100%; height: 40rem; background-color: #cc1; font-family: '돋움' , Dotum;}
+#artBox>h2{padding:30px 0; width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222; background-color: #acb;}
+.art_p{margin: auto; margin-top: 30px; width: 70%; height: 150px;}
+.art_p>p{text-transform: uppercase; text-indent:0.7rem; letter-spacing:2px; text-align: left; font-size:1.5rem; line-height: 1.6;color:#222222;}
 .art_p>p>span{font-weight: bold;color:#222222;}
 .art_img{margin: auto; margin-top: 30px; padding:0 10px; box-sizing: border-box; width: 95%; height: 300px;}
-.art_img>div{float:left; margin-right:1.25%; margin-top:25px; margin-bottom: 25px; width:19%; height: 250px; background-color: #f91;
+.art_img>div{width:19%; height: 250px; background-color: #f91;
   background-repeat: no-repeat; background-position: center; background-size: cover;}
 .art_img>div:last-child{margin-right:0;}
 .art_img01{background-image: url("../../../../img/asics_img/club_01.jpg");}
@@ -88,42 +91,42 @@ i{font-style: normal;}
 
 
 /* #bannerBox============================================= */
-#bannerBox{margin-top:200px; width: 100%; height: 300px; background-color: #f9f9f9;}
-#bannerBox>h2{padding-top: 40px; width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222;}
+#bannerBox{margin:200px 0; width: 100%; height: 300px; background-color: #f9f9f9; font-family: '돋움' , Dotum;}
+#bannerBox>h2{width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222;}
 #bannerBox>h2>.font{color:#737373;}
 .ban_text{margin: auto; margin-top: 40px; width:80%; height: 150px;}
 .ban_text>dl{float:left; padding:40px 0; box-sizing: border-box; margin-right:5%; width: 30%; height: 100%;}
 .ban_text>dl:last-child{margin-right: 0;}
 .ban_text>dl>dt{margin-bottom:10px; width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; line-height:20px;}
-.ban_text>dl>dd{width: 100%;}
-.ban_text>dl>dd:nth-of-type(1){margin-bottom:5px;}
-
-
+.ban_text>dl>dd{width: 100%; height: auto; line-height:1.4;}
+.ban_text>dl>dt{width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; }
+.ban_text>dl>dd{width: 100%; height: 70%; }
+ 
 /* coachBox============================================ */
-#coachBox{width:100%; height: 500px; background-color: #aac;}
-#coachBox>h2{padding-top: 40px; width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222;}
+#coachBox{margin: 200px 0; width:100%; height: 600px; background-color: #aac; font-family: '돋움' , Dotum;}
+#coachBox>h2{padding-bottom:70px; box-sizing: border-box; width: 100%; height: 40px; font-weight: bold; letter-spacing:2px; text-transform: uppercase; font-size: 2.8rem; color:#222222;}
 #coachBox>h2>.font{color:#737372;}
-#coachBox>div{float:left; width:18%; height: 100%; margin-right:1%;}
-#coachBox>.coach_box05{margin-right:0;}
+.coach_box{padding:20px; box-sizing:border-box; width: 100%; height: 500px; background-color: #cca;}
+.coach_box>div{float:left; width:15%; height: 100%; margin-right:6%;}
+.coach_box>.coach_box05{margin-right:0;}
 
-.coach_img{width: 100%; height: 50%; background-color: #a33; border-radius:100%; background-repeat: no-repeat; background-position:0 0; background-size:cover;}
+.coach_img{margin-bottom:30px; width: 100%; height: 65%; border-radius:100%; background-repeat: no-repeat; background-position:0 0; background-size:cover;}
 .coach_img01{background-image: url("../../../../img/asics_img/coach_01.jpg"); }
 .coach_img02{background-image: url("../../../../img/asics_img/coach_02.jpg"); }
 .coach_img03{background-image: url("../../../../img/asics_img/coach_03.jpg"); }
 .coach_img04{background-image: url("../../../../img/asics_img/coach_04.jpg"); }
 .coach_img05{background-image: url("../../../../img/asics_img/coach_05.jpg"); }
 
-/*.coach_info{}*/
-/*.info01{}*/
+.coach_info{padding-left:20px; box-sizing: border-box; width: 100%; height: auto; text-align: left;}
+.info01{font-size: 1.2rem; font-weight: bold; padding-bottom:8px; box-sizing: border-box;}
 /*.info02{}*/
-.ban_text>dl>dt{width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; background-color: #ca1; line-height:20px;}
-.ban_text>dl>dd{width: 100%; height: 70%; background-color: #155;}
-/*.ban_text01{}*/
+
 
 
 /* #footBox---------------------------------------- */
-#footBox{position: relative; z-index: -1; width: auto; min-width:100%; height: auto; background-color:#00c3e6;} 
+#footBox{position: relative; z-index: -1; width: auto; min-width:100%; height: auto; background-color:#00c3e6; font-family: '맑은 고딕' , Malgun Gothic;} 
 .foot_bg{position: absolute; top:0; left:0; display: block; width:100%; height:85%; background-color:#001e62;}
+.foot_bg>.container{width: 100%; height: 100%;}
 .foot_h2{width: 27%; height: 10%; margin: auto;
   background-image: url("../../../../img/img_psd/Vector Smart Object.png"); 
   background-repeat: no-repeat; 

@@ -1,12 +1,9 @@
 // ascis_w_a.js
 (function($){
-    
-<<<<<<< HEAD
+  /* $('.main_btn').children('button').on('mouseenter',function(e){
+       e.preventDefault();
+       $(this).css({transform:'translateX(200px'
+  });
+  },700); 움직이게 하려면, css에서 transition(all 700ms(시간지정) ease(점점 빠르게))를 설정후 미리 사용하여야한다. */
+
 })(jQuery);
-=======
-<<<<<<< HEAD
-// ************* #headBox end=======================================
-=======
-// ************* #headBox end=======================================
->>>>>>> fa854134217711c1698429c4d79181d0126dd19c
->>>>>>> bbacb01a2761dd8ee73ff2badf33eb0e73327fb0
