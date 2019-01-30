@@ -4,25 +4,6 @@
 
 /* tablet start */
 @media screen and (min-width: 481px) and (max-width: 768px){ 
-  #headBg{height: 25px;}
-  #headerBox{top:25px; height:60px; line-height:55px; }
-    .logo{margin-left:1rem; width: 130px; height: 100%;}
-    .logo>a{background-size: 100%;}
-
-    .sign_up{width: 87px;}
-    .sign_up>a{background-position:center; background-size:40%;}
-    .menu>button{background-position:center; background-size:50%;}
-    #navBox{float:right; width: 202px;}
-    #navBox>div{width:96px;}
-    
-      .menu:hover .gnb_box{display:block;}
-      
-    .gnb_box{top:80px; width:100px; height: 299px;}
-    .gnb{ background-color: rgba(255,255,255,0.1);}
-      .gnb>li>a>span{font-size: 1.4rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}
-      .gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1;}
-      
-
 
 
 /* #mainBox ----------------------------------------- */
@@ -131,25 +112,6 @@
 .btn_01{float:left; width:40%; height: 100%; }
 .btn_02{margin-left:5%; float:right; width:55%; height: 100%; }
 .women_btn span{width: 100%; height: 100%; text-align:center; font-size: 0.9rem; line-height:2rem;}
-
-  
-/* #footBox ----------------------------------------- */
-#footBox{height: 300px; padding-top:37px; box-sizing:border-box;}
-  .foot_bg+.container{width: 80%; height: 100%;}
-  .foot_bg .foot_h2{width: 20%; height: 15%; margin-top: 15px; margin-bottom: 15px;}
-  
-  #footBox01 dl{width: 20%; margin-left: 4.5%;}
-  #footBox01 dt{height: 15%; box-shadow:inset 0.3rem 0.3rem 0.3rem rgba(200,200,200,0.3) ;}
-
-  #footBox01 dl>dd>a{padding-bottom:0.2rem; font-size: 1rem;}
-  
-  .foot_bg dl>dt>a{font-size: 1rem;}
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size:0.8rem;}
-
-  address{width: 100%; height: 18%; padding-top: 0.5rem;}
-  address>p{font-size: 0.7rem; width: 100%;}
-  address+p{float:left; width: 100%; height: 5%; font-size: 0.7rem;}
 
 
 }

@@ -1,43 +1,9 @@
 // ascis_w_a.js
 (function($){
-    // console.log('gnbLieq');
+  /* $('.main_btn').children('button').on('mouseenter',function(e){
+       e.preventDefault();
+       $(this).css({transform:'translateX(200px'
+  });
+  },700); 움직이게 하려면, css에서 transition(all 700ms(시간지정) ease(점점 빠르게))를 설정후 미리 사용하여야한다. */
 
-var navBox = $('#navBox');
-
-var menu   = navBox.find('.menu');
-var gnb    = navBox.find('.gnb');
-var gnbLi  = gnb.children('li');
-var index  = 0;
-
-var gnbP   = navBox.find('.gnb_p');
-var gnbpLi = gnbP.children('li');
-var gnbLieq, gnbpLieq;
-
-// ************* #headBox =======================================
-//step1: gnbLi의 eq(index)를 누르면 gnbLi의 eq(index)가 나타나라
-
-  var Enter  = function(e){
-      e.preventDefault();
-      index    = $(this).index();
-      gnbpLieq = gnbpLi.eq(index);
-      gnbpLieq.stop(true, false).fadeIn();
-      gnbP.addClass('active');
-      gnbpLieq.siblings('li').removeClass('active');
-  };
-  var Out = function(e){
-    e.preventDefault();
-    index    = $(this).index();
-    gnbpLieq = gnbpLi.eq(index);
-    gnbP     = navBox.find('.gnb_p');
-    gnbpLi.stop(true, false).fadeOut(100);   
-    gnbP.removeClass('active');
-  };
-
-  gnbLi.on('mouseenter',Enter);
-  gnbLi.on('mouseleave',Out);
-    
-<<<<<<< HEAD
-// ************* #headBox end=======================================
-=======
-// ************* #headBox end=======================================
->>>>>>> fa854134217711c1698429c4d79181d0126dd19c
+})(jQuery);

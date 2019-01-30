@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* asics_main.css */
+@import url("./common/header.css");
+@import url("./common/footer.css");
 @import url("./main_layout/asics_main_common.css");
 @import url("./main_layout/asics_main_mobile.css");
 @import url("./main_layout/asics_main_tablet.css");
