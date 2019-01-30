@@ -4,46 +4,56 @@
 /* mob start */
 @media screen and (max-width: 480px){
 
-/* #headBox----------------------------------------- */
-  #headBg{height:20px;  min-width: 100vw;}
-  #headerBox{height: 50px; top:20px;} 
-      .logo{width: 100px; height: 100%; margin-left:1rem; }
-      .logo>a{background-size: 101%;}
-      .sign_up{width: 71px;}
-      .sign_up>a{width: 100%; height: 100%;}
-      #navBox{width: 100px;}
-      #navBox>div{width:60px; float:right;}
-
-      .menu:hover .gnb_box{display:block;}
-  
-      .gnb{ background-color: rgba(255,255,255,0.1);}
-      .gnb>li>a>span{font-size: 1rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}
-      .gnb>.w_a>a>span{font-size: 1rem; line-height: 1.1;}
-    
-
-
-/* #mainBox----------------------------------------- */
-
+/* #mainBox=============================================  */
+#mainBox{height:600px; padding-top:70px;}
+.main_img{background-image: url("../../../../img/asics_img/main_bg_480.jpg"); background-size: contain;}
+.main_text{display: none;}
+.main_btn{top:600px; left:50%; transform: translateX(-50%);}
+.main_btn>button{font-weight:normal; font-size:1.2rem;  border-radius:0.3rem; font-family: '맑은 고딕' , Malgun Gothic;}
 
 
 /* #artBox ==========================================================*/
+#artBox{margin:200px 0; height:400px;}
+#artBox>h2{padding:0; height: 40px; font-size: 1.5rem;}
+.art_p{margin: auto; margin-top:15px; margin-bottom: 10px; width:95%; height:110px;}
+.art_p>p{text-indent:0.7rem; font-size:1rem; text-align:justify;}
+.art_img{margin: auto; box-sizing: border-box; width: 95%; height:300px;}
+.art_img>div{float:left; margin-right: 4%; width:48%; height:170px; }
+.art_img>.art_img02{margin-right:0;}
+
+.art_img03,.art_img04,.art_img05{display: none;}
+
 
 /* #bannerBox============================================= */
+#bannerBox{height: 600px;}
+#bannerBox>h2{ height:60px; font-size:1.5rem; }
+.ban_text{margin: auto;  width:80%; height: 550px;}
+.ban_text>dl{float:left; padding:40px 0; box-sizing: border-box; margin:2.5% 0; width: 100%; height:30%;}
+.ban_text>dl:last-child{margin-bottom: 0;}
+.ban_text>dl>dt{margin-bottom:0; width: 100%; height: 30%; font-size: 1.2rem; line-height:20px;}
+.ban_text>dl>dt{width: 100%; height: 30%; text-transform: uppercase; font-weight: bold; font-size: 1.2rem; }
+.ban_text>dl>dd>i{font-size:1.3rem;}
+
+
 
 /* coachBox============================================ */
+#coachBox{/*display: none;*/ height:auto;}
+#coachBox>h2{height:60px; font-size:1.5rem;}
+.coach_box{padding: 1.5rem 0;box-sizing: border-box; height:auto;}
+.coach_box>div{float:none; width:100%; height:auto; margin-bottom:1.5rem; padding-bottom: 1rem;}
+.coach_box>div:after{content: " ";margin: auto; display: block; width: 5rem; height: 1px; background-color: #001e62;}
+.coach_box>.coach_box05{margin-bottom:0;}
 
-/* #footBox ----------------------------------------- */
-#footBox{height:270px; padding-top:20px; box-sizing:border-box;}
-  .foot_bg>.foot_h2{width: 20%; height: 12%; margin-top: 15px; margin-bottom: 20px; }
-
-  .foot_bg dl>dt>a{font-size: 13px;}
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 10px;}
-
-  address{width: 100%; height: 15%; padding-top:2rem;}
-  address>p{font-size: 0.5rem; width: 100%;}
-  address+p{float:left; padding-top:0.75rem; width: 100%; height: 5%; font-size: 0.7rem;}
+.coach_img{margin-bottom: 0;float:left; width:35vw; height:35vw; margin-right: 5%;}
+.coach_info{margin: auto; float: right; padding:0; width:55%; height:100%; text-align: left;}
+.info01{padding-top: 10px; box-sizing: border-box; font-size:1rem; font-weight: bold; padding-bottom:5px;}
+.info02{font-size:0.95rem;}
 
 
+
+
+
+
+
+}
 /* mob end */
-

@@ -17,9 +17,17 @@
 
 // Mobile ==============================================
  function Mobile(){
+  //  artBox ==========================
+  var artBox = $('#artBox');
+  var artP = artBox.children('.art_p');
     
+    artP.find('.mob_hidden').attr({class:'hidden'});
 
+  //  bannerBox ==========================
+  var bannerBox = $('#bannerBox');
+  var banFont = bannerBox.find('.font');
 
+    banFont.before('<br />');
 
   };
 
