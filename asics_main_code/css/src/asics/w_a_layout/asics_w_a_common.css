@@ -48,6 +48,24 @@ i{font-style: normal;}
 .ban_text>dl>dd{width: 100%; height: 70%; }
 
 
+/* coachBox============================================ */
+#coachBox{margin: 200px 0; height:100%; background-color: #a9a;}
+#coachBox>h2{margin: auto; padding-bottom:2.5%; box-sizing: border-box; width:30%; height: 5%; background-color: #aac;}
+.coach_box{width: 100%; height:90%; background-color: #ac3;}
+.coach_box>div>div{background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+.coach_img01{background-image: url("../../../../img/asics_img/coach_01.jpg");}
+.coach_img02{background-image: url("../../../../img/asics_img/coach_02.jpg");}
+.coach_img03{background-image: url("../../../../img/asics_img/coach_03.jpg");}
+.coach_img04{background-image: url("../../../../img/asics_img/coach_04.jpg");}
+.coach_img05{background-image: url("../../../../img/asics_img/coach_05.jpg");}
+
+
+.coach_box01{}
+/*.coach_img{}*/
+/*.coach_info{}*/
+/*.info01{}*/
+/*.info02{}*/
+
 
 
 
