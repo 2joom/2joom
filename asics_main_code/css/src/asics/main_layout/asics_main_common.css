@@ -71,8 +71,9 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
     .indicator>ul>li{float:left; width: 20%; height: 100%; }
     .indicator>ul>li:last-child{margin-right:0;}
     .indicator>ul>li>a{border-radius:50%; background-color:#00c3e6;}
-    .indicator>ul>li>a:hover,
-    .indicator>ul>li>a:focus{background-color: #ccc}
+    
+    .indicator>ul>li.active>a,
+    .indicator>ul>li.active>a{background-color: #001e62;}
 
 
 
