@@ -1,4 +1,4 @@
-// device_code.js
+// w_a_rwd_code.js
 (function($) {
   var winW = $(window).width();
   var mob = 480;
