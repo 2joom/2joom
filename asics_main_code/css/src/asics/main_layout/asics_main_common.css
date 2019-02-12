@@ -25,7 +25,6 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 
 
-
 /* #menuBox---------------------------------------- */
 #menuBox{position:relative; width:100%; height:100%; background-color: #001e62;}
   .menu_big{position: absolute; top:50%; transform: translateY(-50%); width: 100%; height: auto;}
