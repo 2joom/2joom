@@ -5,57 +5,22 @@
 /* pc start */
 @media screen and (min-width: 769px) and (max-width: 960px){
 
-  #headBg{height: 50px;}
-  #headerBox{height: 80px; top:50px;}
-    .logo{margin-left:1rem; width: 130px; height: 80px;}
-    .logo>a{background-size: contain; }
-    #navBox>div{width:83px; }
-    .sign_up{float:right; width: 102px;}
-    .sign_up>a{ background-size: 40%;}
-
-    .menu{width: 500px; height: 100%;}
-    .menu>button{display: none; width: 100%; height: 100%;}
-
-.gnb_box{display:block; float: left; top:0; right:0; transform: translateX(-15%); width:25rem; height:100%;}
-
-.gnb_box>.gnb{display:block; width: 100%; height: 100%;}
-.gnb>li{display:block; float:left; width: 23%; height: 100%;}
-.gnb>li:last-of-type{width: 30%;}
-.gnb>li>a>span{top:50%; left:50%; transform:translate(-50% , -50%); color:#fff;  font-size: 1.5rem;}
-
-.gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1; top:50%; left:25%; transform:translate(-25%,-50%);}
-.gnb_p>li{display: block;}
-
-
-.gnb_p{
-  position: relative; top:0; right:13%; width:37rem; height: 20rem;}
-.gnb_p>li{position: absolute; top:0; left:0; float:left; width: 100%; height: 100%;}
-.gnb_p>li>dl{float:left; margin-top: 1rem; width:25%; height: 100%; border-right: 1px solid rgba(0,30,98,0.5); box-sizing: border-box; color:#111;}
-.gnb_p>li>dl:last-of-type{border-right:0;/* width: 19%;*/}
-
-.gnb_p>.w_a_p>dl{width:27%;}
-.gnb_p>.w_a_p>dl:last-of-type{width:19%;}
-
-.active{display: block;}
-
-.gnb_p>li>dl>dt span{ height:10%; font-weight: bold; font-size: 1rem; text-indent: 0.5rem;}
-.gnb_p>li>dl>dd span{width:100%; height:10%; font-size: 1rem; text-indent: 0.5rem;}
-
-
+ 
 /* #mainBox ------------------------------------------------ */
 #mainBox{height:40rem; padding-top: 130px;} 
+.main_small{height:6%;}
 
-.main_indicator{margin: auto; width:20%; height: 100%;}
+.main_indicator{margin: auto; width:25%; height: 100%;}
 .main_indicator>li{float:left; margin-right: 0.4rem; width: 22%; height: 100%;}
 .main_indicator>li:last-child{margin-right: 0;}
 
 .main_btn>.next_btn{width:6%; height:5rem; background-size:contain;}
 .main_btn>.prev_btn{width:6%; height:5rem; background-size:contain;}
 
-.main_img>.main_img01>a{background-position: center; background-size: cover;}
-.main_img>.main_img02>a{background-position: center; background-size: cover;}
-.main_img>.main_img03>a{background-position: center; background-size: cover;}
-.main_img>.main_img04>a{background-position: center; background-size: cover;}
+.main_img>.main_img01>a{background-size: cover;}
+.main_img>.main_img02>a{background-size: cover;}
+.main_img>.main_img03>a{background-size: cover;}
+.main_img>.main_img04>a{background-size: cover;}
 
 
  
@@ -86,6 +51,9 @@
   .best_img08>a{background-position: 0 50%; background-size: cover;}
   .best_img09>a{background-position: 50% 50%; background-size: cover;}
 
+
+
+
 /* #sportBox---------------------------------------- */
   #sportBox{width: 100%; height:30rem; margin: 200px 0;  }  
     .sport_h2{margin: auto; margin-bottom: 5%;
@@ -100,13 +68,10 @@
   .sport_big>div>a>span{position: absolute;}
 
   .sport_img01>a{
-    background-position: 0 0;
     background-size: cover;}
   .sport_img02>a{
-    background-position: 0 0;
     background-size: cover;}
   .sport_img03>a{
-    background-position: 0 0;
     background-size: cover;}
 
   .sport_big>div>a>span{bottom: 0.65rem; left:0.65rem; 
@@ -141,26 +106,7 @@
 .women_btn{margin: auto; width: 55%; height: 27%; margin-top: 3%;}
 .btn_01{float:left; width:40%; height: 100%; }
 .btn_02{margin-left:5%; float:right; width:55%; height: 100%;}
-.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.3rem; line-height: 3.5rem;}
-
-
-
-/* #footBox ------------------------------------------------ */
-  #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
-  .foot_bg+.container{width: 80%; height: 100%;}
-  .foot_bg .foot_h2{width: 20%; height: 12%; margin-top: 25px; margin-bottom: 25px;}
-  
-  #footBox01 dl{width: 20%; margin-left: 4.5%;}
-  #footBox01 dt{height: 16%;}
-  #footBox01 dl>dd>a{padding-bottom:0.2rem;}
-  
-  .foot_bg dl>dt>a{font-size: 1.3rem;}
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 1rem;}
-  
-  address{width: 100%;}
-  address>p{font-size: 0.9rem;}
-  address+p{margin: auto; float:left; width: 100%; height: 5%; font-size: 1rem;}
+.women_btn span{width: 100%; height: 100%; text-align:center; font-size: 1.1rem; line-height: 3.5rem;}
 
 
 }

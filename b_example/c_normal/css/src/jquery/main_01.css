@@ -1,20 +1,24 @@
 /* main_01.css */
 
 #wrap{width: 1200px; height: 700px; background-color: #ccd; margin: auto; }
+#wrap>a:hover,
+#wrap>a:focus{text-decoration: none;}
 
 /* headBox */
 #headBox{width: 100%; height: 100px; background-color:#cca;  text-align: center;}
 h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #a0c;}
-.gnb{position: relative; float: right; margin-top:23px; margin-right: 25px; width: 600px; height: 50px; background-color: #0b8; color:#fff;}
+.gnb{position: relative; float: right; margin-top:23px; margin-right: 25px; width: 600px; height: 50px; background-color: #0b8; }
 .gnb>li{float: left; width: 25%; height: 100%;
   border:1px solid #ccc; box-sizing: border-box;
   background-color: #38c; line-height: 50px;}
 
-.gnb_menu{position:absolute; top:71px; right:78px;
+.gnb_menu{position:absolute; top:71px; right:382px;
   width:600px; height: 150px; background-color: #1c2;}
 .gnb_ul{float: left; width: 25%; 
   border:1px solid #ccc; box-sizing: border-box;
-  background-color: #585; line-height: 30px; color:#fff;}
+  background-color: #585; line-height: 30px; }
+
+.gnb_menu{display: none;}
 
 /* slideBox */
 #slideBox{width: 100%; height: 300px; background-color: #1cc; overflow: hidden;}

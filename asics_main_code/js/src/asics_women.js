@@ -1,44 +1,6 @@
 // ascis_women.js
+
 (function($){
-    // console.log('gnbLieq');
-
-var navBox = $('#navBox');
-
-var menu   = navBox.find('.menu');
-var gnb    = navBox.find('.gnb');
-var gnbLi  = gnb.children('li');
-var index  = 0;
-
-var gnbP   = navBox.find('.gnb_p');
-var gnbpLi = gnbP.children('li');
-var gnbLieq, gnbpLieq;
-
-// ************* #headBox =======================================
-//step1: gnbLi의 eq(index)를 누르면 gnbLi의 eq(index)가 나타나라
-
-  var Enter  = function(e){
-      e.preventDefault();
-      index    = $(this).index();
-      gnbpLieq = gnbpLi.eq(index);
-      gnbpLieq.stop(true, false).fadeIn();
-      gnbP.addClass('active');
-      gnbpLieq.siblings('li').removeClass('active');
-  };
-  var Out = function(e){
-    e.preventDefault();
-    index    = $(this).index();
-    gnbpLieq = gnbpLi.eq(index);
-    gnbP     = navBox.find('.gnb_p');
-    gnbpLi.stop(true, false).fadeOut(100);   
-    gnbP.removeClass('active');
-  };
-
-  gnbLi.on('mouseenter',Enter);
-  gnbLi.on('mouseleave',Out);
-    
-// ************* #headBox end=======================================
-
-
 // ********** #mainBox start======================================
   var mainBox = $('#mainBox');
   var mainBig = mainBox.find('.main_big');
@@ -60,10 +22,11 @@ var gnbLieq, gnbpLieq;
   // 본래 5개의 크기에서 복재까지 합쳐 6개를 대상으로 넓이를 다시확인.
 
 //좌,우 버튼을 클릭하든, 인디케이트를 클릭하든 공통의 기능을 하는 변수가 하나 필요하다!
-  var showI = 0;
   var mainBtn = mainBox.find('.main_btn');
   var nextBtn = mainBtn.children('.next_btn');
   var prevBtn = mainBtn.children('.prev_btn');
+  
+  var showI = 0;
   var mainIndi = mainBox.find('.main_indicator');
   var indiLi = mainIndi.find('li');
 
@@ -81,13 +44,13 @@ var gnbLieq, gnbpLieq;
 //좌,우 버튼 클릭시
 
 // nextBtn클릭시 변수 showI에 1씩 더하는 기능 부여
-// 최대 숫자는 전체 갯수-2 까지만 가능하게 (6개 중 5개까지 움직여아하니까 5개는 4번째라는 jquery식을 이용하여 -2했음)
+// 최대 숫자는 전체 갯수-2 까지만 가능하게 (5개 중 3개까지 움직여아하니까 3개는 4번째라는 jquery식을 이용하여 -2했음)
   nextBtn.on('click', function(e) {
     e.preventDefault();
-    // 맨뒤 eq(4):5번째 그림까지 가게만들어줬다.
-    if(showI >= len-1){ // eq(4) : 5번째 이미지에 왔을때
+    // 맨뒤 eq(3):4번째 그림까지 가게만들어줬다.
+    if(showI >= len-2){ // eq(3) : 4번째 이미지에 왔을때
       mainUl.stop(true,false).css({left: 100 + '%'}); // css는 콜백 함수의 기능이없다.css( ,funcution(){})안됨
-      // 맨앞에 5번째로 가라 why? 스르륵 애니메이트 효과를 주기위해서
+      // 맨앞에 4번째로 가라 why? 스르륵 애니메이트 효과를 주기위해서
       showI = 0; // 다시 초기화 시켜서 한칸씩 가라 : 무한회전으로 보이도록
       // SlideBanner(showI);
       // viewBanner.animate({left:showI * -100 + '%'});
@@ -112,8 +75,8 @@ var gnbLieq, gnbpLieq;
           //  -1 x -100% : +100% 하면 사실 상 맨앞에 5였다.하지만, 
           // function으로 실행하면서
           // 맨 뒤에 5로 이동하게 되었다.
-          // showI값은 4가 되면서 -> eq(4) = 5번째 이미지
-          showI = len-1;
+          // showI값은 3가 되면서 -> eq(3) = 4번째 이미지
+          showI = len-2;
           mainUl.css({left:showI * -100 + '%'});
         });
       }else{        //아니면
@@ -133,21 +96,21 @@ var gnbLieq, gnbpLieq;
     SlideBtn(showI);
   });
 
-  // var movingSlide;
+  var movingSlide;
 
-  // var startMove = function(){
-  //   movingSlide = setInterval(function(){
-  //     console.log('go!go!go!');
-  //     nextBtn.trigger('click');
-  //   }, 4000);
-  // };
+  var startMove = function(){
+    movingSlide = setInterval(function(){
+      nextBtn.trigger('click');
+    }, 4000);
+  };
 
-  // var stopMove = function(){
-  //   clearInterval( movingSlide );
-  // };
+  var stopMove = function(){
+    clearInterval( movingSlide );
+  };
 
-  // startMove();
-  // banner.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
+  var mainBig = $('.main_big');
+  startMove();
+  mainBig.on({ 'mouseenter': stopMove, 'mouseleave': startMove  });
 
 })(jQuery);
 

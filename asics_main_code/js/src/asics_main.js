@@ -37,8 +37,12 @@ var gnbLieq, gnbpLieq;
   gnbLi.on('mouseleave',Out);
     
 // ************* #headBox end=======================================
+ 
 
 
 
 
 })(jQuery);
+
+
+// 과제 : 재생 정지버튼 생성 ,  li 뜯어서 붙이는걸로 바꾸기

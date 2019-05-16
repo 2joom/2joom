@@ -5,40 +5,6 @@ body{background-color: transparent;}
 
 /* pc full */
 @media screen and (min-width: 961px){
-
-  #headBg{height: 50px;}
-  #headerBox{height: 100px; top:50px;}
-    .logo{margin-left:1rem; width: 155px; height: 100px;}
-    .logo>a{background-size: contain; }
-    .sign_up{float:right; width: 102px;}
-    .sign_up>a{ background-size: 50%;}
-
-    .menu>button{display: none; width: 0%; height: 0%;}
-
-.gnb_box{display:block; float: left; top:0; right:50%; transform: translateX(-50%); width:40rem; height:100%;}
-
-.gnb_box>.gnb{display:block; width: 100%; height: 100%; }
-.gnb>li{display:block; float:left; width: 25%; height: 100%;}
-.gnb>li>a>span{top:50%; left:25%; transform:translate(-50%,-50%); color:#fff;  font-size: 2rem;}
-
-.gnb>.w_a>a>span{font-size: 1.7rem; line-height: 1.1; left:32%; transform: translate(-50%,-50%); }
-
-/*.gnb_p{display: block;}*/
-.gnb_p>li{display: block;}
-
-
-.gnb_p{ 
-  position: relative; top:0; right:13%; width: 45rem; height: 20rem;}
-.gnb_p>li{position: absolute; top:0; left:0; float:left; width: 100%; height: 100%;}
-.gnb_p>li>dl{float:left; margin-top: 1rem; width: 25%; height: 100%; border-right: 1px solid rgba(0,30,98,0.5); box-sizing: border-box; color:#111;}
-.gnb_p>li>dl:last-of-type{border-right:0;}
-
-.active{display: block;}
-
-.gnb_p>li>dl>dt span{width: 11.25rem; height:10%; font-weight: bold; font-size: 1.1rem;}
-.gnb_p>li>dl>dd span{width:100%; height:10%; font-size: 1.1rem;}
-
-
   
 /* #mainBox ------------------------------------------------------------- */
 #mainBox{height: 1100px;} 
@@ -79,7 +45,7 @@ body{background-color: transparent;}
     width:80%; height: 100%; max-width: 90rem; }
   .best_h2{margin:auto; margin-bottom: 33px; 
     width: 285px; height: 52px; font-size: 2.8rem; text-transform: uppercase; font-family: '맑은 고딕' , Malgun Gothic;}
-  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-right: ; width: 95%; height: 80%; }
+  .best_big{margin: auto; padding:0 0.5rem; box-sizing: border-box; width: 95%; height: 80%; }
   .best{float:left; margin-top: 1%; margin-left: 2%;
     width: 31%; height: 32%; }
   .best01,.best02,.best03{margin-top: 0;}
@@ -136,22 +102,6 @@ body{background-color: transparent;}
     background-size: cover;}
 
 
-
-
-
-/* #footBox ------------------------------------------------------------- */
-  #footBox{height: 440px; padding-top:20px; box-sizing:border-box;}
-  .foot_bg+.container{width: 80%; height: 100%;}
-  .foot_bg .foot_h2{width: 10%; height: 15%; margin-top: 25px; margin-bottom: 25px; }
-  
-  .foot_bg dl>dt>a{font-size: 1.8rem;}
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 1.3rem;}
-  #footBox02{height: 60%;}
-  #footBox02 dt{height: 25%;}
-  address{font-size: 1rem; text-indent: 0.3rem; width: 95%; }
-  #footBox p{font-size: 1rem; }
- 
 }
 
 /* pc full end */

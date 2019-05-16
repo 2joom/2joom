@@ -11,11 +11,12 @@ Preferences-setting-"word_wrap": true : 1그룹에서 꽉차보이게하는방�
 .hidden_wrap a>span,
 .hidden_wrap div>span,
 .hidden_wrap button>span{
-  display:block; width:0; height:0; overflow:hidden; position:relative; z-index:-100;}
+  display:block; width:0; height:0; overflow:hidden; position:absolute; z-index:-100;}
+
 .clearfix:after,.clearfix::after{content:" "; display: block; width:0; height: 0; clear: both;}
 
-.container {margin:auto; padding:0 0.625rem; box-sizing: border-box;
-            width: auto; max-width: 60rem; height: auto;}
+.container {margin:auto; width: auto; height: auto;
+ /* padding:0 0.625rem; box-sizing: border-box;max-width: 60rem;*/ }
 
 .container_wrap {margin:auto; padding:0 0.625rem; box-sizing: border-box;
                  width: auto; max-width: auto; height: auto;}/* 꽉차게 만들어야하는 경우 max-width: auto;설정때문에 wrap만듬 */

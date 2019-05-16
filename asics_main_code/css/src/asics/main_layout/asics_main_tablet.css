@@ -4,26 +4,7 @@
 
 /* tablet start */
 @media screen and (min-width: 481px) and (max-width: 768px){ 
-   #headBg{height: 45px;}
-  #headerBox{top:45px; height: 80px; line-height:55px; }
-    .logo{margin-left:1rem; width: 130px; height: 100%;}
-    .logo>a{background-size: 100%;}
-
-    .sign_up{width: 87px;}
-    .sign_up>a{background-position:center; background-size:60%;}
-    .menu>button{background-position:center; background-size:60%;}
-    #navBox{float:right; width: 202px;}
-    #navBox>div{width:96px;}
-    
-      .menu:hover .gnb_box{display:block;}
-      
-
-    .gnb_box{top:80px; width:100px; height: 299px;}
-    .gnb{ background-color: rgba(255,255,255,0.1);}
-      .gnb>li>a>span{font-size: 1.4rem; width: 100%; height: auto;  top:50%; left:50%; transform:translate(-50% , -50%);}
-      .gnb>.w_a>a>span{font-size: 1.3rem; line-height: 1.1;}
-      
-
+ 
 /* #mainBox ----------------------------------------- */
 #mainBox{height:908px;}
 .main_video>video{left: 50%; width: auto; height: 116%;
@@ -86,21 +67,6 @@
   h2+.art_box>.art07,
   h2+.art_box>.art08{display: none;}
   
-/* #footBox ----------------------------------------- */
-#footBox{height: 379px; padding-top:37px; box-sizing:border-box;}
-  .foot_bg>h2{width: 18%; height: 12%; margin-top: 20px; margin-bottom: 20px;
-  background-position: 0 0; 
-  background-size: contain;}
-
-  .foot_bg dl>dt>a,
-  #footBox01 dl:hover>dd>a,
-  #footBox01 dl:focus>dd>a{font-size: 1.1rem;}
-  
-  .foot_box04>dt{height: 40%;}
-  .foot_bg dl>dt>a{font-size: 1.2rem; line-height: 2.5rem;}
-
-  address{font-size: 0.8rem; text-indent: 0.3rem; width: 95%; }
-  .foot_bg .foot_p{font-size: 0.8rem; margin-top: 0.5rem;}
 
 
 }
