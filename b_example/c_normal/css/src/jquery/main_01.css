@@ -5,25 +5,15 @@
 #wrap>a:focus{text-decoration: none;}
 
 /* headBox */
-<<<<<<< HEAD
 #headBox{position: relative; width: 100%; height: 100px; background-color:#cca;  text-align: center;}
 h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #a0c;}
 .gnb_big{float: right; width: 600px; height:auto; margin-right: 25px; }
 .gnb{ margin-top:23px; width: 600px; height: 50px; background-color: #0b8; }
-=======
-#headBox{width: 100%; height: 100px; background-color:#cca;  text-align: center;}
-h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #a0c;}
-.gnb{position: relative; float: right; margin-top:23px; margin-right: 25px; width: 600px; height: 50px; background-color: #0b8; }
->>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
 .gnb>li{float: left; width: 25%; height: 100%;
   border:1px solid #ccc; box-sizing: border-box;
   background-color: #38c; line-height: 50px;}
 
-<<<<<<< HEAD
 .gnb_menu{position:absolute; top:71px; right:25px;
-=======
-.gnb_menu{position:absolute; top:71px; right:382px;
->>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
   width:600px; height: 150px; background-color: #1c2;}
 .gnb_ul{float: left; width: 25%; 
   border:1px solid #ccc; box-sizing: border-box;
@@ -32,25 +22,16 @@ h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #
 .gnb_menu{display: none;}
 
 /* slideBox */
-<<<<<<< HEAD
 #slideBox{width: 100%; height: 300px; overflow: hidden;}
 .outer{width: 100%; height: 300%; background-color: #ca1;}
 .outer>li{width:100%; height: 33.333333%;}
-=======
-#slideBox{width: 100%; height: 300px; background-color: #1cc; overflow: hidden;}
-.outer{width: 300%; height: 100%; background-color: #ca1;}
-.outer>li{width:33.333333%; height: 100%;}
->>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
   .slide01{background-color: #0ac;}
   .slide02{background-color: #980;}
   .slide03{background-color: #1d9;}
 
 /* conBox */
 #conBox{width:100%; height: 200px; background-color: #00c;}
-<<<<<<< HEAD
 .con_box00{position: fixed; top:30%; left:30%; width:30%; height:300px; background-color: #1dd;}
-=======
->>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
 .con_box01{float:left; width: 33.2%; height: 100%; 
   border-left: 1px dotted #000;
   background-color: #c1a;}
