@@ -1,6 +1,7 @@
 // main_01.js
 (function($){
   // header
+<<<<<<< HEAD
   var gnb = $('.gnb_big');
   var gnbMenu = $('.gnb_menu');
   var gnbUl = $('.gnb_ul');
@@ -17,6 +18,18 @@ gnb.on('mouseover',function(e){
 
  
  gnb.mouseleave(function(e){
+=======
+  var gnb = $('.gnb');
+  var gnbMenu = $('.gnb_menu');
+  var gnbUl = $('.gnb_ul');
+
+ gnb.mouseover(function(e){
+    e.preventDefault();
+    gnbMenu.slideDown(300);
+    gnbUl.css('display:block');
+ });
+  gnbMenu.mouseleave(function(e){
+>>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
     e.preventDefault();
     gnbMenu.slideUp(300);
  });
@@ -24,6 +37,7 @@ gnb.on('mouseover',function(e){
   // slideBox
   var outerUl = $('.outer');
   var slideLi = outerUl.children('li');
+<<<<<<< HEAD
   var slideLiH = outerUl.children('li').height();
 
 setInterval(function(){ 
@@ -39,5 +53,11 @@ setInterval(function(){
     // 재배치가 된 상태.
   });
 },1000); // setInterval은 지정된 함수를 지속적으로 시간동안 실행하라는 뜻.
+=======
+  var i
+
+  // outerUl
+
+>>>>>>> 3dc6485c8c9968fc0bd2e96bc7dcc284a012ef67
 
 })(jQuery);
