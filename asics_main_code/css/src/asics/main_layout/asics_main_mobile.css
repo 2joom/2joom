@@ -6,9 +6,11 @@
 
 /* #mainBox ----------------------------------------- */
 #mainBox{height:908px;}
-.main_video>video{left: 50%; width: auto; height:120%;
+.main_big{height: 50%; background-image:url();}
+.main_video>video{/*left: 50%; width: auto; height:120%;
   min-width:100%; 
-  background-size:100%; transform: translate(-50% ,-4%);}
+  background-size:100%; transform: translate(-50% ,-4%);*/ display: none;}
+.main_video{height:400px;}
 
 .main_btn>div{height: 50%;}
 .main_btn button,

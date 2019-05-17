@@ -69,14 +69,18 @@
       #navBox>div{width:50px;}
       /*.menu{top:0; right:0;}*/
       
-      .menu:hover .gnb_box{display:block;}
       
-      .gnb_box{width:80px; top:50px; right: 0;}
+      .menu .gnb_box{display: none; margin-right: -80vw; width:80vw; height:350px; top:50px; right: 0; }
       .gnb{background-color: rgba(255,255,255,0.9);}
       .gnb>li{height: 24%;} 
       .gnb>li:last-child{height:28%;} 
-      .gnb>li>a>span{font-size: 1rem; width:auto; height: auto; }
-      .gnb>.w_a>a>span{font-size:1rem; line-height: 1.2; top:50%; left:10%; transform:translate(-5% , -50%);}
+      .gnb>li>a>span{font-size:2rem; width:90%; height: auto; text-align: left;}
+      .gnb>.w_a>a>span{font-size:1.8rem; line-height:1; top:50%;}
+      
+      .gnb_p{display: block; width: 100%; background-color: #cc1;}
+      .gnb_p>li>dl>dt{display: block; width: 100%; background-color: #aac;}
+      .gnb_p>li>dl>dd{display: none;}
+
     
 }
 /* mob end */

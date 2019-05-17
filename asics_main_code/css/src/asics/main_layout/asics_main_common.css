@@ -9,10 +9,9 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 /* #mainBox---------------------------------------- */
 #mainBox{width:100%; height:100%; background-color:transparent;}
-/*.main_big:before{content: " "; position: absolute; z-index: -1; display: block; width:100%; min-width:100%; background-color: #a00;}*/
 .main_big{width: 100%; height: 75%; background-color: #abb; margin-bottom: 2%;}
 .main_video{position: relative; width: auto; min-width: 100%; height: auto; min-height: 100%; overflow: hidden;}
-.main_video>video{position: absolute;}
+.main_video>video{position: absolute; left:50%; transform: translateX(-50%);}
 
 .main_small{width: 100%; height: 23%; text-align: center; font-family: '맑은 고딕' , Malgun Gothic;}
 .main_txt{width: 100%; height: 50%; line-height: 75px; text-transform: capitalize;}
@@ -23,7 +22,6 @@ h2{font-family: '맑은 고딕' , Malgun Gothic; color:#001e62; text-transform: 
 
 .main_btn01>button{width: 80%; height: 100%; border-radius: 1.6rem; background-color: #00c3e6; color:#001e62;; font-size: 1.3rem; font-weight: bolder;}
 .main_btn02>button{width: 80%; height: 100%; border-radius: 1.6rem; background-color: #00c3e6; color:#001e62;; font-size: 1.3rem; font-weight: bolder;}
-
 
 
 
