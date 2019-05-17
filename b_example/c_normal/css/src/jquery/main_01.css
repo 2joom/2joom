@@ -1,0 +1,50 @@
+/* main_01.css */
+
+#wrap{width: 1200px; height: 700px; background-color: #ccd; margin: auto; }
+#wrap>a:hover,
+#wrap>a:focus{text-decoration: none;}
+
+/* headBox */
+#headBox{position: relative; width: 100%; height: 100px; background-color:#cca;  text-align: center;}
+h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #a0c;}
+.gnb_big{float: right; width: 600px; height:auto; margin-right: 25px; }
+.gnb{ margin-top:23px; width: 600px; height: 50px; background-color: #0b8; }
+.gnb>li{float: left; width: 25%; height: 100%;
+  border:1px solid #ccc; box-sizing: border-box;
+  background-color: #38c; line-height: 50px;}
+
+.gnb_menu{position:absolute; top:71px; right:25px;
+  width:600px; height: 150px; background-color: #1c2;}
+.gnb_ul{float: left; width: 25%; 
+  border:1px solid #ccc; box-sizing: border-box;
+  background-color: #585; line-height: 30px; }
+
+.gnb_menu{display: none;}
+
+/* slideBox */
+#slideBox{width: 100%; height: 300px; overflow: hidden;}
+.outer{width: 100%; height: 300%; background-color: #ca1;}
+.outer>li{width:100%; height: 33.333333%;}
+  .slide01{background-color: #0ac;}
+  .slide02{background-color: #980;}
+  .slide03{background-color: #1d9;}
+
+/* conBox */
+#conBox{width:100%; height: 200px; background-color: #00c;}
+.con_box00{position: fixed; top:30%; left:30%; width:30%; height:300px; background-color: #1dd;}
+.con_box01{float:left; width: 33.2%; height: 100%; 
+  border-left: 1px dotted #000;
+  background-color: #c1a;}
+.con_box02{float:left; width: 33.2%; height: 100%; 
+  border-left: 1px dotted #000;
+  background-color: #cca;}
+.con_box03{float:left; width: 33.2%; height: 100%; 
+  border-left: 1px dotted #000;
+  background-color: #8ca;}
+
+/* footBox */
+#footBox{width: 100%; height: 100px; background-color: #ccd;}
+h1{float:left;  margin-top:25px; width: 200px; height: 40px; background-color: #eee; text-align: center;}
+address{float: left; width: 75%; height: 100%;  text-align: center; line-height:100px; font-style:normal;}
+.sns{float: right; width: 100px; height:100%; text-align: center; line-height:100px;
+  background-color: #cca;}
