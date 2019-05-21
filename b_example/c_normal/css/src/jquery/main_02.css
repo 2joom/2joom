@@ -1,0 +1,26 @@
+/* main_02.css */
+#wrap{width: 1200px; height: auto;}
+
+/* #headBox---------------- */
+#headBox{padding-top:25px; box-sizing: border-box;width:100%; height:100px; background-color: #cc1;}
+	h1{ float: left; width: 200px; height: 40px; background-color: #a11;}
+	#gnbBox{position:relative; margin-top: 30px; float: right; width:60%; height: 150px;}
+	 .gnb_title{ width: 100%; height: 30%; background-color: #cca; }
+	 .gnb_title>li{float:left; width:25%; height: 100%;}
+	 .gnb_title>li>a{display: block; border:1px solid #aaa; box-sizing: border-box; width:100%; height: 100%; font-size: 15pt; font-weight: bold; text-align: center; line-height: 50px;} 
+	 .gnb_subtitle{position:absolute; left:-480px; padding-left:480px; box-sizing: border-box; width: 1200px; height: 70%;background-color: #551;} 
+		.gnb_subtitle>ul{float: left; width: 25%; height: 100%;}
+		.gnb_subtitle>ul>li{width: 100%; height: 25%; text-align: center; line-height: 25px;}
+		.gnb_subtitle>ul>li>a{display: block; width: 100%; height: 100%; font-weight: bold;}
+
+		.gnb_subtitle{display:none;}
+		.gnb_subtitle>ul a.active:hover,
+		.gnb_subtitle>ul a.active:focus{background-color: #fff; color:#000;}
+	
+
+/* #viewBox---------------- */
+#viewBox{width:100%; height:300px; background-color: #c91;}
+/* #artBox---------------- */
+#artBox{width:100%; height:200px; background-color: #ac1;}
+/* #footBox---------------- */
+#footBox{width:100%; height:100px; background-color: #c51;}
